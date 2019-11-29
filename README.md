@@ -1,2 +1,2 @@
-# ACTIVITIES INDEX
-database of activities
+# Cowboy Collective
+official website
