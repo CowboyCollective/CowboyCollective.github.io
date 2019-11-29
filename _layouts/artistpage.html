@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="{{ '/assets/css/fonts/stylesheet.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Activities-Index/activities-index.github.io/master/Favicon.png">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name"><a href="{{ site.url }}">{{ site.title | upcase }}</a></h1>
+      <a href="{{ site.url }}/Submit" class="btn">SUBMIT</a>
+      <a href="{{ site.url }}/About" class="btn">ABOUT</a>
+      <a href="{{ site.url }}" class="btn">HOME</a>
+    </section>
+
+    <section class="main-content">
+
+      <h1> {{ page.the }}{{ page.title }} </h1>
+      <h2>{{ page.description }}</h2>
+      <br>
+      {{ content }}
+      <br><br>
+      {% assign the_author= page.artist %}
+      {% for post in site.posts %}
+        {% for artist in post.artist %}
+          {% if artist == the_author %}
+          <li>
+          </h2><h2><b><a href="{{ post.url }}"> {{ post.the | upcase}}{{ post.title | upcase}}</b><br>{{ post.date | date: "%B %Y" }}</a></h2><br><br>
+          </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      <br><br><br>
+      <h2 style="text-align: center;"><b><a href="{{ site.url }}">HOME</a></b></h2>
+    </section>
+<br><br><br>
+      <footer class="site-footer">
+        <h1>Created with love by <a href="https://ewonrael.github.io/">Owen Earl</a></h1>
+        <p>Powered by <a href="http://jekyllrb.com/">Jekyll</a>. View on <a href="https://github.com/Activities-Index/activities-index.github.io">GitHub</a>.</p>
+      </footer>
+  </body>
+</html>

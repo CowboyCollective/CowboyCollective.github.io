@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "gothic";
+    src: url("assets/gothic.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #502D16;
+  background-image: url(assets/grain.gif);
+  filter: blur(0.75px);
+  font-family: 'Besley';
+}
+
+#grain {
+  width: 100vw;
+  height: 99.99vh;
+  position: absolute;
+  background-color: #F4E3D7;
+  opacity: 90%;
+  overflow: scroll;
+}
+
+#logo {
+  width: 50em;
+  height: 4.45em;
+  margin-left: -25em;
+  position: absolute;
+  left: 50%;
+  top: 2em;
+  background-image: url(assets/logo.svg);
+  background-size: contain;
+  cursor: url("assets/point.svg") 12 0, auto;
+}
+
+#logo:hover {
+  background-image: url(assets/logohover.svg);
+  background-size: contain;
+}
+
+#menu {
+  text-align: center;
+  margin-top: -1em;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  word-spacing: 1em;
+  width: 40em;
+  margin-left: -20em;
+  position: relative;
+  left: 50%;
+  height: 1.5em;
+  padding-top: 0.75em;
+  font-size: 1.3em;
+  opacity: 100%;
+  animation: fade5 10s linear 1;
+  color: #502D16;
+  border-color: #502D16;
+}
+
+#menu a {
+  text-decoration: none;
+  color: inherit;
+  cursor: url("assets/point.svg") 12 0, auto;
+}
+
+#welcomenote {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10em;
+}
+
+#welcomenote h1 {
+  font-size: 8.5vw;
+  color: #502D16;
+  animation: fade 2s linear 1;
+}
+
+@keyframes fade {
+  0% {
+    color: #F4E3D7;
+  }
+  50% {
+    color: #F4E3D7;
+  }
+  100% {
+    color: #502D16;
+  }
+}
+
+#welcomenote h2 {
+  font-size: 4em;
+  margin-top: -0.2em;
+  color: #502D16;
+  animation: fade2 4s linear 1;
+}
+
+@keyframes fade2 {
+  0% {
+    color: #F4E3D7;
+  }
+  70% {
+    color: #F4E3D7;
+  }
+  100% {
+    color: #502D16;
+  }
+}
+
+#welcomenote h3 {
+  font-size: 4em;
+  margin-top: -0.2em;
+  color: #502D16;
+  animation: fade3 6s linear 1;
+}
+
+@keyframes fade3 {
+  0% {
+    color: #F4E3D7;
+  }
+  80% {
+    color: #F4E3D7;
+  }
+  100% {
+    color: #502D16;
+  }
+}
+
+#welcomenote h4 {
+  font-size: 4em;
+  margin-top: -0.2em;
+  color: #502D16;
+  animation: fade4 8s linear 1;
+}
+
+@keyframes fade4 {
+  0% {
+    color: #F4E3D7;
+  }
+  90% {
+    color: #F4E3D7;
+  }
+  100% {
+    color: #502D16;
+  }
+}
+
+@keyframes fade5 {
+  0% {
+    opacity: 1%;
+  }
+  90% {
+    opacity: 1%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+#bounty {
+  font-family: "gothic";
+  text-align: center;
+  font-size: 20vw;
+}
+
+#bounty a {
+  text-decoration: none;
+  color: inherit;
+  animation: fade5 10s linear 1;
+  cursor: url("assets/point.svg") 12 0, auto;
+}

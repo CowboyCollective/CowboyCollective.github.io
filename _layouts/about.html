@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="{{ '/assets/css/fonts/stylesheet.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Activities-Index/activities-index.github.io/master/Favicon.png">
+    <script>
+      var sites = [
+          {% for post in site.posts %}'{{ post.url }}',
+          {% endfor %}
+      ];
+
+      function randomSite() {
+          var i = parseInt(Math.random() * sites.length);
+          location.href = sites[i];
+      }
+  </script>
+  <script>
+  function valueser() {
+     if(document.getElementById("Home").style.visibility == 'visible') {
+        document.getElementById("Home").style = 'visibility: hidden';
+        document.getElementById("Submit").style = 'visibility: hidden';
+        document.getElementById("head").style = 'margin-bottom: -5em;';
+      }
+     else {
+        document.getElementById("Home").style = 'visibility: visible; margin-top: -2em;';
+        document.getElementById("Submit").style = 'visibility: visible;';
+        document.getElementById("head").style = 'margin-bottom: -1em;';
+      }
+  }
+  </script>
+  </head>
+  <body>
+    <section class="page-header" id="head">
+      <h1 class="project-name"><a href="{{ site.url }}">{{ site.title | upcase }}</a></h1>
+      <button onclick="valueser();">☰</button>
+      <a href="Submit" class="btn" id="Submit">SUBMIT</a>
+      <u class="btn" id="About">ABOUT</u>
+      <a href="{{ site.url }}" class="btn" id="Home">HOME</a>
+    </section>
+
+    <section class="main-content">
+
+      <h1> {{ page.title }} </h1>
+      <br>
+      {{ content }}
+      <br><br><br>
+      <h2 style="text-align: center;"><b><a href="{{ site.url }}">HOME</a></b></h2>
+    </section>
+<br><br><br>
+      <footer class="site-footer">
+        <h1>Created with love by <a href="https://ewonrael.github.io/">Owen Earl</a></h1>
+        <p>Powered by <a href="http://jekyllrb.com/">Jekyll</a>. View on <a href="https://github.com/Activities-Index/activities-index.github.io">GitHub</a>.</p>
+      </footer>
+  </body>
+</html>

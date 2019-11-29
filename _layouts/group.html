@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/fonts/stylesheet.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="shortcut icon" href="Favicon.png">
+    <script>
+      var sites = [
+          {% for post in site.posts %}'{{ post.url }}',
+          {% endfor %}
+      ];
+
+      function randomSite() {
+          var i = parseInt(Math.random() * sites.length);
+          location.href = sites[i];
+      }
+  </script>
+  <script>
+  function valueser() {
+     if(document.getElementById("Submit").style.visibility == 'visible') {
+        document.getElementById("Submit").style = 'visibility: hidden';
+        document.getElementById("About").style = 'visibility: hidden';
+        document.getElementById("Home").style = 'visibility: hidden';
+        document.getElementById("head").style = 'margin-bottom: -5em;';
+      }
+     else {
+        document.getElementById("Submit").style = 'visibility: visible;';
+        document.getElementById("About").style = 'visibility: visible';
+        document.getElementById("Home").style = 'visibility: visible';
+        document.getElementById("head").style = 'margin-bottom: 1em;';
+      }
+  }
+  </script>
+  <script>
+  function visibility() {
+     if(document.getElementById("name").style.display == 'block') {
+        document.getElementById("name").style = 'display: none';
+        document.getElementById("artist").style = 'display: none';
+        document.getElementById("date").style = 'display: none';
+        document.getElementById("group").style = 'display: none';
+        document.getElementById("mad").style = 'margin-bottom: 0;';
+      }
+     else {
+        document.getElementById("name").style = 'display: block;';
+        document.getElementById("artist").style = 'display: block;';
+        document.getElementById("date").style = 'display: block;';
+        document.getElementById("group").style = 'display: block;';
+        document.getElementById("mad").style = 'margin-bottom: 7em;';
+      }
+  }
+  </script>
+  </head>
+  <body>
+    <section class="page-header" id="head">
+      <h1 class="project-name"><a href="{{ site.url }}">{{ site.title | upcase }}</a></h1>
+      <button onclick="valueser();">☰</button>
+      <a href="Submit" class="btn" id="Submit">SUBMIT</a>
+      <a href="About" class="btn" id="About">ABOUT</a>
+      <a href="{{ site.url }}" class="btn" id="Home">HOME</a>
+    </section>
+
+    <div class="sidebar" id="mad">
+      <p>
+        <b>SORT BY:</b><br>
+        <button onclick="visibility();">GROUP SIZE</button><br>
+        <a id="name" href="IndexDate">DATE INDEXED</a><br>
+        <a id="group" href="Name">NAME</a><br>
+        <a id="date" href="Artist">ARTIST</a><br>
+        <a id="artist" href="Date">DATE CREATED</a><br>
+        <u>GROUP SIZE</u><br>
+      </p><br>
+      <p><b><a href="#" onclick="randomSite();">GO TO RANDOM</a></b></p>
+    </div>
+
+    <section class="main-content">
+      {% assign years = site.posts | group_by: "group" %}
+      {% assign yearsSorted = years | sort: "name" %}
+      {% for y in yearsSorted %}
+      <h1 id="mar">{{y.name}} Activities</h1>
+      <br><br>
+      <li>
+        <div class="list">
+            {% assign yearTitlesSorted = y.items | sort: "title" %}
+            {% for item in yearTitlesSorted %}
+            <h2 class="date">{{ item.date | date: "%m / %Y" }}</h2><h2><b><a href="{{ item.url }}"> {{ item.the | upcase}}{{ item.title | upcase}}</b><br>{{ item.artist | upcase }}</a></h2><br><br>
+            {% endfor %}
+            <br>
+          </div>
+          <br>
+        </li>
+        <br><br>
+      {% endfor %}
+    </section>
+<br><br><br>
+      <footer class="site-footer">
+        <h1>Created with love by <a href="https://ewonrael.github.io/">Owen Earl</a></h1>
+        <p>Powered by <a href="http://jekyllrb.com/">Jekyll</a>. View on <a href="https://github.com/Activities-Index/activities-index.github.io">GitHub</a>.</p>
+      </footer>
+  </body>
+</html>
