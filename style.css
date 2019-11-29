@@ -1,8 +1,15 @@
+@font-face {
+    font-family: "gothic";
+    src: url("assets/gothic.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: black;
-  color: black;
+  color: #502D16;
   background-image: url(assets/grain.gif);
   filter: blur(0.75px);
   font-family: 'Besley';
@@ -12,7 +19,7 @@ body {
   width: 100vw;
   height: 99.99vh;
   position: absolute;
-  background-color: white;
+  background-color: #F4E3D7;
   opacity: 90%;
   overflow: scroll;
 }
@@ -51,6 +58,8 @@ body {
   font-size: 1.3em;
   opacity: 100%;
   animation: fade5 10s linear 1;
+  color: #502D16;
+  border-color: #502D16;
 }
 
 #menu a {
@@ -67,76 +76,76 @@ body {
 
 #welcomenote h1 {
   font-size: 8.5vw;
-  color: black;
+  color: #502D16;
   animation: fade 2s linear 1;
 }
 
 @keyframes fade {
   0% {
-    color: white;
+    color: #F4E3D7;
   }
   50% {
-    color: white;
+    color: #F4E3D7;
   }
   100% {
-    color: black;
+    color: #502D16;
   }
 }
 
 #welcomenote h2 {
   font-size: 4em;
   margin-top: -0.2em;
-  color: black;
+  color: #502D16;
   animation: fade2 4s linear 1;
 }
 
 @keyframes fade2 {
   0% {
-    color: white;
+    color: #F4E3D7;
   }
   70% {
-    color: white;
+    color: #F4E3D7;
   }
   100% {
-    color: black;
+    color: #502D16;
   }
 }
 
 #welcomenote h3 {
   font-size: 4em;
   margin-top: -0.2em;
-  color: black;
+  color: #502D16;
   animation: fade3 6s linear 1;
 }
 
 @keyframes fade3 {
   0% {
-    color: white;
+    color: #F4E3D7;
   }
   80% {
-    color: white;
+    color: #F4E3D7;
   }
   100% {
-    color: black;
+    color: #502D16;
   }
 }
 
 #welcomenote h4 {
   font-size: 4em;
   margin-top: -0.2em;
-  color: black;
+  color: #502D16;
   animation: fade4 8s linear 1;
 }
 
 @keyframes fade4 {
   0% {
-    color: white;
+    color: #F4E3D7;
   }
   90% {
-    color: white;
+    color: #F4E3D7;
   }
   100% {
-    color: black;
+    color: #502D16;
   }
 }
 
@@ -150,4 +159,17 @@ body {
   100% {
     opacity: 100%;
   }
+}
+
+#bounty {
+  font-family: "gothic";
+  text-align: center;
+  font-size: 20vw;
+}
+
+#bounty a {
+  text-decoration: none;
+  color: inherit;
+  animation: fade5 10s linear 1;
+  cursor: url("assets/point.svg") 12 0, auto;
 }

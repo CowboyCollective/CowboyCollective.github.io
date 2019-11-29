@@ -1,2 +1,2 @@
 # CowboyCollective.cc
-offical website
+official website
