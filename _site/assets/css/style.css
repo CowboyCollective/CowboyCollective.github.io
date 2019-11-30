@@ -967,3 +967,15 @@ button {
     font-size: .8em; }
     .site-footer p a {
       color: #F4E3D7; }
+
+#youtube {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  margin-left: -400px;
+  left: 50%; }
+  @media only screen and (max-width: 800px) {
+    #youtube {
+      width: 80vw;
+      height: 45vw;
+      margin-left: -40vw; } }

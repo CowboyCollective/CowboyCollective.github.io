@@ -1,27 +1,22 @@
 ---
 layout: about
-title: "About"
+title: "Howdy!"
 ---
-In his 1969 Essay *The Activity: A New Form of Art*, Michael Kirby proposes that a not yet classified art form exists, which he lays out as follows:
-> In all traditional art, the work&mdash;the thing that gives the art its objective reality&mdash;is available to everyone. Experiences of a work may differ, and spectators at a performance necessarily view it from different distances and angles, for example, but the thing is there to be perceived. <br><br>In the new art form under discussion, the “thing” has moved inside the body, so to speak. The actions of the person himself become the object of his own attention. This work of art can only be seen by one person, and it can only be viewed from within. Since the object of the aesthetic experience has become the self-perceived behavior of an individual, I refer to the form as “Activities”
+The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!
 
-Once considered, there are many pieces from many art movements that could be consisted an Activity. The surrealists created games and techniques to generate source material (a well known example being Exquisite Corpse); Alan Kaprov, known for inventing the Happening of the performance art movement, also created Activities in his later life; participants in the Fluxus movement, of which Yoko Ono was a member, often created art that was to be preformed. It seems the Activity is a common, if not inevitable part of art creation.
+We are looking to empower everyone to be a cowboy by offering resources and an inclusive space to make and share cowboy art! You can learn more about our mission by reading the [manifesto](https://cowboycollective.cc/2019/11/28/Manifesto.html).
 
-Thus there exists a need to document and index Activities. To create a museum of sorts, through which an audience member can discover and browse the instructions for Activities throughout history. This is that museum. Welcome.
+We are offering a $1000 REWARD for making a music video to one of the songs in ["Songs of the Cowboy"](https://cowboycollective.bandcamp.com/album/songs-of-the-cowboy-vol-01). Head over to [CowboyCollective.cc/music](https://CowboyCollective.cc/music) to learn more.
 <br><br><br><br>
 
-<h1>What is an Activity?<br><br></h1>
+<h1>How do I become a Cowboy Collective Card Carrying Cowboy?</h1>
 
-For the sake of this project, there are some rules about what make something an Activity, and therefore appropriate to include. They are as follows:
+Becoming a member is easy! All you have to do is contribute to the collective! Mosey on over to the [contribute](https://cowboycollective.cc/Submit) section to learn more!
+<br><br><br><br>
 
-<ol>
-<li style="list-style-type: decimal;"> The art must exist within the internal experience of the performer. Acts of theatre, performance art, and odd recipes, although interesting, are not Activities, because there is an intended audience outside of the performer themselves.</li><br>
+<h1>How do I keep in touch?</h1>
+Sign up to our ["Cowboy Mail" newsletter](https://mailchi.mp/0592cc9ce576/cowboymail). Or check the website every now and again.
+<br><br><br><br>
 
-<li style="list-style-type: decimal;"> The instructions, no matter how bizarre, must be safely performable. Instructions such as "eat the moon" or "set yourself on fire" are not able to be safely performed and are therefore not Activities.</li><br>
-
-<li style="list-style-type: decimal;"> Activities in this index must be able to be performed by an average person, without any prior specialized knowledge. Activities that require an advanced knowledge of programing or a musical instrument are not to be included.</li><br>
-</ol>
-
-If you know of an Activity that you would like to see included in this index, head over to the [<u>Submit</u>](Submit) page to send it in!
-
-If you have any further questions feel free to email me at [<u>EwonRael@yahoo.com</u>](mailto:EwonRael@yahoo.com).
+<h1>How do I get in touch?</h1>
+If you want to reach out, but you aren't submitting anything, just send a letter to [CowboyCollectiveCC@gmail.com](mailto:EwonRael@CowboyCollectiveCC@gmail.com) and we'll get back to you.
