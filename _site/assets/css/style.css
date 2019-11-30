@@ -566,12 +566,17 @@ th {
 .highlight {
   background-color: #f8f8f8; }
 
+@font-face {
+  font-family: "Century";
+  src: url("{{ '/assets/fonts/cent.otf' | relative_url }}") format("opentype");
+  font-weight: 100;
+  font-style: normal; }
 * {
   box-sizing: border-box; }
 
 li {
   list-style-type: none;
-  font-family: "metropolis-text";
+  font-family: "Besley";
   font-size: 19.25px; }
 
 ol li {
@@ -583,22 +588,22 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-family: "metropolis-text";
+  font-family: "Century";
   font-size: 16px;
   line-height: 1.5;
-  color: #000000;
-  background-color: #ffffff; }
+  color: #502D16;
+  background-color: #F4E3D7; }
 
 a {
-  color: #000000;
+  color: #502D16;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
 
 .btn {
-  font-family: "metropolis";
+  font-family: "Besley";
   font-size: 1.4rem;
-  color: #000000;
+  color: #502D16;
   letter-spacing: 0.1em;
   font-weight: 300;
   float: right;
@@ -615,24 +620,24 @@ a {
       margin-left: 0; } }
   .btn:hover {
     text-decoration: none;
-    color: #000000;
+    color: #502D16;
     border-bottom: 1px solid currentColor; }
 
 p.btn {
   margin-top: 0;
   text-decoration: none;
-  color: #000000;
+  color: #502D16;
   border-bottom: 1px solid currentColor; }
 
 .page-header {
-  color: #000000;
+  color: #502D16;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #F4E3D7;
   margin-bottom: 3em;
   padding: 1rem 6rem; }
   .page-header u {
     text-decoration: none;
-    color: #000000;
+    color: #502D16;
     border-bottom: 1px solid currentColor; }
   .page-header button {
     display: none;
@@ -653,7 +658,7 @@ p.btn {
   margin-top: 0;
   margin-bottom: 0.1rem;
   font-weight: 800;
-  font-family: "metropolis";
+  font-family: "Besley";
   float: left;
   font-size: 1.2rem; }
   .project-name a {
@@ -663,7 +668,7 @@ p.btn {
 .project-tagline {
   margin-bottom: 0;
   font-weight: normal;
-  color: #000000;
+  color: #502D16;
   font-size: 1.25rem; }
 
 .main-content {
@@ -682,7 +687,7 @@ p.btn {
   .main-content img {
     max-width: 100%; }
   .main-content h1 {
-    font-family: "metropolis";
+    font-family: "Besley";
     font-weight: 800;
     font-size: 3em;
     margin-bottom: 0.3em;
@@ -690,9 +695,9 @@ p.btn {
   .main-content h1 a:hover {
     text-decoration: none; }
   .main-content h2 {
-    font-family: "metropolis";
+    font-family: "Besley";
     font-size: 1.2rem;
-    color: #000000;
+    color: #502D16;
     letter-spacing: 0.1em;
     font-weight: 300;
     margin-top: -0.4em;
@@ -711,24 +716,24 @@ p.btn {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
-    color: #000000;
-    background-color: #ffffff;
+    color: #502D16;
+    background-color: #F4E3D7;
     border-radius: 0.3rem; }
   .main-content pre {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: #000000;
+    color: #502D16;
     word-wrap: normal;
-    background-color: #ffffff;
-    border: solid 1px #000000;
+    background-color: #F4E3D7;
+    border: solid 1px #502D16;
     border-radius: 0.3rem; }
     .main-content pre > code {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
-      color: #000000;
+      color: #502D16;
       word-break: normal;
       white-space: pre;
       background: transparent;
@@ -767,8 +772,8 @@ p.btn {
   .main-content blockquote {
     padding: 0 1rem;
     margin-left: 0;
-    color: #000000;
-    border-left: 0.3rem solid #000000; }
+    color: #502D16;
+    border-left: 0.3rem solid #502D16; }
     .main-content blockquote > :first-child {
       margin-top: 0; }
     .main-content blockquote > :last-child {
@@ -785,7 +790,7 @@ p.btn {
     .main-content table th,
     .main-content table td {
       padding: 0.5rem 1rem;
-      border: 1px solid #000000; }
+      border: 1px solid #502D16; }
   .main-content dl {
     padding: 0; }
     .main-content dl dt {
@@ -800,7 +805,7 @@ p.btn {
     height: 2px;
     padding: 0;
     margin: 1rem 0;
-    background-color: #000000;
+    background-color: #502D16;
     border: 0; }
   .main-content .list {
     width: 50rem;
@@ -822,7 +827,7 @@ p.btn {
       letter-spacing: 0; }
 
 .sidebar {
-  font-family: "metropolis";
+  font-family: "Besley";
   margin-top: 7em;
   position: absolute;
   font-size: 1.2rem;
@@ -852,7 +857,7 @@ p.btn {
         margin-right: 1rem;
         margin-top: -2em; }
       .sidebar button {
-        font-family: "metropolis";
+        font-family: "Besley";
         display: block;
         margin-right: 1rem;
         float: right;
@@ -870,7 +875,7 @@ p.btn {
     border-bottom: 1px solid currentColor; }
 
 input {
-  font-family: "metropolis";
+  font-family: "Besley";
   font-weight: 500;
   color: #000000;
   width: 100%;
@@ -900,7 +905,7 @@ textarea {
 button {
   border: 0;
   padding: 0;
-  font-family: "metropolis";
+  font-family: "Besley";
   font-weight: 800;
   background-color: inherit; }
 
@@ -919,7 +924,7 @@ button {
   opacity: 1; }
 
 .site-footer {
-  font-family: "metropolis";
+  font-family: "Besley";
   text-align: center;
   padding-top: 1rem;
   margin-top: 5rem;
@@ -929,7 +934,7 @@ button {
   background-color: #000000;
   font-size: 1rem; }
   .site-footer h1 {
-    font-family: "metropolis";
+    font-family: "Besley";
     font-size: 1.4rem;
     font-weight: 300;
     margin-bottom: 2em; }
