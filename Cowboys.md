@@ -1,3 +1,4 @@
 ---
+title: "Cowboys"
 layout: cowboys
 ---
