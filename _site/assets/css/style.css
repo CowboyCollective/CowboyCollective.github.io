@@ -650,11 +650,13 @@ p.btn {
       margin-left: -15em; } }
   @media only screen and (max-width: 30em) {
     .page-header {
-      width: 10em;
-      margin-left: -5em;
+      width: 96vw;
+      margin-left: -48vw;
       margin-top: 4em; }
       .page-header .project-name {
-        margin-top: -5em; } }
+        margin-top: -5em; }
+      .page-header .btn {
+        float: none; } }
 
 .project-name {
   width: 50em;
