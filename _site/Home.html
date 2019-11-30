@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Activities Index | A database of Activities</title>
+<title>The Cowboy Collective | The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Activities Index" />
+<meta property="og:title" content="The Cowboy Collective" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A database of Activities" />
-<meta property="og:description" content="A database of Activities" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Activities Index" />
+<meta name="description" content="The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!" />
+<meta property="og:description" content="The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!" />
+<link rel="canonical" href="http://localhost:4000/Home.html" />
+<meta property="og:url" content="http://localhost:4000/Home.html" />
+<meta property="og:site_name" content="The Cowboy Collective" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","name":"Activities Index","headline":"Activities Index","description":"A database of Activities","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/Home.html","headline":"The Cowboy Collective","description":"The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Besley.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="/assets/css/fonts/stylesheet.css?v=">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/CowboyCollective/CowboyCollective.github.io/master/Favicon.png">
     <script>
       var sites = [
@@ -108,32 +109,34 @@
   </script>
   <script>
   function valueser() {
-     if(document.getElementById("Submit").style.visibility == 'visible') {
-        document.getElementById("Submit").style = 'visibility: hidden';
+     if(document.getElementById("Contribute").style.visibility == 'visible') {
+        document.getElementById("Contribute").style = 'visibility: hidden';
+        document.getElementById("Cowboys").style = 'visibility: hidden';
+        document.getElementById("Archives").style = 'visibility: hidden';
         document.getElementById("About").style = 'visibility: hidden';
         document.getElementById("head").style = 'margin-bottom: -5em;';
       }
      else {
-        document.getElementById("Submit").style = 'visibility: visible;';
+        document.getElementById("Contribute").style = 'visibility: visible; margin-top: 2em;';
+        document.getElementById("Cowboys").style = 'visibility: visible;';
+        document.getElementById("Archives").style = 'visibility: visible;';
         document.getElementById("About").style = 'visibility: visible';
-        document.getElementById("head").style = 'margin-bottom: -1em;';
+        document.getElementById("head").style = 'margin-bottom: 1em;';
       }
   }
   </script>
   <script>
   function visibility() {
-     if(document.getElementById("name").style.display == 'block') {
-        document.getElementById("name").style = 'display: none';
-        document.getElementById("artist").style = 'display: none';
-        document.getElementById("date").style = 'display: none';
-        document.getElementById("group").style = 'display: none';
+     if(document.getElementById("title").style.display == 'block') {
+        document.getElementById("title").style = 'display: none';
+        document.getElementById("cowboy").style = 'display: none';
+        document.getElementById("type").style = 'display: none';
         document.getElementById("marg").style = 'margin-top: 0;';
       }
      else {
-        document.getElementById("name").style = 'display: block; margin-top: -4em;';
-        document.getElementById("artist").style = 'display: block; margin-top: -4em;';
-        document.getElementById("date").style = 'display: block; margin-top: -4em;';
-        document.getElementById("group").style = 'display: block; margin-top: -4em;';
+        document.getElementById("title").style = 'display: block; margin-top: -4em;';
+        document.getElementById("cowboy").style = 'display: block; margin-top: -4em;';
+        document.getElementById("type").style = 'display: block; margin-top: -4em;';
         document.getElementById("marg").style = 'margin-top: 7em;';
       }
   }
@@ -141,24 +144,24 @@
   </head>
   <body>
     <section class="page-header" id="head">
-      <h1 class="project-name"><a href="http://localhost:4000">ACTIVITIES INDEX</a></h1>
+      <a href="http://localhost:4000"><div class="project-name"></div></a>
       <button onclick="valueser();">☰</button>
-      <a href="Submit" class="btn" id="Submit">SUBMIT</a>
+      <a href="Submit" class="btn" id="Contribute">CONTRIBUTE</a>
+      <a href="Cowboys" class="btn" id="Cowboys">COWBOYS</a>
+      <u class="btn" id="Archives">ARCHIVES</u>
       <a href="About" class="btn" id="About">ABOUT</a>
-      <p class="btn" id="Home">HOME</p>
     </section>
 
     <div class="sidebar">
       <p>
         <b>SORT BY:</b><br>
-        <button onclick="visibility();">DATE INDEXED</button><br>
-        <u>DATE INDEXED</u><br>
-        <a id="name" href="Name">NAME</a><br>
-        <a id="artist" href="Artist">ARTIST</a><br>
-        <a id="date" href="Date">DATE CREATED</a><br>
-        <a id="group" href="Group">GROUP SIZE</a><br>
+        <button onclick="visibility();">DATE</button><br>
+        <u>DATE</u><br>
+        <a id="title" href="Title">TITLE</a><br>
+        <a id="cowboy" href="Cowboy">COWBOY</a><br>
+        <a id="type" href="Type">TYPE</a><br>
       </p><br>
-      <p><b><a href="#" onclick="randomSite();">GO TO RANDOM</a></b></p>
+      <p><b><a href="#" onclick="randomSite();">RANDOM</a></b></p>
     </div>
 
     <section class="main-content" id="marg">

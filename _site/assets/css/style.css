@@ -566,11 +566,6 @@ th {
 .highlight {
   background-color: #f8f8f8; }
 
-@font-face {
-  font-family: "Century";
-  src: url("{{ '/assets/fonts/cent.otf' | relative_url }}") format("opentype");
-  font-weight: 100;
-  font-style: normal; }
 * {
   box-sizing: border-box; }
 
@@ -605,18 +600,18 @@ a {
   font-size: 1.4rem;
   color: #502D16;
   letter-spacing: 0.1em;
-  font-weight: 300;
+  font-weight: 900;
   float: right;
   margin-left: 1em;
   margin-right: 1em;
   font-size: 1.2rem; }
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 62em) {
     .btn {
       visibility: hidden;
       float: right;
       padding-left: 20em;
       margin: 0.3em;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #F4E3D7;
       margin-left: 0; } }
   .btn:hover {
     text-decoration: none;
@@ -644,11 +639,12 @@ p.btn {
     float: right;
     font-size: 1.4em;
     margin-top: -0.2em;
-    font-weight: normal; }
-  @media only screen and (max-width: 60em) {
+    font-weight: normal;
+    margin-bottom: -3em; }
+  @media only screen and (max-width: 75em) {
     .page-header {
       padding: 1rem 1rem; } }
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 62em) {
     .page-header {
       margin-bottom: -5em; }
       .page-header button {
@@ -657,13 +653,11 @@ p.btn {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
-  font-weight: 800;
-  font-family: "Besley";
   float: left;
-  font-size: 1.2rem; }
-  .project-name a {
-    color: inherit;
-    text-decoration: none; }
+  background-color: red;
+  width: 15em;
+  height: 3em;
+  background-image: url("assets/logo.svg"); }
 
 .project-tagline {
   margin-bottom: 0;
@@ -679,7 +673,7 @@ p.btn {
   padding: 2rem 6rem;
   margin: 0 auto;
   font-size: 1.1rem; }
-  @media only screen and (max-width: 60em) {
+  @media only screen and (max-width: 75em) {
     .main-content {
       padding: 1rem 1rem; } }
   .main-content :first-child {
@@ -695,23 +689,24 @@ p.btn {
   .main-content h1 a:hover {
     text-decoration: none; }
   .main-content h2 {
-    font-family: "Besley";
+    font-family: "Century";
     font-size: 1.2rem;
     color: #502D16;
-    letter-spacing: 0.1em;
     font-weight: 300;
     margin-top: -0.4em;
     margin-bottom: -0.6em;
     line-height: 1.2; }
     .main-content h2 b {
       letter-spacing: 0;
-      font-weight: 800; }
+      font-weight: 800;
+      font-family: "Besley";
+      letter-spacing: 0.1em; }
   .main-content h2 a:hover {
     text-decoration: none; }
   .main-content p {
     font-size: 1.2rem;
     margin-bottom: 1em;
-    font-weight: 500; }
+    font-family: "Century"; }
   .main-content code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -810,7 +805,7 @@ p.btn {
   .main-content .list {
     width: 50rem;
     padding-left: 15em; }
-    @media only screen and (max-width: 60em) {
+    @media only screen and (max-width: 75em) {
       .main-content .list {
         padding-left: 12em;
         width: 40rem; } }
@@ -823,25 +818,24 @@ p.btn {
     .main-content .list .date {
       float: right;
       text-align: right;
-      font-family: "roboto";
+      font-family: "Century";
       letter-spacing: 0; }
 
 .sidebar {
-  font-family: "Besley";
+  font-family: "Century";
   margin-top: 7em;
   position: absolute;
   font-size: 1.2rem;
   padding-left: 5em;
   line-height: 2em;
-  font-weight: 300;
-  letter-spacing: 0.1em; }
+  font-weight: 300; }
   .sidebar u {
     padding-bottom: 0.2em;
     text-decoration: none;
     border-bottom: 1px solid currentColor; }
   .sidebar button {
     display: none; }
-  @media only screen and (max-width: 60em) {
+  @media only screen and (max-width: 75em) {
     .sidebar {
       padding-left: 1rem; } }
   @media only screen and (max-width: 45em) {
@@ -867,15 +861,16 @@ p.btn {
         border-bottom: 1px solid currentColor;
         height: 1.875em; } }
   .sidebar b {
+    font-family: "Besley";
     font-weight: 800;
-    letter-spacing: 0; }
+    letter-spacing: 0.1em; }
   .sidebar a:hover {
     padding-bottom: 0.2em;
     text-decoration: none;
     border-bottom: 1px solid currentColor; }
 
 input {
-  font-family: "Besley";
+  font-family: "Century";
   font-weight: 500;
   color: #000000;
   width: 100%;
@@ -883,7 +878,7 @@ input {
 
 #mar {
   padding-left: 12rem; }
-  @media only screen and (max-width: 60em) {
+  @media only screen and (max-width: 75em) {
     #mar {
       padding-left: 10rem; } }
   @media only screen and (max-width: 45em) {

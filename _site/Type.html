@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Group Size | Activities Index</title>
+<title>Group Size | The Cowboy Collective</title>
 <meta name="generator" content="Jekyll v3.8.6" />
 <meta property="og:title" content="Group Size" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A database of Activities" />
-<meta property="og:description" content="A database of Activities" />
-<link rel="canonical" href="http://localhost:4000/Group.html" />
-<meta property="og:url" content="http://localhost:4000/Group.html" />
-<meta property="og:site_name" content="Activities Index" />
+<meta name="description" content="The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!" />
+<meta property="og:description" content="The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!" />
+<link rel="canonical" href="http://localhost:4000/Type.html" />
+<meta property="og:url" content="http://localhost:4000/Type.html" />
+<meta property="og:site_name" content="The Cowboy Collective" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://localhost:4000/Group.html","headline":"Group Size","description":"A database of Activities","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/Type.html","headline":"Group Size","description":"The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Besley.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="/assets/css/fonts/stylesheet.css?v=">
     <link rel="stylesheet" href="/assets/css/style.css?v=">
     <link rel="shortcut icon" href="Favicon.png">
     <script>
@@ -108,34 +109,34 @@
   </script>
   <script>
   function valueser() {
-     if(document.getElementById("Submit").style.visibility == 'visible') {
-        document.getElementById("Submit").style = 'visibility: hidden';
+     if(document.getElementById("Contribute").style.visibility == 'visible') {
+        document.getElementById("Contribute").style = 'visibility: hidden';
+        document.getElementById("Cowboys").style = 'visibility: hidden';
+        document.getElementById("Archives").style = 'visibility: hidden';
         document.getElementById("About").style = 'visibility: hidden';
-        document.getElementById("Home").style = 'visibility: hidden';
         document.getElementById("head").style = 'margin-bottom: -5em;';
       }
      else {
-        document.getElementById("Submit").style = 'visibility: visible;';
+        document.getElementById("Contribute").style = 'visibility: visible; margin-top: 2em;';
+        document.getElementById("Cowboys").style = 'visibility: visible;';
+        document.getElementById("Archives").style = 'visibility: visible;';
         document.getElementById("About").style = 'visibility: visible';
-        document.getElementById("Home").style = 'visibility: visible';
         document.getElementById("head").style = 'margin-bottom: 1em;';
       }
   }
   </script>
   <script>
   function visibility() {
-     if(document.getElementById("name").style.display == 'block') {
-        document.getElementById("name").style = 'display: none';
-        document.getElementById("artist").style = 'display: none';
+     if(document.getElementById("title").style.display == 'block') {
+        document.getElementById("title").style = 'display: none';
         document.getElementById("date").style = 'display: none';
-        document.getElementById("group").style = 'display: none';
+        document.getElementById("cowboy").style = 'display: none';
         document.getElementById("mad").style = 'margin-bottom: 0;';
       }
      else {
-        document.getElementById("name").style = 'display: block;';
-        document.getElementById("artist").style = 'display: block;';
-        document.getElementById("date").style = 'display: block;';
-        document.getElementById("group").style = 'display: block;';
+        document.getElementById("title").style = 'display: block; ';
+        document.getElementById("date").style = 'display: block; ';
+        document.getElementById("cowboy").style = 'display: block; ';
         document.getElementById("mad").style = 'margin-bottom: 7em;';
       }
   }
@@ -143,24 +144,25 @@
   </head>
   <body>
     <section class="page-header" id="head">
-      <h1 class="project-name"><a href="http://localhost:4000">ACTIVITIES INDEX</a></h1>
+      <h1 class="project-name"><a href="http://localhost:4000">THE COWBOY COLLECTIVE</a></h1>
       <button onclick="valueser();">☰</button>
-      <a href="Submit" class="btn" id="Submit">SUBMIT</a>
+      <a href="Submit" class="btn" id="Contribute">CONTRIBUTE</a>
+      <a href="Cowboys" class="btn" id="Cowboys">COWBOYS</a>
+      <u class="btn" id="Archives">ARCHIVES</u>
       <a href="About" class="btn" id="About">ABOUT</a>
-      <a href="http://localhost:4000" class="btn" id="Home">HOME</a>
     </section>
 
     <div class="sidebar" id="mad">
       <p>
         <b>SORT BY:</b><br>
-        <button onclick="visibility();">GROUP SIZE</button><br>
-        <a id="name" href="IndexDate">DATE INDEXED</a><br>
-        <a id="group" href="Name">NAME</a><br>
-        <a id="date" href="Artist">ARTIST</a><br>
-        <a id="artist" href="Date">DATE CREATED</a><br>
-        <u>GROUP SIZE</u><br>
+        <button onclick="visibility();">TYPE</button><br>
+        <a id="date" href="IndexDate">DATE</a><br>
+        <a id="title" href="Title">TITLE</a><br>
+        <a id="cowboy" href="Cowboy">COWBOY</a><br>
+        <u>TYPE</u><br>
       </p><br>
-      <p><b><a href="#" onclick="randomSite();">GO TO RANDOM</a></b></p>
+      </p><br>
+      <p><b><a href="#" onclick="randomSite();">RANDOM</a></b></p>
     </div>
 
     <section class="main-content">

@@ -1,0 +1,4 @@
+---
+layout: name
+title: "Name"
+---

@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Submit | Activities Index</title>
+<title>Submit | The Cowboy Collective</title>
 <meta name="generator" content="Jekyll v3.8.6" />
 <meta property="og:title" content="Submit" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A database of Activities" />
-<meta property="og:description" content="A database of Activities" />
+<meta name="description" content="The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!" />
+<meta property="og:description" content="The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!" />
 <link rel="canonical" href="http://localhost:4000/Submit.html" />
 <meta property="og:url" content="http://localhost:4000/Submit.html" />
-<meta property="og:site_name" content="Activities Index" />
+<meta property="og:site_name" content="The Cowboy Collective" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://localhost:4000/Submit.html","headline":"Submit","description":"A database of Activities","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/Submit.html","headline":"Submit","description":"The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Besley.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="/assets/css/fonts/stylesheet.css?v=">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/Activities-Index/activities-index.github.io/master/Favicon.png">
     <script>
       var sites = [
@@ -108,26 +109,31 @@
   </script>
   <script>
   function valueser() {
-     if(document.getElementById("Home").style.visibility == 'visible') {
-        document.getElementById("Home").style = 'visibility: hidden';
+     if(document.getElementById("Contribute").style.visibility == 'visible') {
+        document.getElementById("Contribute").style = 'visibility: hidden';
+        document.getElementById("Cowboys").style = 'visibility: hidden';
+        document.getElementById("Archives").style = 'visibility: hidden';
         document.getElementById("About").style = 'visibility: hidden';
         document.getElementById("head").style = 'margin-bottom: -5em;';
       }
      else {
-        document.getElementById("Home").style = 'visibility: visible; ';
-        document.getElementById("About").style = 'visibility: visible; margin-top: -2em;';
-        document.getElementById("head").style = 'margin-bottom: -1em;';
+        document.getElementById("Contribute").style = 'visibility: visible; margin-top: 2em;';
+        document.getElementById("Cowboys").style = 'visibility: visible;';
+        document.getElementById("Archives").style = 'visibility: visible;';
+        document.getElementById("About").style = 'visibility: visible';
+        document.getElementById("head").style = 'margin-bottom: 1em;';
       }
   }
   </script>
   </head>
   <body>
     <section class="page-header" id="head">
-      <h1 class="project-name"><a href="http://localhost:4000">ACTIVITIES INDEX</a></h1>
+      <h1 class="project-name"><a href="http://localhost:4000">THE COWBOY COLLECTIVE</a></h1>
       <button onclick="valueser();">☰</button>
-      <u class="btn" id="Submit">SUBMIT</u>
+      <u class="btn" id="Contribute">CONTRIBUTE</u>
+      <a href="Cowboys" class="btn" id="Cowboys">COWBOYS</a>
+      <a href="Home" class="btn" id="Archives">ARCHIVES</a>
       <a href="About" class="btn" id="About">ABOUT</a>
-      <a href="http://localhost:4000" class="btn" id="Home">HOME</a>
     </section>
 
     <section class="main-content">
