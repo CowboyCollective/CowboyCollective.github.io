@@ -2,6 +2,6 @@
 layout: cowboypage
 title: "Owen Earl"
 cowboy: "Owen Earl"
-description: "[SheriffOwen@CowboyCollective.cc](mailto:SheriffOwen@CowboyCollective.cc)"
+description: "<a href="mailto:SheriffOwen@CowboyCollective.cc">SheriffOwen@CowboyCollective.cc</a>"
 ---
 I make things. Like this site for example.
