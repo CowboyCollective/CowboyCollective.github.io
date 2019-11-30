@@ -13,7 +13,7 @@ li {
 }
 
 ol li {
-  list-style-type: lower-latin;
+  list-style-type: "★ ";
 }
 
 body {
@@ -357,7 +357,9 @@ p.btn {
       letter-spacing: 0;
     }
   }
-
+  p a {
+    text-decoration: underline;
+  }
 }
 
 .sidebar {
@@ -409,6 +411,7 @@ p.btn {
       text-decoration: none;
       border-bottom: 1px solid currentColor;
       height: 1.875em;
+      letter-spacing: 0.1em;
     }
   }
 
@@ -432,6 +435,7 @@ input {
   color: #502D16;
   width: 100%;
   border: 0;
+  background-color: inherit;
 }
 
 #mar {
@@ -458,6 +462,7 @@ textarea {
   border-width: 1px;
   border-color: #502D16;
   padding: 5px 5px 0 10px;
+  background-color: #F4E3D7;
 }
 
 button {
@@ -466,6 +471,7 @@ button {
   font-family: "Besley";
   font-weight: 800;
   background-color: inherit;
+  letter-spacing: 0.1em;
 }
 
 #center {

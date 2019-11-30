@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -575,7 +576,7 @@ li {
   font-size: 19.25px; }
 
 ol li {
-  list-style-type: lower-latin; }
+  list-style-type: "★ "; }
 
 body {
   display: flex;
@@ -839,6 +840,8 @@ p.btn {
       text-align: right;
       font-family: "Century";
       letter-spacing: 0; }
+  .main-content p a {
+    text-decoration: underline; }
 
 .sidebar {
   font-family: "Century";
@@ -878,7 +881,8 @@ p.btn {
         font-weight: 500;
         text-decoration: none;
         border-bottom: 1px solid currentColor;
-        height: 1.875em; } }
+        height: 1.875em;
+        letter-spacing: 0.1em; } }
   .sidebar b {
     font-family: "Besley";
     font-weight: 800;
@@ -893,7 +897,8 @@ input {
   font-weight: 500;
   color: #502D16;
   width: 100%;
-  border: 0; }
+  border: 0;
+  background-color: inherit; }
 
 #mar {
   padding-left: 12rem; }
@@ -914,14 +919,16 @@ textarea {
   border-style: solid;
   border-width: 1px;
   border-color: #502D16;
-  padding: 5px 5px 0 10px; }
+  padding: 5px 5px 0 10px;
+  background-color: #F4E3D7; }
 
 button {
   border: 0;
   padding: 0;
   font-family: "Besley";
   font-weight: 800;
-  background-color: inherit; }
+  background-color: inherit;
+  letter-spacing: 0.1em; }
 
 #center {
   text-align: center; }
