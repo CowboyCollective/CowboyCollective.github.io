@@ -5,3 +5,7 @@ google_analytics:
 theme: jekyll-theme-cayman
 paginate: 5
 plugins: [jekyll-paginate]
+
+collections:
+  cowboy:
+    output: true
