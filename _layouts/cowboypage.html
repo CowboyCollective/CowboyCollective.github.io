@@ -11,21 +11,33 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/CowboyCollective/CowboyCollective.github.io/master/Favicon.png">
   </head>
   <body>
-    <section class="page-header">
-      <a href="{{ site.url }}"><div class="project-name"></div></a>
-      <a href="{{ site.url }}/Submit" class="btn">SUBMIT</a>
-      <a href="{{ site.url }}/About" class="btn">ABOUT</a>
-      <a href="{{ site.url }}" class="btn">HOME</a>
+    <section class="page-header" id="head">
+      <a href="{{ site.url }}/Home"><div class="project-name"></div></a>
+      <a href="{{ site.url }}/Submit" class="btn" id="Contribute">CONTRIBUTE</a>
+      <a href="{{ site.url }}/Cowboys" class="btn" id="Cowboys">COWBOYS</a>
+      <a href="{{ site.url }}/Home" class="btn" id="Archives">ARCHIVES</a>
+      <a href="About" class="btn" id="About">ABOUT</a>
     </section>
 
     <section class="main-content">
 
       <h1> {{ page.the }}{{ page.title }} </h1>
-      <h2> <b>{{ page.artist | upcase }}</b> &nbsp; {{ page.date | date: "%B %Y" }} <br></h2><p>{{ page.group }} Activity<br>{{ page.description }}</p>
+      <h2>{{ page.description }}</h2>
       <br>
       {{ content }}
+      <br><br>
+      {% assign the_author= page.cowboy %}
+      {% for post in site.posts %}
+        {% for cowboy in post.cowboy %}
+          {% if cowboy == the_author %}
+          <li>
+          </h2><h2><b><a href="{{ post.url }}"> {{ post.the | upcase}}{{ post.title | upcase}}</b><br>{{ post.date | date: "%d %B" }}</a></h2><br><br>
+          </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
       <br><br><br>
-      <h2 style="text-align: center;"><b><a href="{{ site.url }}">HOME</a></b></h2>
+      <h2 style="text-align: center;"><b><a href="{{ site.url }}/Cowboys">BACK TO COWBOYS</a></b></h2>
     </section>
 <br><br><br>
       <footer class="site-footer">

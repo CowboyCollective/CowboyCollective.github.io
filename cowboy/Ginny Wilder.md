@@ -1,6 +1,6 @@
 ---
-layout: artistpage
+layout: cowboypage
 title: "Ginny Wilder"
-artist: "Ginny Wilder"
+cowboy: "Ginny Wilder"
 description: "Unknown – Present"
 ---

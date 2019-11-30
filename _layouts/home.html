@@ -60,12 +60,12 @@
     </div>
 
     <section class="main-content" id="marg">
-      {% assign sorted = (site.posts | sort: 'indexed' | reverse) %}
+      {% assign sorted = (site.posts | sort: 'date' | reverse) %}
       {% for item in sorted limit:5 %}
       <li>
         <div class="list">
           <h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
-          <h2><a href="{{ site.url }}/artist/{{ item.artist }}">{{ item.artist | upcase }}</a></h2>
+          <h2><b><a href="{{ site.url }}/cowboy/{{ item.cowboy }}">{{ item.cowboy | upcase }}</a></b></h2>
           <p><a href="{{ item.url }}">{{ item.content | strip_html | strip_newlines | truncate: 160 }}</a></p>
           <br><br><br><br>
         </div>

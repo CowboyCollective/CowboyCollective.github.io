@@ -1,6 +1,6 @@
 ---
-layout: artistpage
+layout: cowboypage
 title: "Jean Arp"
-artist: "Jean Arp"
+cowboy: "Jean Arp"
 description: "September 1886 – June 1966"
 ---

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Besley.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="{{ '/assets/css/fonts/stylesheet.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="shortcut icon" href="Favicon.png">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/CowboyCollective/CowboyCollective.github.io/master/Favicon.png">
     <script>
       var sites = [
           {% for post in site.posts %}'{{ post.url }}',
@@ -52,7 +52,7 @@
         <b>SORT BY:</b><br>
         <button onclick="visibility();">TITLE</button><br>
         <a id="date" href="IndexDate">DATE</a><br>
-        <a id="title" href="Title">TITLE</a><br>
+        <u>TITLE</u><br>
         <a id="cowboy" href="Cowboy">COWBOY</a><br>
         <a id="type" href="Type">TYPE</a><br>
       </p><br>
@@ -61,13 +61,13 @@
     </div>
 
     <section class="main-content">
-      <h1 id="mar">Sorted by {{page.title}} </h1>
+      <h1 id="mar">Sort by Title </h1>
       <br><br>
       {% assign sorted = (site.posts | sort: 'title') %}
       {% for item in sorted %}
       <li>
         <div class="list">
-          <h2 class="date">{{ item.date | date: "%m / %Y" }}</h2><h2><b><a href="{{ item.url }}">{{ item.the | upcase}}{{ item.title | upcase}}</b><br>{{ item.artist | upcase }}</a></h2><br><br>
+          <h2 class="date">{{ item.date | date: "%d / %m / &rsquo;%y" }}</h2><h2><b><a href="{{ item.url }}">{{ item.the | upcase}}{{ item.title | upcase}}</b><br>{{ item.cowboy | upcase }}</a></h2><br><br>
         </div>
       </li>
       {% endfor %}

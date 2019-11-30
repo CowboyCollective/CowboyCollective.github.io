@@ -1,6 +1,6 @@
 ---
-layout: artistpage
+layout: cowboypage
 title: "Mieko Shiomi"
-artist: "Mieko Shiomi"
+cowboy: "Mieko Shiomi"
 description: "January 1938 – Present"
 ---

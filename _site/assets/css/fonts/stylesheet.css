@@ -4,3 +4,31 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Century';
+    src: url('centbold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century';
+    src: url('centitalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Century';
+    src: url('centbolditalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: url('gothic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

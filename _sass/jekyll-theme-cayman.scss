@@ -35,6 +35,7 @@ a {
 
   &:hover {
     text-decoration: underline;
+    cursor: url("https://cowboycollective.cc/assets/point.svg") 12 0, auto;
   }
 }
 
@@ -48,6 +49,7 @@ a {
   margin-left: 1em;
   margin-right: 1em;
   font-size: 1.2rem;
+  border-bottom: 1px solid #F4E3D7;
 
   &:hover {
   text-decoration: none;
@@ -56,6 +58,9 @@ a {
   }
   @media only screen and (max-width: 50em) {
     font-size: 1rem;
+  }
+  @media only screen and (max-width: 38em) {
+    font-size: 0.8rem;
   }
 }
 
@@ -87,6 +92,10 @@ p.btn {
   @media only screen and (max-width: 50em) {
     width: 38em;
     margin-left: -19em;
+  }
+  @media only screen and (max-width: 38em) {
+    width: 30em;
+    margin-left: -15em;
   }
 }
 

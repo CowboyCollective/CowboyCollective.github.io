@@ -593,7 +593,8 @@ a {
   color: #502D16;
   text-decoration: none; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: url("https://cowboycollective.cc/assets/point.svg") 12 0, auto; }
 
 .btn {
   font-family: "Besley";
@@ -604,7 +605,8 @@ a {
   float: right;
   margin-left: 1em;
   margin-right: 1em;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  border-bottom: 1px solid #F4E3D7; }
   .btn:hover {
     text-decoration: none;
     color: #502D16;
@@ -612,6 +614,9 @@ a {
   @media only screen and (max-width: 50em) {
     .btn {
       font-size: 1rem; } }
+  @media only screen and (max-width: 38em) {
+    .btn {
+      font-size: 0.8rem; } }
 
 p.btn {
   margin-top: 0;
@@ -639,6 +644,10 @@ p.btn {
     .page-header {
       width: 38em;
       margin-left: -19em; } }
+  @media only screen and (max-width: 38em) {
+    .page-header {
+      width: 30em;
+      margin-left: -15em; } }
 
 .project-name {
   width: 50em;
