@@ -107,12 +107,18 @@ p.btn {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
-  float: left;
-  background-color: red;
-  width: 15em;
-  height: 3em;
-  background-image: url("assets/logo.svg");
+  position: absolute;
+  left: 2em;
+  top: 2em;
+  width: 30em;
+  height: 2.65em;
+  background-image: url("https://cowboycollective.cc/assets/logo.svg");
+  background-size: 100%;
   }
+
+.project-name:hover {
+  background-image: url("https://cowboycollective.cc/assets/logohover.svg");
+}
 
 .project-tagline {
   margin-bottom: 0;
