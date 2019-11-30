@@ -2,6 +2,6 @@
 layout: cowboypage
 title: "Owen Earl"
 cowboy: "Owen Earl"
-description: "March 1998 – Present"
+description: "[SheriffOwen@CowboyCollective.cc](mailto:SheriffOwen@CowboyCollective.cc)"
 ---
 I make things. Like this site for example.
