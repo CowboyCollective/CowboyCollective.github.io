@@ -1,4 +1,0 @@
----
-layout: artist
-title: "Artist"
----

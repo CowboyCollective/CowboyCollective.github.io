@@ -1,4 +1,0 @@
----
-layout: name
-title: "Name"
----
