@@ -50,7 +50,7 @@ a {
   margin-right: 1em;
   font-size: 1.2rem;
 
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 82em) {
     visibility: hidden;
     float: right;
     padding-left: 20em;
@@ -93,10 +93,10 @@ p.btn {
     margin-bottom: -3em;
   }
 
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 90em) {
     padding: 1rem 1rem;
   }
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 82em) {
     button {
       display: block;
     }
@@ -114,6 +114,11 @@ p.btn {
   height: 2.65em;
   background-image: url("https://cowboycollective.cc/assets/logo.svg");
   background-size: 100%;
+  @media only screen and (max-width: 40em) {
+    padding-left: 10%;
+    width: 80vw;
+    height: 7vw;
+  }
   }
 
 .project-name:hover {
@@ -136,7 +141,7 @@ p.btn {
   margin: 0 auto;
   font-size: 1.1rem;
 
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 90em) {
     padding: 1rem 1rem;
   }
 
@@ -328,7 +333,7 @@ p.btn {
       width: 40rem;
     }
 
-    @media only screen and (max-width: 45em) {
+    @media only screen and (max-width: 55em) {
       padding-left: 0;
       width: 100%;
     }
@@ -369,7 +374,7 @@ p.btn {
     padding-left: 1rem;
   }
 
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 55em) {
     margin-top: -2rem;
     position: relative;
     height: 4em;
@@ -428,7 +433,7 @@ padding-left: 12rem;
     padding-left: 10rem;
   }
 
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 55em) {
     padding-left: 0;
   }
 }
