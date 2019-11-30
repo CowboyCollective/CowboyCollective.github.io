@@ -108,24 +108,6 @@
       }
   </script>
   <script>
-  function valueser() {
-     if(document.getElementById("Contribute").style.visibility == 'visible') {
-        document.getElementById("Contribute").style = 'visibility: hidden';
-        document.getElementById("Cowboys").style = 'visibility: hidden';
-        document.getElementById("Archives").style = 'visibility: hidden';
-        document.getElementById("About").style = 'visibility: hidden';
-        document.getElementById("head").style = 'margin-bottom: -5em;';
-      }
-     else {
-        document.getElementById("Contribute").style = 'visibility: visible; margin-top: 2em;';
-        document.getElementById("Cowboys").style = 'visibility: visible;';
-        document.getElementById("Archives").style = 'visibility: visible;';
-        document.getElementById("About").style = 'visibility: visible';
-        document.getElementById("head").style = 'margin-bottom: 1em;';
-      }
-  }
-  </script>
-  <script>
   function visibility() {
      if(document.getElementById("cowboy").style.display == 'block') {
         document.getElementById("cowboy").style = 'display: none';
@@ -144,7 +126,7 @@
   </head>
   <body>
     <section class="page-header" id="head">
-      <a href="http://localhost:4000"><div class="project-name"></div></a>
+      <a href="http://localhost:4000/Home"><div class="project-name"></div></a>
       <button onclick="valueser();">☰</button>
       <a href="Submit" class="btn" id="Contribute">CONTRIBUTE</a>
       <a href="Cowboys" class="btn" id="Cowboys">COWBOYS</a>

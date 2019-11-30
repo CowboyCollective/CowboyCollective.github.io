@@ -605,18 +605,13 @@ a {
   margin-left: 1em;
   margin-right: 1em;
   font-size: 1.2rem; }
-  @media only screen and (max-width: 82em) {
-    .btn {
-      visibility: hidden;
-      float: right;
-      padding-left: 20em;
-      margin: 0.3em;
-      border-bottom: 1px solid #F4E3D7;
-      margin-left: 0; } }
   .btn:hover {
     text-decoration: none;
     color: #502D16;
     border-bottom: 1px solid currentColor; }
+  @media only screen and (max-width: 50em) {
+    .btn {
+      font-size: 1rem; } }
 
 p.btn {
   margin-top: 0;
@@ -627,43 +622,38 @@ p.btn {
 .page-header {
   color: #502D16;
   text-align: center;
-  background-color: #F4E3D7;
   margin-bottom: 3em;
-  padding: 1rem 6rem; }
+  width: 45em;
+  position: relative;
+  margin-left: -22em;
+  left: 50%;
+  margin-top: 7em; }
   .page-header u {
     text-decoration: none;
     color: #502D16;
     border-bottom: 1px solid currentColor; }
   .page-header button {
     display: none;
-    float: right;
-    font-size: 1.4em;
-    margin-top: -0.2em;
-    font-weight: normal;
-    margin-bottom: -3em; }
-  @media only screen and (max-width: 90em) {
+    width: 0; }
+  @media only screen and (max-width: 50em) {
     .page-header {
-      padding: 1rem 1rem; } }
-  @media only screen and (max-width: 82em) {
-    .page-header {
-      margin-bottom: -5em; }
-      .page-header button {
-        display: block; } }
+      width: 38em;
+      margin-left: -19em; } }
 
 .project-name {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
+  width: 50em;
+  height: 4.45em;
+  margin-left: -25em;
   position: absolute;
-  left: 2em;
+  left: 50%;
   top: 2em;
-  width: 30em;
-  height: 2.65em;
+  margin-top: -8em;
   background-image: url("https://cowboycollective.cc/assets/logo.svg");
   background-size: 100%; }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 70em) {
     .project-name {
-      padding-left: 10%;
       width: 80vw;
+      margin-left: -40vw;
       height: 7vw; } }
 
 .project-name:hover {
@@ -813,15 +803,16 @@ p.btn {
     background-color: #502D16;
     border: 0; }
   .main-content .list {
-    width: 50rem;
-    padding-left: 15em; }
-    @media only screen and (max-width: 75em) {
+    width: 50rem; }
+    @media only screen and (max-width: 90em) {
       .main-content .list {
-        padding-left: 12em;
-        width: 40rem; } }
-    @media only screen and (max-width: 55em) {
+        width: 35em; } }
+    @media only screen and (max-width: 70em) {
       .main-content .list {
-        padding-left: 0;
+        width: 30em; } }
+    @media only screen and (max-width: 60em) {
+      .main-content .list {
+        margin-left: 0em;
         width: 100%; } }
     .main-content .list a:hover {
       text-decoration: none; }
@@ -848,7 +839,7 @@ p.btn {
   @media only screen and (max-width: 75em) {
     .sidebar {
       padding-left: 1rem; } }
-  @media only screen and (max-width: 55em) {
+  @media only screen and (max-width: 60em) {
     .sidebar {
       margin-top: -2rem;
       position: relative;
@@ -891,7 +882,7 @@ input {
   @media only screen and (max-width: 75em) {
     #mar {
       padding-left: 10rem; } }
-  @media only screen and (max-width: 55em) {
+  @media only screen and (max-width: 60em) {
     #mar {
       padding-left: 0; } }
 

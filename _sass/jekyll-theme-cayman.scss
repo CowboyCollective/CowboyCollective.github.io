@@ -39,7 +39,6 @@ a {
 }
 
 .btn {
-
   font-family: "Besley";
   font-size: 1.4rem;
   color: $section-headings-color;
@@ -50,19 +49,13 @@ a {
   margin-right: 1em;
   font-size: 1.2rem;
 
-  @media only screen and (max-width: 82em) {
-    visibility: hidden;
-    float: right;
-    padding-left: 20em;
-    margin: 0.3em;
-    border-bottom: 1px solid #F4E3D7;
-    margin-left: 0;
-  }
-
   &:hover {
   text-decoration: none;
   color: $section-headings-color;
   border-bottom: 1px solid currentColor;
+  }
+  @media only screen and (max-width: 50em) {
+    font-size: 1rem;
   }
 }
 
@@ -76,9 +69,12 @@ p.btn {
 .page-header {
   color: $header-heading-color;
   text-align: center;
-  background-color: $header-bg-color;
   margin-bottom: 3em;
-  padding: 1rem 6rem;
+  width: 45em;
+  position: relative;
+  margin-left: -22em;
+  left: 50%;
+  margin-top: 7em;
   u {
     text-decoration: none;
     color: $section-headings-color;
@@ -86,39 +82,29 @@ p.btn {
   }
   button {
     display: none;
-    float: right;
-    font-size: 1.4em;
-    margin-top: -0.2em;
-    font-weight: normal;
-    margin-bottom: -3em;
+    width: 0;
   }
-
-  @media only screen and (max-width: 90em) {
-    padding: 1rem 1rem;
-  }
-  @media only screen and (max-width: 82em) {
-    button {
-      display: block;
-    }
-    margin-bottom: -5em;
+  @media only screen and (max-width: 50em) {
+    width: 38em;
+    margin-left: -19em;
   }
 }
 
 .project-name {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
+  width: 50em;
+  height: 4.45em;
+  margin-left: -25em;
   position: absolute;
-  left: 2em;
+  left: 50%;
   top: 2em;
-  width: 30em;
-  height: 2.65em;
+  margin-top: -8em;
   background-image: url("https://cowboycollective.cc/assets/logo.svg");
   background-size: 100%;
-  @media only screen and (max-width: 40em) {
-    padding-left: 10%;
-    width: 80vw;
-    height: 7vw;
-  }
+    @media only screen and (max-width: 70em) {
+      width: 80vw;
+      margin-left: -40vw;
+      height: 7vw;
+    }
   }
 
 .project-name:hover {
@@ -326,15 +312,18 @@ p.btn {
 
   .list {
     width: 50rem;
-    padding-left: 15em;
 
-    @media only screen and (max-width: 75em) {
-      padding-left: 12em;
-      width: 40rem;
+
+    @media only screen and (max-width: 90em) {
+      width: 35em;
     }
 
-    @media only screen and (max-width: 55em) {
-      padding-left: 0;
+    @media only screen and (max-width: 70em) {
+      width: 30em;
+    }
+
+    @media only screen and (max-width: 60em) {
+      margin-left: 0em;
       width: 100%;
     }
 
@@ -374,7 +363,7 @@ p.btn {
     padding-left: 1rem;
   }
 
-  @media only screen and (max-width: 55em) {
+  @media only screen and (max-width: 60em) {
     margin-top: -2rem;
     position: relative;
     height: 4em;
@@ -433,7 +422,7 @@ padding-left: 12rem;
     padding-left: 10rem;
   }
 
-  @media only screen and (max-width: 55em) {
+  @media only screen and (max-width: 60em) {
     padding-left: 0;
   }
 }
