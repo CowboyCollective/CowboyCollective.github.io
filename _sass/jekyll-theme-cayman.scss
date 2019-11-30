@@ -35,7 +35,7 @@ a {
 
   &:hover {
     text-decoration: underline;
-    cursor: url("https://cowboycollective.cc/assets/point.svg") 12 0, auto;
+    cursor: url("https://cowboycollective.cc/welcome%20site/assets/point.svg") 12 0, auto;
   }
 }
 
@@ -96,6 +96,15 @@ p.btn {
   @media only screen and (max-width: 38em) {
     width: 30em;
     margin-left: -15em;
+  }
+  @media only screen and (max-width: 30em) {
+    width: 10em;
+    margin-left: -5em;
+    margin-top: 4em;
+    .project-name {
+      margin-top: -5em;
+    }
+
   }
 }
 
@@ -418,7 +427,7 @@ p.btn {
 input {
   font-family: "Century";
   font-weight: 500;
-  color: #000000;
+  color: #502D16;
   width: 100%;
   border: 0;
 }
@@ -442,10 +451,10 @@ textarea {
   width: 100%;
   height: 20em;
   resize: vertical;
-  color: #000000;
+  color: #502D16;
   border-style: solid;
   border-width: 1px;
-  border-color: #000000;
+  border-color: #502D16;
   padding: 5px 5px 0 10px;
 }
 
@@ -466,13 +475,13 @@ button {
 }
 
 #black {
-  background-color: #000000;
+  background-color: $section-headings-color;
   height: 1px;
   width: 20em;
 }
 
 ::placeholder {
-  color: #000000;
+  color: #502D16;
   opacity: 1;
 }
 
@@ -483,8 +492,8 @@ button {
   margin-top: 5rem;
   margin-bottom: 0;
   padding-left: 0;
-  color: #ffffff;
-  background-color: #000000;
+  color: #F4E3D7;
+  background-color: #502D16;
   font-size: 1rem;
 
   h1 {
@@ -495,7 +504,7 @@ button {
   }
 
   h1 a {
-    color: #ffffff;
+    color: #F4E3D7;
     font-weight: bold;
   }
 
@@ -504,7 +513,7 @@ button {
     font-size: .8em;
 
     a {
-      color: #ffffff;
+      color: #F4E3D7;
     }
   }
 }

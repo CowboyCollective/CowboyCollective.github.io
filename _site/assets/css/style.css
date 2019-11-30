@@ -594,7 +594,7 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: underline;
-    cursor: url("https://cowboycollective.cc/assets/point.svg") 12 0, auto; }
+    cursor: url("https://cowboycollective.cc/welcome%20site/assets/point.svg") 12 0, auto; }
 
 .btn {
   font-family: "Besley";
@@ -648,6 +648,13 @@ p.btn {
     .page-header {
       width: 30em;
       margin-left: -15em; } }
+  @media only screen and (max-width: 30em) {
+    .page-header {
+      width: 10em;
+      margin-left: -5em;
+      margin-top: 4em; }
+      .page-header .project-name {
+        margin-top: -5em; } }
 
 .project-name {
   width: 50em;
@@ -882,7 +889,7 @@ p.btn {
 input {
   font-family: "Century";
   font-weight: 500;
-  color: #000000;
+  color: #502D16;
   width: 100%;
   border: 0; }
 
@@ -901,10 +908,10 @@ textarea {
   width: 100%;
   height: 20em;
   resize: vertical;
-  color: #000000;
+  color: #502D16;
   border-style: solid;
   border-width: 1px;
-  border-color: #000000;
+  border-color: #502D16;
   padding: 5px 5px 0 10px; }
 
 button {
@@ -920,12 +927,12 @@ button {
     text-decoration: underline; }
 
 #black {
-  background-color: #000000;
+  background-color: #502D16;
   height: 1px;
   width: 20em; }
 
 ::placeholder {
-  color: #000000;
+  color: #502D16;
   opacity: 1; }
 
 .site-footer {
@@ -935,8 +942,8 @@ button {
   margin-top: 5rem;
   margin-bottom: 0;
   padding-left: 0;
-  color: #ffffff;
-  background-color: #000000;
+  color: #F4E3D7;
+  background-color: #502D16;
   font-size: 1rem; }
   .site-footer h1 {
     font-family: "Besley";
@@ -944,10 +951,10 @@ button {
     font-weight: 300;
     margin-bottom: 2em; }
   .site-footer h1 a {
-    color: #ffffff;
+    color: #F4E3D7;
     font-weight: bold; }
   .site-footer p {
     font-weight: 500;
     font-size: .8em; }
     .site-footer p a {
-      color: #ffffff; }
+      color: #F4E3D7; }
