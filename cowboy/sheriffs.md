@@ -10,7 +10,7 @@ Around these parts, being a sheriff is less about being a boss, and more like be
 ===============================================================
 The Cowboy Collective is open to everyone! We want everyone to know that they truly are welcome here. A wise man once told me that a good community is a place where we all are our best selves. We can't always be a good cowboy in every part of our day to day lives. Being a good cowboy is hard, takes practice, and some of us have less experience than others. The Cowboy Collective is a space where we can practice. Mess up. And learn to be better.
 
-Everyone is welcome to express themselves at the Cowboy Collective, but that doesn't mean that all ideas are welcome inside this community. Remember, a good cowboy is a good listener, and works to fix up the town they're in. If you have some ideas that make other cowboys feel like you aren't listening to them, a sheriff might reach out and ask that you express your idea in a way that's more inclusive.
+Everyone is welcome to express themselves at the Cowboy Collective, but that doesn't mean that all ideas are welcome inside this community. Remember, [a good cowboy is a good listener, and works to fix up the town they're in](https://cowboycollective.cc/2019/11/30/RulesoftheCowboy.html). If you have some ideas that make other cowboys feel like you aren't listening to them, a sheriff might reach out and ask that you express your idea in a way that's more inclusive.
 
 That also means that if someone is not being a good cowboy, or is acting in a way that you feel is exclusive, you can reach out to a sheriff to try and resolve the issue. Emails with sheriffs with always be confidential, and courses of action will me chosen together.
 
@@ -24,4 +24,4 @@ For example, you don't have to be a sheriff to start making art, or submit writi
 
 You also don't need to be a sheriff to start contributing on [GitHub](https://github.com/CowboyCollective). That's where the Cowboy Collective site is hosted, and when sheriffs add new posts or make changes to the website, that's where those changes take place. You already have access to the site source-code, so you can already play around with possible improvements. Github lets you make suggestions of changes to the source code, and if we like your change it will be approved and added to the site!
 
-When the time comes to add a new sheriff to the town, you will already be such a reliable contributor that the only change that will happen is you can approve your own changes. Everything else will stay the same!
+When the time comes to add a new sheriff to the town, you will already be such a reliable contributor that the only change that will happen is you can approve your own changes.
