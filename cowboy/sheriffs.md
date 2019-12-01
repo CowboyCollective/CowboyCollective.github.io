@@ -1,6 +1,6 @@
 ---
 layout: cowboypage
-title: "Why we have Sheriffs"
+title: "Why We Have Sheriffs"
 cowboy: "sheriffs"
 type: "other"
 ---
