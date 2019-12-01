@@ -1,4 +1,4 @@
 ---
 layout: artist
-title: "Artist"
+title: "Sort by Cowboy"
 ---

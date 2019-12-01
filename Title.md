@@ -1,4 +1,4 @@
 ---
 layout: name
-title: "Name"
+title: "Sort by Title"
 ---

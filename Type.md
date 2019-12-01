@@ -1,4 +1,4 @@
 ---
 layout: group
-title: "Group Size"
+title: "Sort by Type"
 ---

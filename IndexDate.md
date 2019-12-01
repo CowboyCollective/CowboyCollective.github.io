@@ -1,4 +1,4 @@
 ---
 layout: index
-title: "Index Date"
+title: "Sort by Date"
 ---
