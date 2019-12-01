@@ -1,6 +1,6 @@
 ---
 layout: thanks
-title: "How to Apply for $1,000 Reward"
+title: "How to Apply for the $1,000 Reward"
 ---
 In order to help promote the creation of cowboy art, and help support the aspiring cowboy artists out there that may not have the financial means to realize their visions otherwise, the Cowboy Collective is offering a $1,000 reward to anyone who wants to make a cowboy music video. Everyone is welcome to apply! It doesn't matter who you are, where you come from, or what your story is.
 
@@ -29,7 +29,7 @@ Once you have a proposal, you can submit it over at our **[proposal portal](http
 ====================
 If you get selected the Cowboy Collective will award you half of the money upfront. That's $500!
 
-Use these funds to help make your video. Maybe you need to buy a camera or some nice cowboy hats. The Cowboy Collective might check in with you during this time, but it really is your project. If you are feeling stuck or need help along the way, remember that there are all kinds of nice cowboys that are part of the collective. They might be willing to lend a hand or offer some expertise!!
+**You will then have a MAXIMUM of TWO MOTHS to make the video!** Use these funds to help make your video. Maybe you need to buy a camera or some nice cowboy hats. The Cowboy Collective might check in with you during this time, but it really is your project. If you are feeling stuck or need help along the way, remember that there are all kinds of nice cowboys that are part of the collective. They might be willing to lend a hand or offer some expertise!!
 
 <br>Step 04: Claim Your Bounty!
 ====================
@@ -44,5 +44,5 @@ Once you finish the music video you can submit it to be included in the Cowboy C
 
 3. We are looking for people who have good ideas, but can also follow through and get the job done. If you don't already have a compelling existing body of work, perhaps you can make something for the collective now, and apply later!
 
-<br>GOOD LUCK!
+<br>[Take me to the Proposal Portal!](https://cowboycollective.cc/PP)
 ==============
