@@ -10,7 +10,7 @@ Even if you don't know him by name, you are familiar with the work of Ennio Morr
 
 <iframe id="youtube" src="https://www.youtube.com/embed/enuOArEfqGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 
-One of the things that watching this music being preformed makes me realize is what a strange and experimental composer he was. The music is so iconic that the decisions he's making feel inevitable, but some of them are really weird. Like if you were to ask me to write some cowboy film music, I don't think my first thought would be to use a recorder and some dude going "wah wah wah". There are instruments I don't even recognize in there, whistling, and it's punctuated with groups of men shouting nonsense.
+One of the things that watching this music being preformed makes me realize is what a strange and experimental composer he is. The music is so iconic that the decisions he's making feel inevitable, but some of them are really weird. Like if you were to ask me to write some cowboy film music, I don't think my first thought would be to use a recorder and some dude going "wah wah wah". There are instruments I don't even recognize in there, whistling, and it's punctuated with groups of men shouting nonsense.
 
 Perhaps this is why his music so well captures the essence of the cowboy. [Cowboys are brave and free](https://cowboycollective.cc/2019/11/30/RulesoftheCowboy.html), and what's more brave then writing some ridiculous, silly things into your serious film scores?
 

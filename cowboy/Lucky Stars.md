@@ -10,7 +10,7 @@ The Lucky Stars is about as rootin' tootin' cowboy as they come! They are a Holl
 
 I grew up with the Lucky Stars. I was born in LA, and my parents were from that area and that time. I think more than anything, the Lucky Stars were my first exposure to cowboy culture because we were always listening to their records growing up.
 
-At first glace they seem about as hardcore, traditional cowboy as they come. They sing about being lonesome and drinking and wooin' women. They also record their albums using old microphones for that traditional sound, and there are even rumors of them transporting actual pianos with them to gigs because those newfangled electric ones just won't do!
+At first glace they seem about as hardcore, traditional cowboy as they come. They sing about being lonesome and drinking and wooin' women. They also record their albums using old microphones for that old record sound, and there are even rumors of them transporting actual pianos with them to gigs because those newfangled electric ones just won't do!
 
 However, after a closer listen one will hear some new perspectives on what cowboys can be. Songs like *Get off Your High Horse* remind us to be humble and stay true to our friends; the classic *All Shapes and Sizes* celebrates loving women who don't fit traditional beauty standards; and perhaps my favorite *(Mama's Got) The Rundown Daddy Blues* tells the story of a cowboy that just wants to sit in his rocking chair instead of going out and partying. I have linked to the album that track is from below.
 
@@ -18,7 +18,7 @@ However, after a closer listen one will hear some new perspectives on what cowbo
 <iframe id="youtube" src="https://open.spotify.com/embed/album/2Cdjq3oL27jcTtOflDMSvE" frameborder="0" allowtransparency="true"></iframe>
 <br>
 
-More than anything the Lucky Stars know how to have a good time! Their music makes you just want to get up and dance. Their lyrics make you laugh, and astonishes you with how clever and full of puns they are. You would have to be coldhearted not to fall in love with these rootin’ tootin’ cowboys.
+More than anything the Lucky Stars know how to have a good time! Their music makes you just want to get up and dance. Their lyrics make you laugh, and astonishes you with how clever and full of puns they are. You would have to be coldhearted not to fall in love with these rootin’ tootin’ cowboy music makers.
 
 1. **[Here is a link to their website](http://www.theluckystars.com/).** It seems to be down right now, but I'm hoping that will be sorted out soon.
 
