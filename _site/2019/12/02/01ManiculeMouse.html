@@ -70,7 +70,14 @@ century.  That’s back when books were all written by hand. They’ve been phas
   <li>
     <p><strong>Making the Manicules</strong><br />
 I wanted to give the site a little extra touch of cowboy and whimsy by turning the mouse cursor into a manicule when links are hovered over. Luckily there is a manicule in the <a href="https://cowboycollective.cc/2019/12/01/WANTEDPosters.html">the WANTED Poster Resource Pack</a>, which includes a set of actual historical WANTED posters. <a href="https://raw.githubusercontent.com/CowboyCollective/Wanted-Posters/master/Refrences/John%20Wilkes%20Booth.jpg">This one right here</a> has the manicule in question.
-<img src="https://raw.githubusercontent.com/CowboyCollective/media/master/manicule.png" alt="Manicule Mouse" /></p>
+<img src="https://raw.githubusercontent.com/CowboyCollective/media/master/manicule.png" alt="Manicule Mouse" />
+I used an image editor to crop and rotate it before playing with the “levels” to get the black and white effect. Then I opened it up in <a href="https://inkscape.org/">Inkscape</a> and used the “trace bitmap” feature (Ctrl+Shift+B), and before using the pen tool to trace over the areas I wanted to be white.</p>
+  </li>
+  <li>
+    <p><strong>Implementing the Code</strong><br />
+Now that I have the image I want, I can write the css to implement it. That looks like this:<br /><br />
+<strong><code class="highlighter-rouge">a:hover{ cursor: url("https://cowboycollective.cc/welcome%20site/assets/point.svg") 12 0, auto;}</code></strong><br /><br />
+This will make the cursor that manicule picture whenever it hovers over a link (a). Feel free to use this code in your own websites! You can replace the url with any image file you like.</p>
   </li>
 </ol>
 

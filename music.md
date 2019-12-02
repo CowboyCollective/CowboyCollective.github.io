@@ -33,7 +33,7 @@ Once you have a proposal, you can submit it over at our **[proposal portal](http
 ====================
 If you get selected the Cowboy Collective will award you half of the money upfront. That's $500!
 
-**You will then have a MAXIMUM of TWO MOTHS to make the video!** Use these funds to help make your video. Maybe you need to buy a camera or some nice cowboy hats. The Cowboy Collective might check in with you during this time, but it really is your project. If you are feeling stuck or need help along the way, remember that there are all kinds of nice cowboys that are part of the collective. They might be willing to lend a hand or offer some expertise!!
+**You will then have a MAXIMUM of TWO MOTHS to make the video!** Use these funds to help make your video. Maybe you need to buy a camera or some nice cowboy hats. The Cowboy Collective might check in with you during this time, but it really is your project. We do love updates, however, and if you are really feeling stuck maybe you can submit a post to the Collective and see if a community member reaches out with expertise!
 
 <br>Step 04: Claim Your Bounty!
 ====================

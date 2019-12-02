@@ -3,6 +3,7 @@ layout: default
 title: "Make Your Own Cowboy WANTED Poster"
 cowboy: "Owen Earl"
 type: "Makin"
+photo: "https://raw.githubusercontent.com/CowboyCollective/Wanted-Posters/master/Wanted%20Posters.png"
 date: 2019-12-01
 ---
 ![Wanted Posters](https://raw.githubusercontent.com/CowboyCollective/Wanted-Posters/master/Wanted%20Posters.png)

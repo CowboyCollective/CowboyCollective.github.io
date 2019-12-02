@@ -3,6 +3,7 @@ layout: default
 title: "Cowboy Fonts"
 cowboy: "Owen Earl"
 type: "Makin"
+photo: "https://raw.githubusercontent.com/CowboyCollective/Cowboy-Fonts/master/cowboy%20fonts.png"
 date: 2019-11-30
 ---
 ![Cowboy Fonts](https://raw.githubusercontent.com/CowboyCollective/Cowboy-Fonts/master/cowboy%20fonts.png)
