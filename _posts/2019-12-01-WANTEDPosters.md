@@ -7,7 +7,7 @@ date: 2019-12-01
 ---
 ![Wanted Posters](https://raw.githubusercontent.com/CowboyCollective/Wanted-Posters/master/Wanted%20Posters.png)
 
-<h2><b><a href="https://github.com/CowboyCollective/Wanted-Posters/archive/master.zip">DOWNLOAD THE ZIP FILE </a></b></h2><br>
+<h2><b><a href="https://github.com/CowboyCollective/Wanted-Posters/archive/master.zip">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>
 
 Howdy Cowboys!
 
@@ -35,4 +35,4 @@ Remember! Here at the Cowboy Collective, we want everyone to know that they too 
 If you like what we're doing here, print out some posters to get the word out!<br><br>
 
 
-<h2><b><a href="https://github.com/CowboyCollective/Wanted-Posters/archive/master.zip">DOWNLOAD THE ZIP FILE </a></b></h2><br>
+<h2><b><a href="https://github.com/CowboyCollective/Wanted-Posters/archive/master.zip">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>

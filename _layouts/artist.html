@@ -57,7 +57,7 @@
         <a id="type" href="Type">TYPE</a><br>
       </p><br>
       </p><br>
-      <p><b><a href="#" onclick="randomSite();">RANDOM</a></b></p>
+      <p><b><a href="#" onclick="randomSite()">RANDOM</a></b></p>
     </div>
 
     <section class="main-content">
@@ -70,7 +70,7 @@
       <li>
         <div class="list">
         <h2><b><a href="{{ site.url }}/cowboy/{{ y.name }}">{{ y.name | upcase }}</a></b></h2><br>
-            {% assign yearTitlesSorted = y.items | sort: "title" %}
+            {% assign yearTitlesSorted = y.items | sort: "year" %}
             {% for item in yearTitlesSorted %}
                 <h2 class="date">{{ item.date | date: "%d / %m / &rsquo;%y" }}</h2><h2><a href="{{ item.url }}">{{ item.the | upcase}}{{ item.title | upcase}}</a></h2><br>
             {% endfor %}

@@ -7,7 +7,7 @@ date: 2019-11-30
 ---
 ![Cowboy Fonts](https://raw.githubusercontent.com/CowboyCollective/Cowboy-Fonts/master/cowboy%20fonts.png)
 
-<h2><b><a href="https://codeload.github.com/CowboyCollective/Cowboy-Fonts/zip/master">DOWNLOAD THE ZIP FILE </a></b></h2><br>
+<h2><b><a href="https://codeload.github.com/CowboyCollective/Cowboy-Fonts/zip/master">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>
 
 Any self-respecting cowboy knows that design is an essential skill. How else would we write [WANTED posters](https://cowboycollective.cc/2019/12/01/WANTEDPosters.html), or put titles on our [cowboy albums](https://CowboyCollective.cc/2019/11/29/SongsOfTheCowboyVol01.html)?
 
@@ -35,4 +35,4 @@ Finally, the most important cowboy font of them all, Clarendon. If there is one 
 
 Of course the MOST important thing to know about cowboys and their type design is that they were highly experiential, trail blazing, weren't afraid to break all the rules and make a mess. Using these fonts might give your cowboy work an historically accuracy,  but the true cowboy spirit is in the new! Honor the cowboys of past by pushing the boundaries, and using letters in such new and exciting ways that your contemporaries will call it "grotesque"!<br><br>
 
-<h2><b><a href="https://codeload.github.com/CowboyCollective/Cowboy-Fonts/zip/master">DOWNLOAD THE ZIP FILE</a></b></h2><br>
+<h2><b><a href="https://codeload.github.com/CowboyCollective/Cowboy-Fonts/zip/master">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>
