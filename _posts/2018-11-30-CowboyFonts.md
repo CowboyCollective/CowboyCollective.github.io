@@ -5,6 +5,8 @@ cowboy: "Owen Earl"
 type: "Makin"
 date: 2019-11-30
 ---
+![Cowboy Fonts](https://raw.githubusercontent.com/CowboyCollective/Cowboy-Fonts/master/cowboy%20fonts.png)
+
 <h2><b><a href="https://codeload.github.com/CowboyCollective/Cowboy-Fonts/zip/master">DOWNLOAD THE ZIP FILE </a></b></h2><br>
 
 Any self-respecting cowboy knows that design is an essential skill. How else would we write [WANTED posters](https://raw.githubusercontent.com/CowboyCollective/media/master/wanted%20sign.png), or put titles on our [cowboy albums](https://CowboyCollective.cc/2019/11/29/SongsOfTheCowboyVol01.html)?
