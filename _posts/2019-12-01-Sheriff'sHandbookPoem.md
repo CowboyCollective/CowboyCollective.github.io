@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Sheriff's Handbook Poem"
-cowboy: "Colbe Shicatano"
+cowboy: "Colbe Schicatano"
 type: "Writin"
 date: 2019-12-01
 ---
