@@ -980,6 +980,18 @@ button {
       height: 45vw;
       margin-left: -40vw; } }
 
+#youtubewide {
+  position: relative;
+  width: 800px;
+  height: 225px;
+  margin-left: -400px;
+  left: 50%; }
+  @media only screen and (max-width: 800px) {
+    #youtubewide {
+      width: 80vw;
+      height: 22.5vw;
+      margin-left: -40vw; } }
+
 .question {
   font-size: 0.5em;
   background-color: #502D16;
