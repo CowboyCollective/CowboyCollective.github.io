@@ -2,7 +2,7 @@
 layout: default
 title: "Canon in F# Major for Yodel Instructors "
 cowboy: "Owen Earl"
-type: "Listen"
+type: "Listenin"
 date: 2019-12-02
 ---
 
