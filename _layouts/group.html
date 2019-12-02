@@ -68,7 +68,7 @@
       <br><br>
       <li>
         <div class="list">
-            {% assign yearTitlesSorted = y.items | sort: "title" %}
+            {% assign yearTitlesSorted = y.items | sort: "date" %}
             {% for item in yearTitlesSorted %}
             <h2 class="date">{{ item.date | date: "%d / %m / &rsquo;%y" }}</h2><h2><b><a href="{{ item.url }}"> {{ item.the | upcase}}{{ item.title | upcase}}</b><br>{{ item.cowboy | upcase }}</a></h2><br><br>
             {% endfor %}
