@@ -9,7 +9,7 @@ date: 2019-11-30
 
 <h2><b><a href="https://codeload.github.com/CowboyCollective/Cowboy-Fonts/zip/master">DOWNLOAD THE ZIP FILE </a></b></h2><br>
 
-Any self-respecting cowboy knows that design is an essential skill. How else would we write [WANTED posters](https://raw.githubusercontent.com/CowboyCollective/media/master/wanted%20sign.png), or put titles on our [cowboy albums](https://CowboyCollective.cc/2019/11/29/SongsOfTheCowboyVol01.html)?
+Any self-respecting cowboy knows that design is an essential skill. How else would we write [WANTED posters](https://cowboycollective.cc/2019/12/01/WANTEDPosters.html), or put titles on our [cowboy albums](https://CowboyCollective.cc/2019/11/29/SongsOfTheCowboyVol01.html)?
 
 At the center of good cowboy graphic design is good fonts. The more the better! Cowboys are known to put all sorts of big, bold, and varied fonts in all their design work. The bigger and the bolder the better! There's no such thing as too many fonts on one cowboy poster! Fonts should roam as wild and free as the cowboy heart!
 
