@@ -698,7 +698,10 @@ p.btn {
   .main-content :first-child {
     margin-top: 0; }
   .main-content img {
-    max-width: 100%; }
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
   .main-content h1 {
     font-family: "Besley";
     font-weight: 800;
