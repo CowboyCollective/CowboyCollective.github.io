@@ -1,8 +1,12 @@
 ---
 layout: thanks
-title: "How to Apply for the $1,000 Reward"
+title: "$1,000 Reward"
 ---
-In order to help promote the creation of cowboy art, and help support the aspiring cowboy artists out there that may not have the financial means to realize their visions otherwise, the Cowboy Collective is offering a $1,000 reward to anyone who wants to make a cowboy music video. Everyone is welcome to apply! It doesn't matter who you are, where you come from, or what your story is.
+Howdy! The Cowboy Collective is on the **SEARCH** for an original music video to accompany a **MINUTE LONG COWBOY SONG!** All cowboys (you don't have to be a boy to be a cowboy!) can apply with their ideas for a **MUSIC VIDEO**, and if selected they will receive a **$1000 REWARD** to help create their art!
+
+Once the first round of 10 music videos are made, a second round will start, so if you don't get selected in the first round **YOU WILL HAVE ANOTHER CHANCE!**
+
+All cowboy art is included in the Cowboy Collective, so you are welcome to make a music video even if you didn't get the reward, and that video will be included in the Cowboy Collective Archives!
 
 <br>Step 01: Pick a Song
 ====================

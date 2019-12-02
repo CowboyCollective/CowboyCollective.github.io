@@ -26,7 +26,7 @@ More than anything, F.A.T. Labs was fun. Their projects were goofy, like that ti
 
 If you go to the F.A.T. Labs site now you will [see that they are no longer active](http://fffff.at/). They shut down because in their eyes, the internet is no longer free. We lost the fight against mass surveillance and consolidation of power and control. That was in 2015 when they shut their doors, before the Cambridge Analytics scandal or other things of that nature. I guess they knew something many of us hadn't yet figured out.<br><br>
 
-★★★
+&#9733;&#9733;&#9733;
 
 <br>
 To F.A.T. Labs I say, so long partner. You were a good cowboy. You fought the good fight. There will never be another Cowboy exactly like you, but your spirit lives on inside my heart and the heart of all the cowboys who fought along with you. You are missed, and we will continue fighting in your honor.
