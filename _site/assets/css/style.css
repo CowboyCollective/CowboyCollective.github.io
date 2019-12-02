@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -575,7 +576,7 @@ li {
   font-size: 19.25px; }
 
 ol li {
-  list-style-type: "&#9733; "; }
+  list-style-type: "★ "; }
 
 body {
   display: flex;

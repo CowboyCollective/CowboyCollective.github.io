@@ -6,7 +6,7 @@ The Cowboy Collective is a free-range group of artists making creative commons c
 
 We are looking to empower everyone to be a cowboy by offering resources and an inclusive space to make and share cowboy art! You can learn more about our mission by reading the [manifesto](https://cowboycollective.cc/2019/11/28/Manifesto.html).
 
-We are offering a $1000 REWARD for making a music video to one of the songs in ["Songs of the Cowboy"](https://cowboycollective.bandcamp.com/album/songs-of-the-cowboy-vol-01). Head over to [CowboyCollective.cc/music](https://CowboyCollective.cc/music) to learn more.
+We are offering a $1000 REWARD for making a music video to one of the songs in ["Songs of the Cowboy"](https://CowboyCollective.cc/2019/11/29/SongsOfTheCowboyVol01.html). Head over to [CowboyCollective.cc/music](https://CowboyCollective.cc/music) to learn more.
 <br><br><br><br>
 
 <h1>How do I become a Cowboy Collective Card Carrying Cowboy?</h1>
