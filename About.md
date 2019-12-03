@@ -11,10 +11,10 @@ We are offering a $1000 REWARD for making a music video to one of the songs in [
 
 <h1>How do I become a Cowboy Collective Card Carrying Cowboy?</h1>
 
-Becoming a member is easy! All you have to do is contribute to the collective! Mosey on over to the [contribute](https://cowboycollective.cc/Submit) section to learn more!
+We have a saying around these parts which is "anyone can be a cowboy," and we **mean** it! Mosey on over to the [contribute](https://cowboycollective.cc/Submit) section to learn more!
 <br><br><br><br>
 
-<h1>How do I keep in touch?</h1>
+<h1>Keep in Touch</h1>
 Sign up to our ["Cowboy Mail" newsletter](https://mailchi.mp/0592cc9ce576/cowboymail). Or check the website every now and again.
 <br><br><br><br>
 
