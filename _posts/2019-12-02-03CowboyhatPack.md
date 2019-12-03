@@ -13,7 +13,7 @@ date: 2019-12-03
 
 Oh Hi Howdy!
 
-I was watching this music video from Taylor Swift for the song "You Need to Calm Down." The song is a real banger, and I love the messaging in it, but something occurred to me... There's hardly a cowboy in it!
+I was watching this music video from the Taylor Swift song *You Need to Calm Down.* The song is a real banger, and I love the messaging in it, but something occurred to me... There's hardly a cowboy in it!
 
 <iframe id="youtube" src="https://www.youtube.com/embed/Dkk9gvTmCXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 
