@@ -979,9 +979,9 @@ button {
   left: 50%; }
   @media only screen and (max-width: 800px) {
     #youtube {
-      width: 80vw;
-      height: 45vw;
-      margin-left: -40vw; } }
+      width: 100vw;
+      height: 56.25vw;
+      margin-left: -50vw; } }
 
 #youtubewide {
   position: relative;
@@ -991,9 +991,9 @@ button {
   left: 50%; }
   @media only screen and (max-width: 800px) {
     #youtubewide {
-      width: 80vw;
-      height: 22.5vw;
-      margin-left: -40vw; } }
+      width: 100vw;
+      height: 28.125vw;
+      margin-left: -50vw; } }
 
 .question {
   font-size: 0.5em;
