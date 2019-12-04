@@ -3,7 +3,7 @@ layout: cowboypage
 title: "Guido De Boer"
 cowboy: "Guido De Boer"
 description: "<a href='mailto:info@guidodeboer.info'>info@guidodeboer.info</a>"
-type: "sheriff"
+type: "CCCCC"
 ---
 Dutch graphic designer & letter artist
 
