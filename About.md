@@ -2,7 +2,7 @@
 layout: about
 title: "Howdy!"
 ---
-The Cowboy Collective is a free-range group of artists making [Creative Commons](https://creativecommons.org/licenses/by/4.0/legalcode) cowboy themed art!
+The Cowboy Collective is a free-range group of artists making [Creative Commons](https://creativecommons.org/licenses/by/4.0/legalcode) cowboy-themed art!
 
 We are looking to empower everyone to be a cowboy by offering resources and an inclusive space to make and share cowboy art! You can learn more about our mission by reading the [manifesto](https://cowboycollective.cc/2019/11/28/Manifesto.html).
 
