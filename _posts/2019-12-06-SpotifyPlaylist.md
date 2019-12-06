@@ -25,28 +25,38 @@ I hope y'all will [contribute](https://cowboycollective.cc/Submit)!<br><br>
 
 3. **Buffalo Gals** - *Malcolm McLaren*
 
-4. **[The Good, The Bad and the Ugly](https://cowboycollective.cc/cowboy/Ennio%20Morricone)** - *Ennio Morricone*
+4. **Frontier Psychiatrist** - *The Avalanches*
 
-5. **(Gimme Some of That) Ol' Atonal Music** - *Merle Hazard*
+5. **[The Good, The Bad and the Ugly](https://cowboycollective.cc/cowboy/Ennio%20Morricone)** - *Ennio Morricone*
 
-6. **[Old Town Road (Remix)](https://cowboycollective.cc/cowboy/Lil%20Nas%20X)** - *Lil Nas X*
+6. **Lonesome Cowboy Bill** - *The Velvet Underground*
 
-7. **One Lonely Heart** - *Lene Lovich*
+7. **Lovesick Blues** - *Mason Ramsey*
 
-8. **Radio and TV** - *The Everly Brothers*
+8. **(Gimme Some of That) Ol' Atonal Music** - *Merle Hazard*
 
-9. **Hoe-Down** - *Aaron Copland*
+9. **[Old Town Road (Remix)](https://cowboycollective.cc/cowboy/Lil%20Nas%20X)** - *Lil Nas X*
 
-10. **[The Rundown Daddy Blues](https://cowboycollective.cc/cowboy/Lucky%20Stars)** - *The Lucky Stars*
+10. **One Lonely Heart** - *Lene Lovich*
 
-11. **Sassafrass** - *Van Dyke Parks*
+11. **Radio and TV** - *The Everly Brothers*
 
-12. **Shake you Donkey Up** - *XTC*
+12. **Rocky Raccoon** - *The Beatles*
 
-13. **Walk, Don't Run** - *The Ventures*
+13. **Rodeo: Hoe-Down** - *Aaron Copland*
 
-14. **Walkin' After Midnight** - *Patsy Cline*
+14. **Royals** - *The Beef Seeds*
 
-15. **Woody's Roundup** - *Riders in the Sky*
+15. **[(Mama's Got) The Rundown Daddy Blues](https://cowboycollective.cc/cowboy/Lucky%20Stars)** - *The Lucky Stars*
 
-16. **[You Need to Calm Down](https://cowboycollective.cc/2019/12/03/03CowboyhatPack.html)** - *Taylor Swift*
+16. **Sassafrass** - *Van Dyke Parks*
+
+17. **Shake you Donkey Up** - *XTC*
+
+18. **Walk, Don't Run** - *The Ventures*
+
+19. **Walkin' After Midnight** - *Patsy Cline*
+
+20. **Woody's Roundup** - *Riders in the Sky*
+
+21. **[You Need to Calm Down](https://cowboycollective.cc/2019/12/03/03CowboyhatPack.html)** - *Taylor Swift*
