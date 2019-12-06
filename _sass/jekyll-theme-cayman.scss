@@ -168,6 +168,10 @@ p.btn {
     font-size: 3em;
     margin-bottom: 0.3em;
     line-height: 1;
+    word-break: break-word;
+    hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
   }
 
   h1 a:hover {

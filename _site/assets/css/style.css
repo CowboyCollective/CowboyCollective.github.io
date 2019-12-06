@@ -707,7 +707,11 @@ p.btn {
     font-weight: 800;
     font-size: 3em;
     margin-bottom: 0.3em;
-    line-height: 1; }
+    line-height: 1;
+    word-break: break-word;
+    hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto; }
   .main-content h1 a:hover {
     text-decoration: none; }
   .main-content h2 {
