@@ -19,7 +19,7 @@ I hope y'all will [contribute](https://cowboycollective.cc/Submit)!<br><br>
 
 
 <br><br>
-1. **Big Boned Gal** - *K.D. Lang*
+1. **[Big Boned Gal](https://cowboycollective.cc/cowboy/KD%20Lang)** - *K.D. Lang*
 
 2. **Brown Cow Down** - *Wonder Pets*
 
@@ -28,6 +28,8 @@ I hope y'all will [contribute](https://cowboycollective.cc/Submit)!<br><br>
 4. **Frontier Psychiatrist** - *The Avalanches*
 
 5. **[The Good, The Bad and the Ugly](https://cowboycollective.cc/cowboy/Ennio%20Morricone)** - *Ennio Morricone*
+
+6. **Little Cowboy** - *The Free Design*
 
 6. **Lonesome Cowboy Bill** - *The Velvet Underground*
 
@@ -52,6 +54,8 @@ I hope y'all will [contribute](https://cowboycollective.cc/Submit)!<br><br>
 16. **Sassafrass** - *Van Dyke Parks*
 
 17. **Shake you Donkey Up** - *XTC*
+
+19. **[Supercalifragilisticexpialidocious](https://cowboycollective.cc/cowboy/Mary%20Poppins)** - Big Daddy
 
 18. **Walk, Don't Run** - *The Ventures*
 
