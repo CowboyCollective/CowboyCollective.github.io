@@ -2,7 +2,7 @@
 layout: default
 title: "De Angstaanjagende Opsporingsposters"
 cowboy: "Guido De Boer"
-type: "Watchin"
+type: "Memein"
 photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/Screenshot%20from%202019-12-06%2020-20-02%402x.png"
 date: 2019-12-06
 ---
