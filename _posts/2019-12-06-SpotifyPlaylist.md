@@ -25,42 +25,46 @@ I hope y'all will [contribute](https://cowboycollective.cc/Submit)!<br><br>
 
 3.  **Buffalo Gals** - *Malcolm McLaren*
 
-4. **Frontier Psychiatrist** - *The Avalanches*
+4. **Clint Eastwood** - *Gorillaz*
 
-5. **[The Good, The Bad and the Ugly](https://cowboycollective.cc/cowboy/Ennio%20Morricone)** - *Ennio Morricone*
+5. **Frontier Psychiatrist** - *The Avalanches*
 
-6. **Little Cowboy** - *The Free Design*
+6. **[The Good, The Bad and the Ugly](https://cowboycollective.cc/cowboy/Ennio%20Morricone)** - *Ennio Morricone*
 
-6. **Lonesome Cowboy Bill** - *The Velvet Underground*
+7. **Little Cowboy** - *The Free Design*
 
-7. **Lovesick Blues** - *Mason Ramsey*
+8. **Lonesome Cowboy Bill** - *The Velvet Underground*
 
-8. **(Gimme Some of That) Ol' Atonal Music** - *Merle Hazard*
+9. **Lovesick Blues** - *Mason Ramsey*
 
-9. **[Old Town Road (Remix)](https://cowboycollective.cc/cowboy/Lil%20Nas%20X)** - *Lil Nas X*
+10. **(Gimme Some of That) Ol' Atonal Music** - *Merle Hazard*
 
-10. **[One Lonely Heart](https://cowboycollective.cc/2019/12/10/CowboyManDemo.html)** - *Lene Lovich*
+11. **[Old Town Road (Remix)](https://cowboycollective.cc/cowboy/Lil%20Nas%20X)** - *Lil Nas X*
 
-11. **Radio and TV** - *The Everly Brothers*
+12. **[One Lonely Heart](https://cowboycollective.cc/2019/12/10/CowboyManDemo.html)** - *Lene Lovich*
 
-12. **Rocky Raccoon** - *The Beatles*
+13. **Radio and TV** - *The Everly Brothers*
 
-13. **Rodeo: Hoe-Down** - *Aaron Copland*
+14. **Rocky Raccoon** - *The Beatles*
 
-14. **Royals** - *The Beef Seeds*
+15. **Rodeo: Hoe-Down** - *Aaron Copland*
 
-15. **[(Mama's Got) The Rundown Daddy Blues](https://cowboycollective.cc/cowboy/Lucky%20Stars)** - *The Lucky Stars*
+16. **Royals** - *The Beef Seeds*
 
-16. **Sassafrass** - *Van Dyke Parks*
+17. **[(Mama's Got) The Rundown Daddy Blues](https://cowboycollective.cc/cowboy/Lucky%20Stars)** - *The Lucky Stars*
 
-17. **Shake you Donkey Up** - *XTC*
+18. **Sassafrass** - *Van Dyke Parks*
 
-19. **[Supercalifragilisticexpialidocious](https://cowboycollective.cc/cowboy/Mary%20Poppins)** - Big Daddy
+19. **Shake you Donkey Up** - *XTC*
 
-18. **Walk, Don't Run** - *The Ventures*
+20. **[Supercalifragilisticexpialidocious](https://cowboycollective.cc/cowboy/Mary%20Poppins)** - Big Daddy
 
-19. **Walkin' After Midnight** - *Patsy Cline*
+21. **Walk, Don't Run** - *The Ventures*
 
-20. **Woody's Roundup** - *Riders in the Sky*
+22. **Walkin' After Midnight** - *Patsy Cline*
 
-21. **[You Need to Calm Down](https://cowboycollective.cc/2019/12/03/03CowboyhatPack.html)** - *Taylor Swift*
+23. **William Tell Overture** - *Gioachino Rossini*
+
+24. **Woody's Roundup** - *Riders in the Sky*
+
+25. **[You Need to Calm Down](https://cowboycollective.cc/2019/12/03/03CowboyhatPack.html)** - *Taylor Swift*
