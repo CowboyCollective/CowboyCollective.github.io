@@ -12,7 +12,7 @@ date: 2019-12-01
 
 Howdy Cowboys!
 
-There's all sorts of reasons a cowboy might need to make a WANTED poster. Here at the Cowboy Collective, we need WANTED posters to advertize our [$1000 reward for making a music video](https://cowboycollective.cc/music), or remind ourselves about our [Rules of the Cowboy](https://cowboycollective.cc/2019/11/30/RulesoftheCowboy.html), but maybe you're needing to invite folks to a birthday party, or you lost your dog.
+There's all sorts of reasons a cowboy might need to make a WANTED poster. Here at the Cowboy Collective, we need WANTED posters to advertise our [$1000 reward for making a music video](https://cowboycollective.cc/music), or remind ourselves about our [Rules of the Cowboy](https://cowboycollective.cc/2019/11/30/RulesoftheCowboy.html), but maybe you're needing to invite folks to a birthday party, or you lost your dog.
 
 That's why I'm writing some instructions on how to make your own WANTED poster, as well as giving out a couple resources to aid in the process.
 
@@ -23,7 +23,7 @@ You can't write "WANTED" in big letter if you ain't got letters to write it with
 If you're reading this you're already in the right place! [Click here to download.](https://github.com/CowboyCollective/Wanted-Posters/archive/master.zip)
 
 3. **Get inspired!**<br>
-Inside the *WANTED Poster Resource Pack* are some finished Cowboy Collective posters, as well as some actual historical WANTED posters. These WANTED posters from yester-year are all in the public domain, so you can do whatever you please with them!
+Inside the *WANTED Poster Resource Pack* are some finished Cowboy Collective posters, as well as some actual historical WANTED posters. These WANTED posters from yesteryear are all in the public domain, so you can do whatever you please with them!
 
 4. **Use the templates to make your own WANTED poster!**<br>
 The Cowboy Collective WANTED posters were made in [Inkscape](https://inkscape.org/) which is free to download. I bet the templates open in a program like Adobe Illustrator, but I haven't tried this myself. If you're unfamiliar with Inkscape it can be a little confusing, but clicking on things and picking a color at the bottom should change the color, and double clicking on text should enable you to write your own text. There are plenty of Cowboys on the internet making tutorials if you want to do something more  ambitious!

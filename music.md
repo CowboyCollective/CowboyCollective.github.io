@@ -27,13 +27,13 @@ This is of course "Lonely Cowboy" by founding member [Colbe Schicatano](https://
 
 The Cowboy Collective is looking for music videos that tell a story. Videos that say something unique and personal, or offer new ideas of what a cowboy might do or be. Use this as an opportunity to express your voice, not just make a little cash.
 
-Once you have a proposal, you can submit it over at our **[proposal portal](https://cowboycollective.cc/PP)**. Where it will be reviewed by the team, and we'll get back to you one way or another!
+Once you have a proposal, you can submit it over at our **[proposal portal](https://cowboycollective.cc/PP),** where it will be reviewed by the team. We will get back to you one way or another!
 
 <br>Step 03: Make a Music Video
 ====================
 If you get selected the Cowboy Collective will award you half of the money upfront. That's $500!
 
-**You will then have a MAXIMUM of TWO MOTHS to make the video!** Use these funds to help make your video. Maybe you need to buy a camera or some nice cowboy hats. The Cowboy Collective might check in with you during this time, but it really is your project. We do love updates, however, and if you are really feeling stuck maybe you can submit a post to the Collective and see if a community member reaches out with expertise!
+**You will then have a MAXIMUM of TWO MONTHS to make the video!** Use these funds to help make your video. Maybe you need to buy a camera or some nice cowboy hats. The Cowboy Collective might check in with you during this time, but it really is your project. We do love updates, however, and if you are really feeling stuck maybe you can submit a post to the Collective and see if a community member reaches out with expertise!
 
 <br>Step 04: Claim Your Bounty!
 ====================

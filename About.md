@@ -8,7 +8,7 @@ We are looking to empower everyone to be a cowboy by offering resources and an i
 
 We are offering a $1000 REWARD for making a music video to one of the songs in *[Songs of the Cowboy](https://CowboyCollective.cc/2019/11/29/SongsOfTheCowboyVol01.html)*. Head over to [CowboyCollective.cc/music](https://CowboyCollective.cc/music) to learn more.
 
-Everything that is here on the site is [Creative Commons](https://creativecommons.org/licenses/by/4.0/legalcode), which means you are free to download and remix make your own! Just make sure to give us a little shout-out when you do!
+Everything that is here on the site is [Creative Commons](https://creativecommons.org/licenses/by/4.0/legalcode), which means you are free to download, remix, and make your own! Just make sure to give us a little shout-out when you do!
 <br><br><br><br>
 
 <h1 id="CCCCC">How do I become a Cowboy Collective Card Carrying Cowboy?</h1>

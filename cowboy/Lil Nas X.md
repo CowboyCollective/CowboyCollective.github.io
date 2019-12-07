@@ -10,7 +10,7 @@ type: "honorary"
 
 There are so many things I could say about Lil Nas X and how he embodies the cowboy ethos. In fact, I think it would be harder to think of something he's done that isn't in line with what a good cowboy is and does. That being said there's one moment in particular that I want to focus on.
 
-For those of you living under a rock, *Old Town Road* became the number one song on the charts in March of 2019. Also, get out from under that rock of yours there's some cowboys doing some interesting things out here.
+For those of you living under a rock, *Old Town Road* became the number one song on the charts in March of 2019. Also, get out from under that rock of yours there's some cowboys doing interesting things out here.
 
 The song was pulled from Billboard's country chart for not being country enough. [In an interview, a New York Times reporter](https://www.youtube.com/watch?v=ptKqFafZgCk) asks him the question, "Do you think there's a racial element to *Old Town Road* being removed from the country chart?"
 
@@ -24,7 +24,7 @@ But after thinking it over I actually realized how much I love this. He's alread
 
 He rides the wave to the top of the charts, and when the country music establishment freaks out and says "that's not true country" what does he do? He just forgives and moves on. He doesn't need their approval, they are not the boss of who gets to be what, and acting like it means something when the establishment gets riled up only grants them power.
 
-More than anything it's a loving response. You know, this song is fun and it's for everyone. When the powers that be have reservations he responds empathetically. He's saying "I get it, you're afraid to let lose here, but when you do work up the nerve, you can be part of the fun too." He put Billy Ray Cyrus front and center. Billy Ray is the epitome of traditional country music, and he's in the club!
+More than anything it's a loving response. You know, this song is fun and it's for everyone. When the powers that be have reservations he responds empathetically. He's saying "I get it, you're afraid to let loose here, but when you do work up the nerve, you can be part of the fun too." He put Billy Ray Cyrus front and center. Billy Ray is the epitome of traditional country music, and he's in the club!
 
 He's not writing cowboy rap to try and go against existing culture. He's trying to participate and celebrate country, and he's doing it in a way that is authentic to himself, inclusive, and loving.
 

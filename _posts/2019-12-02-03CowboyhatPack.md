@@ -33,7 +33,7 @@ You know, Taylor Swift started out as a country artist, and the way the cowboys 
 <a href="https://raw.githubusercontent.com/CowboyCollective/media/master/Screenshot%20from%202019-12-03%2013-40-49%402x.png">![drag show](https://raw.githubusercontent.com/CowboyCollective/media/master/Screenshot%20from%202019-12-03%2013-40-49%402x.png)</a>
 *A movement I can really get behind!*<br><br>
 
-Anyways, I'm releasing a [**Pre-Photoshopped Cowboy Hat Pack.**](https://codeload.github.com/CowboyCollective/CowboyHat-Pack/zip/master) That way if you're out and about on the internet and you feel the way the cowboys are being represented is a little lacking, you can just pop one of these bad boys on there, and *blamo!* Cowboy representation!
+Anyway, I'm releasing a [**Pre-Photoshopped Cowboy Hat Pack.**](https://codeload.github.com/CowboyCollective/CowboyHat-Pack/zip/master) That way if you're out and about on the internet and you feel the way the cowboys are being represented is a little lacking, you can just pop one of these bad boys on there, and *blamo!* Cowboy representation!
 
 Help spread our message of cowboy love and inclusivity by inserting these Pre-Photoshopped Cowboy Hats everywhere!
 

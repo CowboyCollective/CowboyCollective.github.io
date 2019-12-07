@@ -6,7 +6,7 @@ description: "<i>Nominated by Owen Earl</i>"
 type: "honorary"
 ---
 
-The Lucky Stars is about as rootin' tootin' cowboy as they come! They are a Hollywood band that was particularly active during the '90s [neo-swing revival movement](https://en.wikipedia.org/wiki/Swing_revival). Listening to their records is good wholesome cowboy fun, but seeing them preform live is at another level! These boys aren't as active as they used to be, but they still have been know to put on a show every now and again and I was lucky enough to hear them perform live in Denver CO no too long ago.
+The Lucky Stars is about as rootin' tootin' cowboy as they come! They are a Hollywood band that was particularly active during the '90s [neo-swing revival movement](https://en.wikipedia.org/wiki/Swing_revival). Listening to their records is good wholesome cowboy fun, but seeing them perform live is at another level! These boys aren't as active as they used to be, but they still have been know to put on a show every now and again and I was lucky enough to hear them perform live in Denver CO not too long ago.
 
 I grew up with the Lucky Stars. I was born in LA, and my parents were from that area and that time. I think more than anything, the Lucky Stars were my first exposure to cowboy culture because we were always listening to their records growing up.
 

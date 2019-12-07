@@ -29,11 +29,11 @@ Mr. Banks is the town's sheriff, he's the man of the household, and he takes his
 
 However, the town is not happy. People are constantly fighting with each other. George's wife is all excited about letting women vote, something George doesn't understand. The kids are unhappy. And most importantly, George is miserable!
 
-No one really respects his authority! He knows how bad the town has it, but he doesn't have the tools to fix it because when he tries to intact change no one really listens. He is pent up and stressed about everything. He cares so much about money and order and when people don't understand how important these things are to him it just makes everything worse.
+No one really respects his authority! He knows how bad the town has it, but he doesn't have the tools to fix it because when he tries to enact change no one really listens. He is pent-up and stressed about everything. He cares so much about money and order and when people don't understand how important these things are to him it just makes everything worse.
 
 George is trying to make the town better, he wants to be a good sheriff, but he doesn't actually know what the town needs.
 
-Mary Poppins rides into town and what does she do? She leads by example. She doesn't say, "George, your being a bad sheriff. You're pent up and too concerned about money." She just embodies a good sheriff. She leads the town with love and kindness and puts people first, not order. She teaches George the role of a sheriff by leading.
+Mary Poppins rides into town and what does she do? She leads by example. She doesn't say, "George, your being a bad sheriff. You're pent-up and too concerned about money." She just embodies a good sheriff. She leads the town with love and kindness and puts people first, not order. She teaches George the role of a sheriff by leading.
 
 At first he's angry and doesn't like her. He tries to cast her out. But eventually he starts to see her ways. He starts to learn how to be a good sheriff. Most importantly, he's liberated. George doesn't like worrying so much about money and order and being on time. It's crippling him, but he's doing it because he wants to be a good sheriff and that's what being a sheriff means to him.
 
