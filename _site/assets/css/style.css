@@ -633,7 +633,10 @@ p.btn {
   position: relative;
   margin-left: -22em;
   left: 50%;
-  margin-top: 7em; }
+  margin-top: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .page-header u {
     text-decoration: none;
     color: #502D16;

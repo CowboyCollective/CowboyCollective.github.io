@@ -80,6 +80,10 @@ p.btn {
   margin-left: -22em;
   left: 50%;
   margin-top: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   u {
     text-decoration: none;
     color: $section-headings-color;
