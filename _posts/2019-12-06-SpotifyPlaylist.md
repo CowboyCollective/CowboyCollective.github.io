@@ -9,7 +9,7 @@ Oh hi howdy!
 
 Sheriff Owen here. I'm working on getting [*Songs of the Cowboy*](https://cowboycollective.cc/2019/11/29/SongsOfTheCowboyVol01.html) up on Spotify. Originally I was going to hold off on this post until that time came, but I just couldn't wait!
 
-I'm starting the [official Cowboy Collective playlist](https://open.spotify.com/playlist/4qITDxGx9jzu2oBde0vTm8)! There's so much amazing cowboy music out there, and putting it all in one place really makes me realize how eclectic the cowboy genera can be!
+I'm starting the [official Cowboy Collective playlist](https://open.spotify.com/playlist/4qITDxGx9jzu2oBde0vTm8)! There's so much amazing cowboy music out there, and putting it all in one place really makes me realize how eclectic the cowboy genre can be!
 
 Some of these songs/musicians came up in other posts here at the Cowboy Collective, so I'm adding some links below in case you want to read up on some of them.
 

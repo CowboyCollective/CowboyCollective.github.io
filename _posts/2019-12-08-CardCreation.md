@@ -12,7 +12,7 @@ date: 2019-12-08
 
 Here at Cowboy Collective, we have quite a few [Card Carrying Cowboys](https://cowboycollective.cc/Cowboys). Becoming recognized as a Card Carrying Cowboy on the site is easy! All you have to do is [contribute](https://cowboycollective.cc/Submit).
 
-But what about actually getting a physical card? You cant be a Card *Carrying* Cowboy if you ain't got a card to carry.
+But what about actually getting a physical card? You can't be a Card *Carrying* Cowboy if you ain't got a card to carry.
 
 That's why I'm releasing the Cowboy Collective Card Creation resource pack! Inside you will find some templates, some resource images, as well as some finished cards to help you make your very own Cowboy Collective Card.
 

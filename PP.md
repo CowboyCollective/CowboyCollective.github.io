@@ -2,7 +2,7 @@
 layout: thanks
 title: "Proposal Portal"
 ---
-It sounds like you've got a brilliant idea for a cowboy music video! Explain what you have in mind below and we'll take a look at it! Do keep it mind that it might take a while for us to get back to you, depending on how many submissions there are, but we will get back to you one way or another!
+It sounds like you've got a brilliant idea for a cowboy music video! Explain what you have in mind below and we'll take a look at it! Do keep in mind that it might take a while for us to get back to you, depending on how many submissions there are, but we will get back to you one way or another!
 
 <br>
 <form method="POST" action="https://formspree.io/xwkplydy">

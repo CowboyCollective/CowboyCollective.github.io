@@ -26,10 +26,10 @@ If you're reading this you're already in the right place! [Click here to downloa
 Inside the *WANTED Poster Resource Pack* are some finished Cowboy Collective posters, as well as some actual historical WANTED posters. These WANTED posters from yesteryear are all in the public domain, so you can do whatever you please with them!
 
 4. **Use the templates to make your own WANTED poster!**<br>
-The Cowboy Collective WANTED posters were made in [Inkscape](https://inkscape.org/) which is free to download. I bet the templates open in a program like Adobe Illustrator, but I haven't tried this myself. If you're unfamiliar with Inkscape it can be a little confusing, but clicking on things and picking a color at the bottom should change the color, and double clicking on text should enable you to write your own text. There are plenty of Cowboys on the internet making tutorials if you want to do something more  ambitious!
+The Cowboy Collective WANTED posters were made in [Inkscape](https://inkscape.org/), which is free to download. I bet the templates open in a program like Adobe Illustrator, but I haven't tried this myself. If you're unfamiliar with Inkscape it can be a little confusing, but clicking on things and picking a color at the bottom should change the color, and double clicking on text should enable you to write your own text. There are plenty of Cowboys on the internet making tutorials if you want to do something more  ambitious!
 
 5. **Share what you've made with the world!**<br>
-In Inkscape you can go to "file" (top left) and click "save as" to export your poster to a more friendly file format! PDFs or png images are good! Now you're ready to print or email your posters to all your cowboy friends!
+In Inkscape you can go to "file" (top left) and click "save as" to export your poster to a more friendly file format. PDFs or png images are good. Now you're ready to print or email your posters to all your cowboy friends!
 
 Remember! Here at the Cowboy Collective, we want everyone to know that they too can be a cowboy! Anyone can submit their work to the Collective and join the ranks as a [Cowboy Collective Card Carrying Cowboy](http://localhost:4000/Cowboys)! If you make something cool with these temples, consider [contributing it to the collective](http://localhost:4000/Submit)!
 

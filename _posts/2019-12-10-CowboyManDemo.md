@@ -10,7 +10,7 @@ date: 2019-12-10
 Exactly one year ago today I posted the following video on my snapchat story:
 <iframe id="youtubetall" src="https://www.youtube.com/embed/Wi2zBRhe-A4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I have an ongoing project on my snapchat where I write little "odes" to people and things. These have included *ode to Madi's new Glasses* and *ode to Error 404 page not found*. They're one minute songs that share something that's on my mind. Part of the joy of these songs is that they're ephemeral. We will never know what *ode to Crack in the Wall* sounded like. The moment has passed.
+I have an ongoing project on my snapchat where I write little "odes" to people and things. These have included *ode to Madi's new Glasses* and *ode to Error 404 page not found*. They're one-minute songs that share something that's on my mind. Part of the joy of these songs is that they're ephemeral. We will never know what *ode to Crack in the Wall* sounded like. The moment has passed.
 
 This ode started out in a similar fashion. I was playing around with the Lene Lovich song *One Lonely Heart* on the piano, and through reinterpretation and experimentation transformed it into this little ode to a kind-heated cowboy who wonders what his legacy will be.
 

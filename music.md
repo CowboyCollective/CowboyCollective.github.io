@@ -37,7 +37,7 @@ If you get selected the Cowboy Collective will award you half of the money upfro
 
 <br>Step 04: Claim Your Bounty!
 ====================
-Once you finish the music video you can submit it to be included in the Cowboy Collective archives. It is at this point that you will be awarded the second half of the money. Do with it whatever you like, but I do hope you'll use it to continue making art!
+Once you finish the music video you, can submit it to be included in the Cowboy Collective archives. It is at this point that you will be awarded the second half of the money. Do with it whatever you like, but we do hope you'll use it to continue making art!
 
 
 <br>Other Thoughts
