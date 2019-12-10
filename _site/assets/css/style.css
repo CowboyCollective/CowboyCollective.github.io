@@ -656,7 +656,8 @@ p.btn {
     .page-header {
       width: 96vw;
       margin-left: -48vw;
-      margin-top: 4em; }
+      margin-top: 4em;
+      display: block; }
       .page-header .project-name {
         margin-top: -5em; }
       .page-header .btn {
