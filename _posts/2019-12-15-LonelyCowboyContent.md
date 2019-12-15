@@ -4,7 +4,7 @@ title: "Lonely Cowboy Sound and Video"
 description: "Some Content for Your Hands Only"
 cowboy: "Colbe Schicatano"
 type: "Lookin"
-photo: ""
+photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/cowboythumb.png"
 date: 2019-12-15
 ---
 
