@@ -1,0 +1,35 @@
+---
+layout: homeP
+title: My Blog
+---
+
+<!-- This loops through the paginated posts -->
+<section class="main-content" id="marg">
+{% for post in paginator.posts %}
+<li>
+  <div class="list">
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <h2><b><a href="{{ site.url }}/cowboy/{{ post.cowboy }}">{{ post.cowboy | upcase }}</a></b></h2>
+    <p><a href="{{ post.url }}" style="text-decoration: none;"><img src="{{ post.photo }}">{{ post.content | strip_html | strip_newlines | truncate: 350 }}</a></p>
+    <br><br><br><br>
+  </div>
+</li>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      <div id="leftar"></div>
+    </a>
+  {% else %}
+    <span class="previous"></span>
+  {% endif %}
+  <h2 id="center"><b><a href="IndexDate">VIEW ALL</a></b></h2>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next"><div id="rightar"></div></a>
+  {% else %}
+    <span class="next "></span>
+  {% endif %}
+</div>
+</section>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Besley.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/fonts/stylesheet.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/CowboyCollective/CowboyCollective.github.io/master/Favicon.png">
+    <script>
+      var sites = [
+          {% for post in site.posts %}'{{ post.url }}',
+          {% endfor %}
+      ];
+
+      function randomSite() {
+          var i = parseInt(Math.random() * sites.length);
+          location.href = sites[i];
+      }
+  </script>
+  <script>
+  function visibility() {
+     if(document.getElementById("title").style.display == 'block') {
+        document.getElementById("title").style = 'display: none';
+        document.getElementById("cowboy").style = 'display: none';
+        document.getElementById("type").style = 'display: none';
+        document.getElementById("marg").style = 'margin-top: 0;';
+      }
+     else {
+        document.getElementById("title").style = 'display: block; margin-top: -4em;';
+        document.getElementById("cowboy").style = 'display: block; margin-top: -4em;';
+        document.getElementById("type").style = 'display: block; margin-top: -4em;';
+        document.getElementById("marg").style = 'margin-top: 7em;';
+      }
+  }
+  </script>
+  </head>
+  <body>
+    <section class="page-header" id="head">
+      <a href="{{ site.url }}/Home"><div class="project-name"></div></a>
+      <button onclick="valueser();">☰</button>
+      <a href="About" class="btn" id="About">ABOUT</a>
+      <u class="btn" id="Archives">ARCHIVES</u>
+      <a href="Cowboys" class="btn" id="Cowboys">COWBOYS</a>
+      <a href="Submit" class="btn" id="Contribute">CONTRIBUTE</a>
+    </section>
+
+    <div class="sidebar" id="mad">
+      <p>
+        <b>SORT BY:</b><br>
+        <button onclick="visibility();">DATE</button><br>
+        <a id="date" href="IndexDate">DATE</a><br>
+        <a id="title" href="Title">TITLE</a><br>
+        <a id="cowboy" href="Cowboy">COWBOY</a><br>
+        <a id="type" href="Type">TYPE</a><br>
+      </p><br>
+      </p><br>
+      <p><b><a href="#" onclick="randomSite();">RANDOM</a></b></p>
+    </div>
+
+    {{ content }}
+
+<br><br><br>
+      <footer class="site-footer">
+        <h1>Licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons.</a></h1>
+        <p><a href="https://github.com/CowboyCollective/CowboyCollective.github.io/">Click here to view and download this website on GitHub</a>.</p>
+        <p><a href="https://www.patreon.com/cowboycollective">PATREON</a> &nbsp;&#9733; &nbsp;<a href="https://cowboycollective.bandcamp.com">BANDCAMP</a> &nbsp;&#9733; &nbsp;<a href="https://mailchi.mp/0592cc9ce576/cowboymail">NEWSLETTER</a></p>
+      </footer>
+  </body>
+</html>
