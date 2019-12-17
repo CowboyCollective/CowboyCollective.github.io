@@ -946,6 +946,14 @@ button {
   #center:hover {
     text-decoration: underline; }
 
+#centered {
+  text-align: center; }
+  #centered:hover {
+    text-decoration: underline; }
+  @media only screen and (max-width: 30em) {
+    #centered {
+      visibility: hidden; } }
+
 #black {
   background-color: #502D16;
   height: 1px;
@@ -1023,7 +1031,23 @@ button {
   font-weight: 700;
   padding-top: 0.1em; }
 
+#leftar {
+  background-image: url("https://cowboycollective.cc/assets/leftpoint.svg");
+  background-size: 100%;
+  width: 6em;
+  height: 3.15em;
+  float: left;
+  margin-right: -6em;
+  margin-bottom: -3.15em;
+  margin-left: 1em;
+  margin-top: -1em; }
+
 #rightar {
-  background-image: url("https://cowboycollective.cc/assets/logo.svg");
-  width: 4em;
-  height: 4em; }
+  background-image: url("https://cowboycollective.cc/assets/rightpoint.svg");
+  background-size: 100%;
+  width: 6em;
+  height: 3.15em;
+  float: right;
+  margin-left: -6em;
+  margin-top: -1.8em;
+  margin-right: 1em; }
