@@ -497,7 +497,7 @@ button {
 #centered {
   text-align: center;
 
-  &:hover {
+  & a:hover {
     text-decoration: underline;
   }
     @media only screen and (max-width: 30em) {
