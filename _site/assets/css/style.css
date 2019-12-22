@@ -1051,3 +1051,6 @@ button {
   margin-left: -6em;
   margin-top: -1.8em;
   margin-right: 1em; }
+
+audio {
+  width: 100%; }

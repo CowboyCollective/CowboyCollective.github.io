@@ -29,6 +29,6 @@ I hope y'all will [contribute](https://cowboycollective.cc/Submit)!<br><br>
 
 17. **[(Mama's Got) The Rundown Daddy Blues](https://cowboycollective.cc/cowboy/Lucky%20Stars)** - *The Lucky Stars*
 
-20. **[Supercalifragilisticexpialidocious](https://cowboycollective.cc/cowboy/Mary%20Poppins)** - Big Daddy
+20. **[Supercalifragilisticexpialidocious](https://cowboycollective.cc/cowboy/Mary%20Poppins)** - *Big Daddy*
 
 25. **[You Need to Calm Down](https://cowboycollective.cc/2019/12/03/03CowboyhatPack.html)** - *Taylor Swift*
