@@ -17,7 +17,7 @@ Ah, it's that time of year again - the time to spread love and yuletide joy to e
 I've assembled a small collection of some of my favorite cowboy memes for you to spread and share as you please. Not convinced these are the right memes for you this holiday season? Well just check out these festive examples:
 
 *You can send this one to your cousin Joey after he steals the last piece of Christmas Ham after you called dibs*
-![Last Yeehaw](https://github.com/CowboyCollective/media/blob/master/last%20haw.jpeg)<br>
+![Last Yeehaw](https://github.com/CowboyCollective/media/master/last%20haw.jpeg)<br>
 
 *For when you propose to your girlfriend on the last night of Hanukkah - Mazeltov!*
 ![Engaged](https://github.com/CowboyCollective/media/blob/master/engaged.jpeg)<br>
