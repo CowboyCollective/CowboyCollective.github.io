@@ -1,7 +1,7 @@
 ---
 layout: gallery
 title: "shy cowboy Typeface - Gallery"
-backto: "https://cowboycollective.cc/2019/12/23/ShyCowboy.html"
+backto: "https://cowboycollective.cc/2019/12/27/ShyCowboy.html"
 ---
 ![00](https://raw.githubusercontent.com/CowboyCollective/shy-cowboy/master/Lara.jpeg)<br>
 ![01](https://raw.githubusercontent.com/CowboyCollective/shy-cowboy/master/Lara-01.jpeg)<br>
