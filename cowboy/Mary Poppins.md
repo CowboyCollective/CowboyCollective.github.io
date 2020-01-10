@@ -6,7 +6,7 @@ description: "<i>Nominated by Owen Earl</i>"
 type: "honorary"
 ---
 
-You may not think of *Mary Poppins*, the classic Disney film, as a cowboy story. After all, on first glace Mary Poppins shares almost nothing in common with the classic cowboy archetype. We think of cowboys as men, she's a woman. We think of cowboys as American, she's British. We think of cowboys as rough and tumble, and she's proper.
+You may not think of *Mary Poppins*, the classic Disney film, as a cowboy story. After all, on first glance Mary Poppins shares almost nothing in common with the classic cowboy archetype. We think of cowboys as men, she's a woman. We think of cowboys as American, she's British. We think of cowboys as rough and tumble, and she's proper.
 
 
 However, if we look a little closer, we see that Mary Poppins is about as close to a classic cowboy as can be, just dressed up a little different.
