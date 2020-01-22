@@ -15,7 +15,7 @@ We're about ready to start seriously promoting the Cowboy Collective, and what b
 
 I wanted to encourage everyone to find ways to make these posters their own, so I figured I'd do some handwritten posters, because hand writing is always kind of unique to the person doing it.
 
-Cowboy [Guido De Boer](https://cowboycollective.cc/cowboy/Guido%20De%20Boer) has given me some instructions on making Cowboy Calligraphy, which he's assured me he'll share with the rest of us soon!
+[High on Type](https://cowboycollective.cc/cowboy/High%20on%20Type) has some instructions on making [Cowboy Calligraphy](https://cowboycollective.cc/2019/12/06/CowboyCalligraphy.html), which which you can follow to make your own cowboy writing system!
 
 Regardless, here are some notes and pictures documenting my process.
 
@@ -29,7 +29,7 @@ I then drew guide lines in pencil, copying the layout of the poster.
 
 ![Image three](https://raw.githubusercontent.com/CowboyCollective/HanddrawnPosters/master/Process/04.jpg)
 
-Then I added the text, following Guido's instructions on making cowboy letters. One of the features of this era of letter making is a playful experimentation with the traditional rules.
+Then I added the text, following High on Type's instructions on making cowboy letters. One of the features of this era of letter making is a playful experimentation with the traditional rules.
 
 ![Image three](https://raw.githubusercontent.com/CowboyCollective/HanddrawnPosters/master/Finished/01.jpg)
 
