@@ -5,10 +5,8 @@ cowboy: "Owen Earl"
 type: "Makin"
 photo: "https://raw.githubusercontent.com/CowboyCollective/HanddrawnPosters/master/Process/04.jpg"
 date: 2019-12-17
+zip: "https://github.com/CowboyCollective/HanddrawnPosters/archive/master.zip"
 ---
-
-<h2><b><a href="https://github.com/CowboyCollective/HanddrawnPosters/archive/master.zip">&#9733; DOWNLOAD THE ZIP! &#9733;</a></b></h2><br>
-
 Hey Y'all!
 
 We're about ready to start seriously promoting the Cowboy Collective, and what better way to do that, then to stick up some [WANTED posters](https://cowboycollective.cc/2019/12/01/WANTEDPosters.html)?
@@ -42,5 +40,3 @@ I wanted to experiment with making a really big poster, so I bought the biggest 
 I really like how the letters in "WANTED" came out, and I think I'll experiment with them in the future!
 
 The .zip file includes black and white copies of my handwritten WANTED posters, so you can help get the word out by printing some out and posting them around!<br><br>
-
-<h2><b><a href="https://github.com/CowboyCollective/HanddrawnPosters/archive/master.zip">&#9733; DOWNLOAD THE ZIP! &#9733;</a></b></h2><br>

@@ -6,9 +6,9 @@ cowboy: "Colbe Schicatano"
 type: "Memein"
 photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/advice.JPG"
 date: 2019-12-23
+zip: "https://github.com/CowboyCollective/CowboyMemes/archive/master.zip"
+gallery: "https://cowboycollective.cc/gallery/CowboyMemesHolidays"
 ---
-
-<h2><b><a href="https://github.com/CowboyCollective/CowboyMemes/archive/master.zip">&#9733; DOWNLOAD THE ZIP! &#9733;</a><br><br><a href="https://cowboycollective.cc/gallery/CowboyMemesHolidays">&#9733; VIEW GALLERY! &#9733;</a></b></h2><br>
 
 Happy Holidays Deputies and Rangers of all kinds.
 
@@ -23,8 +23,3 @@ I've assembled a small collection of some of my favorite cowboy memes for you to
 ![Engaged](https://raw.githubusercontent.com/CowboyCollective/CowboyMemes/master/engaged.jpeg)<br>
 
 Thats all folks! I wish you all a Happy Holidays, and a very merry yee to your haw.
-
-
-<h2><b><a href="https://github.com/CowboyCollective/CowboyMemes/archive/master.zip">&#9733; DOWNLOAD THE ZIP! &#9733;</a><br><br><a href="https://cowboycollective.cc/gallery/CowboyMemesHolidays">&#9733; VIEW GALLERY! &#9733;</a></b></h2><br>
-
-***Editors Note:*** *I added a new "gallery" feature, very cool. Also, if you have any memes to add be sure to send them our way via the "[contribute](https://cowboycollective.cc/Submit)" page.*

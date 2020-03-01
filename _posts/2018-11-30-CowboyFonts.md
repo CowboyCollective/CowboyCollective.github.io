@@ -5,10 +5,9 @@ cowboy: "Owen Earl"
 type: "Makin"
 photo: "https://raw.githubusercontent.com/CowboyCollective/Cowboy-Fonts/master/cowboy%20fonts.png"
 date: 2019-11-30
+zip: "https://codeload.github.com/CowboyCollective/Cowboy-Fonts/zip/master"
 ---
 ![Cowboy Fonts](https://raw.githubusercontent.com/CowboyCollective/Cowboy-Fonts/master/cowboy%20fonts.png)
-
-<h2><b><a href="https://codeload.github.com/CowboyCollective/Cowboy-Fonts/zip/master">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>
 
 Any self-respecting cowboy knows that design is an essential skill. How else would we write [WANTED posters](https://cowboycollective.cc/2019/12/01/WANTEDPosters.html), or put titles on our [cowboy albums](https://CowboyCollective.cc/2019/11/29/SongsOfTheCowboyVol01.html)?
 
@@ -35,5 +34,3 @@ Chunk is more of an "Egyptian" style slab serif. This was the precursor to the C
 Finally, the most important cowboy font of them all, Clarendon. If there is one typeface that continues to summarize all that was exciting and brilliant about this era, it's Clarendon. The gold standard of cowboy type design. Impallari type has the best and most complete free Clarendon family. It comes with a whole series of widths from condensed to wide. Unfortunately, this project was abandoned before it was finished over five years ago. What was completed is brilliant, well crafted, and everything good type design should be. We can only wonder what this would have looked like had it been seen to completion!
 
 Of course the MOST important thing to know about cowboys and their type design is that they were highly experiential, trail blazing, weren't afraid to break all the rules and make a mess. Using these fonts might give your cowboy work an historical accuracy,  but the true cowboy spirit is in the new! Honor the cowboys of past by pushing the boundaries, and using letters in such new and exciting ways that your contemporaries will call it "grotesque"!<br><br>
-
-<h2><b><a href="https://codeload.github.com/CowboyCollective/Cowboy-Fonts/zip/master">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>

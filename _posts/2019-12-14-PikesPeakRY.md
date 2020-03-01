@@ -5,9 +5,8 @@ cowboy: "Christopher Earl"
 type: "Lookin"
 photo: "https://raw.githubusercontent.com/CowboyCollective/PikesPeakRY/master/Pikes%20Peak%20174.jpg"
 date: 2019-12-14
+zip: "https://github.com/CowboyCollective/PikesPeakRY/archive/master.zip"
 ---
-<h2><b><a href="https://github.com/CowboyCollective/PikesPeakRY/archive/master.zip">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>
-
 On August 31st 2015 the family and I rode the historic "Cog Wheel Route" in Colorado. I took some photos during this adventure. Not all the photos are winners, but they might be useful to some Cowboys making art.
 
 Here are some highlights:
@@ -31,6 +30,3 @@ Here are some highlights:
 ![triangle](https://raw.githubusercontent.com/CowboyCollective/PikesPeakRY/master/Pikes%20Peak%20187.jpg)
 
 ![triangle](https://raw.githubusercontent.com/CowboyCollective/PikesPeakRY/master/Pikes%20Peak%20206.jpg)<br><br>
-
-
-<h2><b><a href="https://github.com/CowboyCollective/PikesPeakRY/archive/master.zip">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2>

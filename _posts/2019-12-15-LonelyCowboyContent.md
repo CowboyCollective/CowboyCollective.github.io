@@ -6,10 +6,8 @@ cowboy: "Colbe Schicatano"
 type: "Lookin"
 photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/cowboythumb.png"
 date: 2019-12-15
+zip: "https://github.com/CowboyCollective/Thelonelycowboymusicvideo/archive/master.zip"
 ---
-
-<h2><b><a href="https://github.com/CowboyCollective/Thelonelycowboymusicvideo/archive/master.zip">&#9733; DOWNLOAD THE ZIP! &#9733;</a></b></h2><br>
-
 Howdy!
 
 I recently had the pleasure of working on a little music video with some of my fellow cowboys (which you can watch below) and I felt like it may be time to share the inner workings of that process with the collective since it was such a dog-gone good time.
@@ -23,6 +21,3 @@ Inside the zip folder I have included a number of files I used to create the fin
 ![Bean Can Green Screen](https://raw.githubusercontent.com/CowboyCollective/media/master/beans.JPG)<br>
 
 Feel free to use these files as a resource to practice editing, greeen screen, or whatever your artistic heart desires. Enjoy!<br><br>
-
-
-<h2><b><a href="https://github.com/CowboyCollective/Thelonelycowboymusicvideo/archive/master.zip">&#9733; DOWNLOAD THE ZIP &#9733;</a></b></h2><br>

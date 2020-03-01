@@ -6,10 +6,9 @@ cowboy: "Owen Earl"
 type: "Memein"
 photo: "https://raw.githubusercontent.com/CowboyCollective/CowboyMemes/master/why%20there%20were%20problems%20in%20the%20WW.jpg"
 date: 2020-01-22
+zip: "https://github.com/CowboyCollective/CowboyMemes/archive/master.zip"
+gallery: "https://cowboycollective.cc/gallery/CowboyMemesHolidays#vol2"
 ---
-
-<h2><b><a href="https://github.com/CowboyCollective/CowboyMemes/archive/master.zip">&#9733; DOWNLOAD THE ZIP! &#9733;</a><br><br><a href="https://cowboycollective.cc/gallery/CowboyMemesHolidays#vol2">&#9733; VIEW GALLERY! &#9733;</a></b></h2><br>
-
 Oh Hi Howdy!
 
 About a month ago [Colbe Schicatano](https://cowboycollective.cc/cowboy/Colbe%20Schicatano) made a post of some cowboy memes. It was a good start, but definitely not definitive! That's why I'm submitting my own collection of cowboy memes. You can see my additions in the gallery.
@@ -24,5 +23,3 @@ Here are a couple examples:
 
 **Self-Driving Cars**
 ![Achy Breaky Heart](https://raw.githubusercontent.com/CowboyCollective/CowboyMemes/master/self%20driving%20cars.jpg)<br>
-
-<h2><b><a href="https://github.com/CowboyCollective/CowboyMemes/archive/master.zip">&#9733; DOWNLOAD THE ZIP! &#9733;</a><br><br><a href="https://cowboycollective.cc/gallery/CowboyMemesHolidays#vol2">&#9733; VIEW GALLERY! &#9733;</a></b></h2><br>

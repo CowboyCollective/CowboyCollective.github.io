@@ -6,10 +6,9 @@ cowboy: "Owen Earl"
 type: "Memein"
 photo: "https://github.com/CowboyCollective/CowboyHat-Pack/raw/master/banner.gif"
 date: 2019-12-03
+zip: "https://codeload.github.com/CowboyCollective/CowboyHat-Pack/zip/master"
 ---
 ![cowboy hat gif](https://github.com/CowboyCollective/CowboyHat-Pack/raw/master/banner.gif)
-
-<h2><b><a href="https://codeload.github.com/CowboyCollective/CowboyHat-Pack/zip/master">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>
 
 Oh Hi Howdy!
 
@@ -40,7 +39,5 @@ Help spread our message of cowboy love and inclusivity by inserting these Pre-Ph
 I want the number of cowboy hats in this zip file to get to a million, so you can also help the cause by making and contributing some Pre-Photoshopped Cowboy Hat images!
 
 Love to see what y'all do with this!<br><br>
-
-<h2><b><a href="https://codeload.github.com/CowboyCollective/CowboyHat-Pack/zip/master">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>
 
 ![Mona Lisa Winking and with Cowboy Hat](https://raw.githubusercontent.com/CowboyCollective/media/master/monolisa.jpg)

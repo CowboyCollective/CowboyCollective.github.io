@@ -5,10 +5,9 @@ cowboy: "Owen Earl"
 type: "Makin"
 photo: "https://raw.githubusercontent.com/CowboyCollective/Wanted-Posters/master/Wanted%20Posters.png"
 date: 2019-12-01
+zip: "https://github.com/CowboyCollective/Wanted-Posters/archive/master.zip"
 ---
 ![Wanted Posters](https://raw.githubusercontent.com/CowboyCollective/Wanted-Posters/master/Wanted%20Posters.png)
-
-<h2><b><a href="https://github.com/CowboyCollective/Wanted-Posters/archive/master.zip">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>
 
 Howdy Cowboys!
 
@@ -34,6 +33,3 @@ In Inkscape you can go to "file" (top left) and click "save as" to export your p
 Remember! Here at the Cowboy Collective, we want everyone to know that they too can be a cowboy! Anyone can submit their work to the Collective and join the ranks as a [Cowboy Collective Card Carrying Cowboy](http://localhost:4000/Cowboys)! If you make something cool with these temples, consider [contributing it to the collective](http://localhost:4000/Submit)!
 
 If you like what we're doing here, print out some posters to get the word out!<br><br>
-
-
-<h2><b><a href="https://github.com/CowboyCollective/Wanted-Posters/archive/master.zip">&#9733; DOWNLOAD THE ZIP FILE &#9733;</a></b></h2><br>

@@ -5,9 +5,8 @@ cowboy: "OTRR Group"
 type: "Listenin"
 photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/roy%20rodgers%20banner.JPG"
 date: 2019-12-22
+zip: "https://archive.org/compress/OTRR_Roy_Rogers_Singles/formats=VBR%20MP3&file=/OTRR_Roy_Rogers_Singles.zip"
 ---
-<h2><b><a href="https://archive.org/compress/OTRR_Roy_Rogers_Singles/formats=VBR%20MP3&file=/OTRR_Roy_Rogers_Singles.zip">&#9733; DOWNLOAD THE ZIP! &#9733;</a></b></h2><br><br>
-
 ![Wanted](https://raw.githubusercontent.com/CowboyCollective/media/master/roy%20rodgers%20banner.JPG)
 <iframe src="https://archive.org/embed/OTRR_Roy_Rogers_Singles&playlist=1" id="youtube" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe><br>
 
@@ -37,5 +36,3 @@ This is the Single Episode version of the archive. The more complete, Certified 
 <br><br>
 
 Relax, listen, and enjoy!<br><br>
-
-<h2><b><a href="https://archive.org/compress/OTRR_Roy_Rogers_Singles/formats=VBR%20MP3&file=/OTRR_Roy_Rogers_Singles.zip">&#9733; DOWNLOAD THE ZIP! &#9733;</a></b></h2><br><br>
