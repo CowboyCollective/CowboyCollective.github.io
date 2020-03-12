@@ -6,7 +6,7 @@ cowboy: "Colbe Schicatano"
 type: "Lookin"
 photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/cowboythumb.png"
 date: 2019-12-15
-zip: "https://github.com/CowboyCollective/Thelonelycowboymusicvideo/archive/master.zip"
+zip: "https://archive.org/download/LonelyCowboyFootage/Lonely%20Cowboy%20Sound%20and%20Video.zip"
 ---
 Howdy!
 
@@ -21,3 +21,5 @@ Inside the zip folder I have included a number of files I used to create the fin
 ![Bean Can Green Screen](https://raw.githubusercontent.com/CowboyCollective/media/master/beans.JPG)<br>
 
 Feel free to use these files as a resource to practice editing, greeen screen, or whatever your artistic heart desires. Enjoy!<br><br>
+
+<iframe src="https://archive.org/embed/LonelyCowboyFootage" id="youtube" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe><br>
