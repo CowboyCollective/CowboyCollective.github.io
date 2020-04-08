@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Writing a Cowboy Songs for my European Friends"
+title: "Playing the Searchlight Rag for my European Friends"
 description: "Classic Cowboy Music!"
 cowboy: "Owen Earl"
 type: "Listenin"
