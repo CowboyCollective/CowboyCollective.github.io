@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Writing a Cowboy Songs for my European Friends"
+title: "Writing a Cowboy Song for my European Friends"
 description: "writing a song from scratch!"
 cowboy: "Owen Earl"
 type: "Listenin"
