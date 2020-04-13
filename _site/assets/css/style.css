@@ -1054,3 +1054,38 @@ button {
 
 audio {
   width: 100%; }
+
+.slider {
+  -webkit-appearance: none;
+  height: 1px;
+  background: #502D16;
+  outline: none; }
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #502D16;
+  cursor: pointer;
+  border: solid;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #502D16; }
+
+.slider::-moz-range-track {
+  background-color: transparent; }
+
+.slider::-moz-range-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: solid;
+  border-radius: 20px;
+  background-color: #502D16;
+  border-color: transparent;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #502D16; }
