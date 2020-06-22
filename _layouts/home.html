@@ -61,7 +61,7 @@
     </div>
 
     <section class="main-content" id="marg">
-      <h2 id="center"><b><a href="IndexDate">VIEW ALL</a></b></h2>
+      <h2 id="center"><b><a href="{{ site.url }}/IndexDate">VIEW ALL</a></b></h2>
       {% assign sorted = (site.posts | sort: 'date' | reverse) %}
       {% for item in sorted limit:5 %}
       <li>

@@ -3,7 +3,7 @@ layout: default
 title: "Lonely Cowboy Sound and Video"
 description: "Some Content for Your Hands Only"
 cowboy: "Colbe Schicatano"
-type: "Lookin"
+type: "Watchin"
 photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/cowboythumb.png"
 date: 2019-12-15
 zip: "https://archive.org/download/LonelyCowboyFootage/Lonely%20Cowboy%20Sound%20and%20Video.zip"
