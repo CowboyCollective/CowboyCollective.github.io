@@ -21,9 +21,9 @@ zip: "https://cowboycollective.cc/zip/CopperplateCC"
   left: 2.5vw;
   width: 95vw;
   text-align: center;
-  border-style: double;
-  border-width: 8px;
-  border-color: rgb(200, 171, 55);
+  outline-style: double;
+  outline-width: 8px;
+  outline-color: rgb(200, 171, 55);
 }
 </style>
 
