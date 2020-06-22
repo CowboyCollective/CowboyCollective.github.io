@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Besley.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/fonts/stylesheet.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/CowboyCollective/CowboyCollective.github.io/master/Favicon.png">
+    <script>
+      var sites = [
+          {% for post in site.posts %}'{{ post.url }}',
+          {% endfor %}
+      ];
+
+      function randomSite() {
+          var i = parseInt(Math.random() * sites.length);
+          location.href = sites[i];
+      }
+  </script>
+  </head>
+  <body>
+    <section class="page-header" id="head">
+      <a href="{{ site.url }}"><div class="project-name"></div></a>
+      <a href="{{ site.url }}/About" class="btn" id="About">ABOUT</a>
+      <a href="{{ site.url }}" class="btn" id="Archives">ARCHIVES</a>
+      <a href="{{ site.url }}/Cowboys" class="btn" id="Cowboys">COWBOYS</a>
+      <a href="{{ site.url }}/Submit" class="btn" id="Contribute">CONTRIBUTE</a>
+    </section>
+
+    <section class="main-content">
+
+      <a href="{{ page.backto }}"><h1> {{ page.the }}{{ page.title }} </h1></a>
+      {{ content }}
+
+<b>Make sure to click on the <q>return to merchant</q> button after checkout to proceed to download!</b><br><br>
+
+<!-- COPYPASTA-->
+				<script>
+				function validate() {
+				    var n1 = document.getElementsByName('amount')[0].value;
+				    if (n1*100 == 0) {
+								document.getElementById("my-form-id").method = "none";
+								document.getElementById("my-form-id").action = "{{ page.zipLocation }}";
+				        return true;
+				    } else if (n1 > 0) {
+								document.getElementById("my-form-id").method = "post";
+								document.getElementById("my-form-id").action = "https://www.paypal.com/us/cgi-bin/webscr";
+								return true;
+				    } else {
+				        alert("That doesn't look like a valid amount!");
+				        return false;
+				    }
+				}
+				</script>
+				<form id="my-form-id" name="_xclick" action="" method="none" onsubmit="return validate();">
+				<input type="hidden" name="cmd" value="_xclick" />
+				<input type="hidden" name="business" value="{{ page.paypal }}" />
+				<input type="hidden" name="currency_code" value="USD" />
+				<input type="hidden" name="item_name" value="{{ page.itemName }}" />
+				<input type="hidden" name="no_shipping" value="1" />
+				<input id="checkout" type="hidden" name="return" value="{{ page.zipLocation }}" />
+				<input type="hidden" name="cancel_return" value="{{ page.backto }}" />
+				<label for="mce-EMAIL">How much do you want to pay (in USD)?</label><br>
+				<label style="font-size: 1.5em;">$</label><input type="text" name="amount" value="{{ page.price }}" placeholder="Enter Amount Here" id="dollarinput"/><br><br><br>
+				<input id="mc-embedded-subscribe" type="submit" value="&#9733; DOWNLOAD ZIP &#9733;" name="submit" style="letter-spacing: 0; font-weight: 800; font-family: 'Besley'; letter-spacing: 0.1em;">
+				</form>
+
+
+	<!-- COPYPASTA-->
+      <br><br><br>
+      <h2 style="text-align: center;"><b><a href="{{ page.backto }}">BACK TO MAIN POST</a></b></h2>
+    </section>
+<br><br><br>
+      <footer class="site-footer">
+        <h1>Licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons.</a></h1>
+        <p><a href="https://github.com/CowboyCollective/CowboyCollective.github.io/">Click here to view and download this website on GitHub</a>.</p>
+        <p><a href="https://www.patreon.com/cowboycollective">PATREON</a> &nbsp;&#9733; &nbsp;<a href="https://cowboycollective.bandcamp.com">BANDCAMP</a> &nbsp;&#9733; &nbsp;<a href="https://mailchi.mp/0592cc9ce576/cowboymail">NEWSLETTER</a></p>
+      </footer>
+  </body>
+</html>

@@ -39,3 +39,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'copperplate';
+    src: url('CopperplateCC-Heavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

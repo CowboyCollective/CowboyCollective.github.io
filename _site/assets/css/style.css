@@ -1089,3 +1089,15 @@ audio {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #502D16; }
+
+label {
+  float: left; }
+
+#dollarinput {
+  position: absolute;
+  float: left;
+  font-size: 1.5em;
+  margin-left: 0.3em;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  width: auto; }
