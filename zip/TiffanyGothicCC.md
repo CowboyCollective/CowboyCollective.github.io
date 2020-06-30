@@ -1,6 +1,6 @@
 ---
 layout: zip
-title: "Copperplate CC - Download"
+title: "Tiffany Gothic CC - Download"
 backto: "https://cowboycollective.cc/2020/06/30/TiffanyGothicCC.html"
 zipLocation: "https://github.com/CowboyCollective/TiffanyGothicCC/releases/download/1.0/TiffanyGothicCC.zip"
 paypal: "indestructibletype@gmail.com"
