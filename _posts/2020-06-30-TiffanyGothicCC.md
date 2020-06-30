@@ -43,7 +43,7 @@ This relative of Copperplate Gothic felt like a good place to start for the seco
 Perusing other ATF catalogs reveals something peculiar, it appears between 1909 and 1923 *Tiffany Gothic* got renamed to *Typo Gothic*. This is a much worse name in my opinion. By the 1960s, ATF catalogs including listings for numerous typefaces with *Typo* in the name, none of which bear any resemblance to the 1923 *Typo Gothic*.
 
 ![ATF](https://raw.githubusercontent.com/CowboyCollective/media/master/1969Typo.png)
-*Tiffany Gothic page in 1969 [American Type Founders Handy Type Index](https://archive.org/details/ATFHandyTypeIndexTY154_1969try2/page/n17)*
+*Page in 1969 [American Type Founders Handy Type Index](https://archive.org/details/ATFHandyTypeIndexTY154_1969try2/page/n17)*
 
 Although interesting, this doesn't help me with my digitization effort, as none of these images are of a high enough resolution to do the project justice.
 
