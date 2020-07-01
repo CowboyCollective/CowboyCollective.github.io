@@ -47,20 +47,20 @@ Perusing other ATF catalogs reveals something peculiar, it appears between 1909 
 
 Although interesting, this doesn't help me with my digitization effort, as none of these images are of a high enough resolution to do the project justice.
 
-Google confirms a suspicion I was beginning to have: there is very little, if any, information about *Tiffany Gothic* that has made it to the digital age. No digitization effort. No articles. It seems this is a typeface lost to time. This lack of information and references renders my work impossible.
+Google confirmed a suspicion I was beginning to have: there is very little, if any, information about *Tiffany Gothic* that has made it to the digital age. No digitization effort. No articles. It seems this is a typeface lost to time. This lack of information and references renders my work impossible.
 
 <h1 style="text-align: center;">ꞏ</h1>
 
-I stumble upon the delightful website of Dr. David M. MacMillan, *[Circuitous Root](http://www.circuitousroot.com/)*. It feels reminiscent of an earlier, more optimistic era of the internet. The site is built from scratch, and is clearly motivated by a deep knowledge and passion, not likes and shares. He's got a certain [love of metal type](http://www.circuitousroot.com/artifice/letters/), and like the Cowboy Collective, most of the site's contents are licensed under the creative commons. He's also got a copy of the 1923 *American Type Founders Specimen Book & Catalogue*.
+I stumbled upon the delightful website of Dr. David M. MacMillan, *[Circuitous Root](http://www.circuitousroot.com/)*. It feels reminiscent of an earlier, more optimistic era of the internet. The site is built from scratch, and is clearly motivated by a deep knowledge and passion, not likes and shares. He's got a certain [love of metal type](http://www.circuitousroot.com/artifice/letters/), and like the Cowboy Collective, most of the site's contents are licensed under the creative commons. He's also got a copy of the 1923 *American Type Founders Specimen Book & Catalogue*.
 
-I write to David MacMillan hoping he'll do me the tremendous favor of scanning the *Typo Gothic* page from his ATF catalog. Within 24 hours, he writes back. Not only does he include the page in question, but also pages from the 1912 ATF catalog showing *Typo Gothic*, all of which are scanned at a whopping 2400 pixels an inch. The scans are [available online for download, for those curious](https://archive.org/details/atf-tiffanygothic-specimens).
+I wrote to David MacMillan hoping he would do me the tremendous favor of scanning the *Typo Gothic* page from his ATF catalog. Within 24 hours, he wrote back. Not only does he include the page in question, but also pages from the 1912 ATF catalog showing *Typo Gothic*, all of which are scanned at a whopping 2400 pixels an inch. The scans are [available online for download, for those curious](https://archive.org/details/atf-tiffanygothic-specimens).
 
 He also turns me on to the book [*American Metal Typefaces
 of the Twentieth Century*](https://www.amazon.com/American-Typefaces-Twentieth-Century-Revised/dp/0938768395), which includes an entry for *Tiffany Gothic*.
 
-> *Typo Gothic* is the oldest of the group, and has been made by many founders. [...] The earliest showing seems to have been offered as *Lining Antique* by Illinois Type Foundry in 1889; Keystone Type Foundry later used the same name. Subsequently it was show as *Cleveland* by Standard Type Foundry, as Standard *Lining Antique* by Marder, Luse, and as *Olympia* by Inland, all before 1900. ATF showed it as *Tiffany Gothic* from 1901 to 1090 and later as Typo Gothic.
+> *Typo Gothic* is the oldest of the group, and has been made by many founders. [...] The earliest showing seems to have been offered as *Lining Antique* by Illinois Type Foundry in 1889; Keystone Type Foundry later used the same name. Subsequently it was show as *Cleveland* by Standard Type Foundry, as Standard *Lining Antique* by Marder, Luse, and as *Olympia* by Inland, all before 1900. ATF showed it as *Tiffany Gothic* from 1901 to 1090 and later as *Typo Gothic*.
 
-I like the name *Tiffany Gothic* and think I'll stick to that, but it is interesting to know how many names this typeface has gone by throughout it's history. We know, perhaps, that these letters date back to at least the 1880s, but the specific year, as well as it's designer(s) remain a total mystery.
+I like the name *Tiffany Gothic* and think I'll stick to that, but it is interesting to know how many names this typeface has gone by throughout it's history. We know, perhaps, that these letters date back to at least the 1880s, but the specific year, as well as it's designer(s) remain a mystery.
 
 <h1 style="text-align: center;">ꞏ</h1>
 
@@ -68,14 +68,14 @@ The digitization effort proved to be more challenging than that for Copperplate.
 
 ![Fishermen](https://github.com/CowboyCollective/TiffanyGothicCC/raw/master/sources/references/remarkable%20fishermen.png)
 
-This is possible when working digitally, however, at very acute angles, such a thin point looks weird and create a dazzling effect. I wanted to stay true to the original spirit, but knowing the designers were working within the limitations of their time, I can't help but reason that they knew the tips would get slightly rounded in the printing process, and may have made different decisions if working with today's technologies.
+This *is* possible when working digitally. However, at very acute angles, such a thin point looks weird and create a dazzling effect. I wanted to stay true to the original spirit, but knowing the designers were working within the limitations of their time, I can't help but reason that they knew the tips would get slightly rounded in the printing process, and may have made different decisions if working with today's technologies.
 
 <img style="width: 100%;" src="https://raw.githubusercontent.com/CowboyCollective/media/ae6f9d4f572d4838399f21e1e909cfa9ca6aeec6/TiffanyFS.svg">
 
 The solution was to chop a very small portion of the tips of any point smaller then a right angle off. At smaller sizes this is not even visible. It feels, perhaps, against the original design, but without this subtle change the sharp points would distract from the letters, and my goal is to present these digitization in a way which communicates the beauty without distractions.
 
-Many such considerations took place throughout the digitization process. These letters, although beautiful and charming, are wonky and irregular. Striking that careful balance between accounting for the differences in technology and imposing my own sensibilities is difficult work, and I'm not convinced I always found it.
+Many such considerations took place throughout the digitization process. These letters, although beautiful, are wonky and irregular. Striking that careful balance between accounting for the differences in technology and imposing my own sensibilities is difficult work, and I'm not convinced I always found it. I will continue to revisit this digital font for the foreseeable suture.
 
-I am convinced that I love these letters, and that they belong in any cowboy oriented designer's tool-kit. They're full of character and charm, and I want to see them in use!
+What I am convinced of, is my love of these letters. They belong in any cowboy oriented designer's tool-kit. They're full of spunky character and old-timey charm, and I want to see them in use!
 
 I'm also convinced that the [*Cowboy Font Revival*](https://indestructibletype.com/Cowboy.html) project is even more interesting and full of surprises then I was expecting.
