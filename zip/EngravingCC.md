@@ -1,7 +1,7 @@
 ---
 layout: zip
 title: "Engraving CC - Download"
-backto: "https://cowboycollective.cc/2020/06/30/TiffanyGothicCC.html"
+backto: "https://cowboycollective.cc/2020/07/18/EngravingCC.html"
 zipLocation: "https://github.com/CowboyCollective/EngravingCC/releases/download/1.0/EngravingCC.zip"
 paypal: "indestructibletype@gmail.com"
 itemName: "Engraving CC"
