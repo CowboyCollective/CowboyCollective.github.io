@@ -6,7 +6,7 @@ cowboy: "Owen Earl"
 type: "Makin"
 date: 2020-07-20
 photo: "https://raw.githubusercontent.com/CowboyCollective/RailroadGothicCC/master/sources/References/Title.png"
-zip: "https://cowboycollective.cc/zip/RailraodGothicCC"
+zip: "https://cowboycollective.cc/zip/RailroadGothicCC"
 ---
 <style type='text/css'>
 
