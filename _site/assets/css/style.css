@@ -265,7 +265,7 @@ a:hover { text-decoration: underline; cursor: url("https://cowboycollective.cc/w
 .btn { font-family: "Besley"; font-size: 1.4rem; color: #502D16; letter-spacing: 0.1em; font-weight: 900; float: right; margin-left: 1em; margin-right: 1em; font-size: 1.2rem; border-bottom: 1px solid #F4E3D7; }
 .btn:hover { text-decoration: none; color: #502D16; border-bottom: 1px solid currentColor; }
 @media only screen and (max-width: 50em) { .btn { font-size: 1rem; } }
-@media only screen and (max-width: 38em) { .btn { font-size: 0.8rem; } }
+@media only screen and (max-width: 38em) { .btn { font-size: 1rem; } }
 
 p.btn { margin-top: 0; text-decoration: none; color: #502D16; border-bottom: 1px solid currentColor; }
 
@@ -273,10 +273,13 @@ p.btn { margin-top: 0; text-decoration: none; color: #502D16; border-bottom: 1px
 .page-header u { text-decoration: none; color: #502D16; border-bottom: 1px solid currentColor; }
 .page-header button { display: none; width: 0; }
 @media only screen and (max-width: 50em) { .page-header { width: 38em; margin-left: -19em; } }
-@media only screen and (max-width: 38em) { .page-header { width: 30em; margin-left: -15em; } }
-@media only screen and (max-width: 30em) { .page-header { width: 96vw; margin-left: -48vw; margin-top: 4em; display: block; }
+@media only screen and (max-width: 40em) { .page-header { width: 96vw; margin-left: -48vw; margin-top: 4em; display: block; }
   .page-header .project-name { margin-top: -5em; }
+  .page-header #Archives { margin-right: 20vw; }
+  .page-header #About { margin-left: 20vw; }
   .page-header .btn { float: none; } }
+@media only screen and (max-width: 30em) { .page-header { width: 96vw; margin-left: -48vw; margin-top: 4em; display: block; }
+  .page-header .project-name { margin-top: -5em; } }
 
 .project-name { width: 50em; height: 4.45em; margin-left: -25em; position: absolute; left: 50%; top: 2em; margin-top: -8em; background-image: url("https://cowboycollective.cc/assets/logo.svg"); background-size: 100%; }
 @media only screen and (max-width: 70em) { .project-name { width: 80vw; margin-left: -40vw; height: 7vw; } }
