@@ -10,7 +10,4 @@ photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/illigalc
 
 <iframe src="https://archive.org/embed/illegal-cowboy-music-video" id="youtube" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
-A blend of original and found footage telling the story of an aspiring cowboy in West Yorkshire, England. After consuming a psychoactive frog, he has a terrifying vision of a manufactured cowboy reality stripped of all freedom culminating in imprisonment. By contrasting the ideal of cowboyism against both popular imagination and the restrictions of contemporary society, we are asking whether an authentic cowboy lifestyle is possible in the 21st century. By showing a man at odds with their own idealised version of themselves we are inviting the viewer to question whether the masculine construction provided by society is truly "freeing".
-
-
-This video was edited live on twitch. An edited video of this live stream can be viewed [here](https://youtu.be/c9ASTVmBbaA).
+This music video tells the story of an aspiring Cowboy's battle with reality and idealism. The music video is made from footage filmed by seven amateur videographers around the UK (and one royalty free clip of a horse) and was edited live on Twitch. The video tells the story of an aspiring Cowboy in West Yorkshire, grappling with his desires and reality after the consumption of a psychoactive frog. By showing a man at odds with his own dreams, we invite the viewer to question whether the freedoms represented by the cowboy lifestyle are possible in the 21st century. You can watch the editing process [here](https://youtu.be/c9ASTVmBbaA).
