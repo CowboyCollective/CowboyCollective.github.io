@@ -5,7 +5,7 @@ description: "A game by Foxdog Studios made in 72 hours for the Ludum Dare 47 ga
 cowboy: "Foxdog Studios"
 type: "Watchin"
 date: 2020-10-16
-photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/redsundown.png"
+photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/caterpillar.png"
 ---
 <iframe src="https://ld47.fds.im" id="youtube" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
