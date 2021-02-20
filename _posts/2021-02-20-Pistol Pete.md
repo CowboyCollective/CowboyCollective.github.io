@@ -19,7 +19,7 @@ As is often the case with pilot episodes, had Pistol Pete been picked up for bro
 
 Now gather the family and watch the Pistol Pete pilot in its entirety so you can decide for yourself.
 
-<iframe id="youtube" src="https://www.youtube.com/embed/7H2sF424S98" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://archive.org/embed/pistol-pete" style="youtube" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
 <h1>An Idea Decades in the Making</h1>
 
