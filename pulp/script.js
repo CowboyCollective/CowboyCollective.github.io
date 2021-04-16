@@ -96,7 +96,6 @@ function createBook(i){
     document.getElementById("book").src = getEmbed(comics[i][4])
     document.getElementById("clicker").onclick = function(){ window.open(comics[i][4]) }
   }
-  //book.onclick = function(){ window.open(getEmbed(comics[i][4])) }
   document.getElementById("body").appendChild(book)
 }
 
@@ -110,12 +109,12 @@ function createEnder(){
 
 function exit(){
   document.getElementById("preview").style.visibility = "hidden"
-  document.getElementById('book').src = "loading.html"
+  document.getElementById("book").src = "loading.html"
 }
 
 function sortDate(){
   comics.sort(yearSort)
-  document.getElementById("body").innerHTML = "";
+  document.getElementById("body").innerHTML = ""
   document.getElementById("date").style = "font-weight: bold;"
   document.getElementById("title").style = "font-weight: regular;"
   let year = 0000
@@ -134,7 +133,7 @@ function sortDate(){
 
 function sortTitle(){
   comics.sort(nameSort)
-  document.getElementById("body").innerHTML = "";
+  document.getElementById("body").innerHTML = ""
   document.getElementById("date").style = "font-weight: regular;"
   document.getElementById("title").style = "font-weight: bold;"
   let title = "0000"
