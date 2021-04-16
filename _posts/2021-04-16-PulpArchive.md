@@ -8,7 +8,7 @@ date: 2021-04-16
 photo: "https://github.com/CowboyCollective/media/raw/master/pulp.gif"
 ---
 
-1. **[VISIT ARCHIVE](https://cowboycollective.cc/pulp/).**
+1. <h2>**[VISIT ARCHIVE](https://cowboycollective.cc/pulp/).**</h2>
 
 The *[Cowboy Collective Pulp Archive](https://cowboycollective.cc/pulp/)* is a library of over 100 cowboy-themed pulp magazines and comics, dating all the way back to the 1800s. It features high-quality scans that can be navigated like a book, with as the option to download the magazines/comics in a PDF format. These are all in the public domain, so feel free to remix and redistribute at your leisure. I will continue to expand the *Cowboy Collective Pulp Archive* with time, so be sure to check back in the future.
 
