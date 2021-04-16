@@ -8,9 +8,9 @@ date: 2021-04-16
 photo: "https://github.com/CowboyCollective/media/raw/master/pulp.gif"
 ---
 
-1. <h2>**[VISIT ARCHIVE](https://cowboycollective.cc/pulp/).**</h2>
+1. **[<b>VISIT ARCHIVE</b>](https://cowboycollective.cc/pulp/).**
 
-The *[Cowboy Collective Pulp Archive](https://cowboycollective.cc/pulp/)* is a library of over 100 cowboy-themed pulp magazines and comics, dating all the way back to the 1800s. It features high-quality scans that can be navigated like a book, with as the option to download the magazines/comics in a PDF format. These are all in the public domain, so feel free to remix and redistribute at your leisure. I will continue to expand the *Cowboy Collective Pulp Archive* with time, so be sure to check back in the future.
+The *[Cowboy Collective Pulp Archive](https://cowboycollective.cc/pulp/)* is a library of over 100 cowboy-themed pulp magazines and comics, dating all the way back to the 1800s. It features high-quality scans that can be navigated like a book, with the option to download the magazines/comics in a PDF format. These are all in the public domain, so feel free to remix and redistribute at your leisure. I will continue to expand the *Cowboy Collective Pulp Archive* with time, so be sure to check back in the future.
 
 **The Inspiration**<br>I'm working on a Cowboy Collective project that is unrelated and will hopefully be ready to share soon. For this other project I need some cowboy illustrations, but I'm not advanced enough at drawing to do this myself, so I started searching around the internet for public domain sources of cowboy drawings.
 
@@ -20,14 +20,14 @@ Eventually I stumbled upon a PDF of a 1940s cowboy pulp magazine, and felt I had
 
 The majority of the magazines were coming from archive.org, which has a brilliant little feature that lets you turn through the pages as if you are reading a physical book without downloading it. I love it and decided I would like to build a web page that would act like a library, where you could pick up a magazine that catches your eye, flip through it, and put it back.
 
-Archive.org has some brilliant formatting, in that there is predictable hyperlink for everything, so if you have a link to a PDF (https://archive.org/download/1926-05-frontier-stories-v-004n-002/1926-05%20Frontier%20Stories%20v004n002.pdf) you could figure out the link to embed the page-turning feature on your site (https://archive.org/embed/1926-05-frontier-stories-v-004n-002/) as well as the cover image (https://archive.org/download/1926-05-frontier-stories-v-004n-002/__ia_thumb.jpg).
+Archive.org has some smart formatting, in that there is a predictable hyperlink for everything, so if you have a link to a PDF (https://archive.org/download/1926-05-frontier-stories-v-004n-002/1926-05%20Frontier%20Stories%20v004n002.pdf) you could figure out the link to embed the page-turning feature on your site (https://archive.org/embed/1926-05-frontier-stories-v-004n-002/) as well as the cover image (https://archive.org/download/1926-05-frontier-stories-v-004n-002/__ia_thumb.jpg).
 
 This is great because I will only have to write down one link per entry, and the computer can figure out the other necessary information.
 
-It does mean that for pulp magazines not already on archive.org, copies have been uploaded to the Cowboy Collective page. I am proud to feel as though I am contributing something as cool as the archive.org library.
+It does mean that for pulp magazines not already on archive.org, copies have been uploaded to the [Cowboy Collective page](https://archive.org/details/@cowboy_collective). I am proud to feel as though I am contributing to something as cool as the archive.org library.
 
 I would like to acknowledge the amazing time, energy, and expertise that has gone into the many projects that make this archive possible, including [archive.org](https://archive.org), the [Pulp Magazines Project](https://www.pulpmags.org), and Phil Stephensen-Payne's incredible [FictionMags Index](http://www.philsp.com/homeville/fmi/0start.htm).
 
 The hope is the *[Cowboy Collective Pulp Archive](https://cowboycollective.cc/pulp/)* makes discovering and navigating cowboy themed pulp magazines and comics easy and fun.
 
-1. **[VISIT ARCHIVE](https://cowboycollective.cc/pulp/).**
+1. **[<b>VISIT ARCHIVE</b>](https://cowboycollective.cc/pulp/).**
