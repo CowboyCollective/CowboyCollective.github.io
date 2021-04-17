@@ -8,9 +8,12 @@ date: 2021-04-16
 photo: "https://github.com/CowboyCollective/media/raw/master/pulp.gif"
 ---
 
-1. **[<b>VISIT ARCHIVE</b>](https://cowboycollective.cc/pulp/).**
 
-The *[Cowboy Collective Pulp Archive](https://cowboycollective.cc/pulp/)* is a library of over 100 cowboy-themed pulp magazines and comics, dating all the way back to the 1800s. It features high-quality scans that can be navigated like a book, with the option to download the magazines/comics in a PDF format. These are all in the public domain, so feel free to remix and redistribute at your leisure. I will continue to expand the *Cowboy Collective Pulp Archive* with time, so be sure to check back in the future.
+[<b>&#x2605; VISIT ARCHIVE &#x2605;</b>](https://cowboycollective.cc/pulp/)
+-----
+
+
+<br>The *[Cowboy Collective Pulp Archive](https://cowboycollective.cc/pulp/)* is a library of over 100 cowboy-themed pulp magazines and comics, dating all the way back to the 1800s. It features high-quality scans that can be navigated like a book, with the option to download the magazines/comics in a PDF format. These are all in the public domain, so feel free to remix and redistribute at your leisure. I will continue to expand the *Cowboy Collective Pulp Archive* with time, so be sure to check back in the future.
 
 **The Inspiration**<br>I'm working on a Cowboy Collective project that is unrelated and will hopefully be ready to share soon. For this other project I need some cowboy illustrations, but I'm not advanced enough at drawing to do this myself, so I started searching around the internet for public domain sources of cowboy drawings.
 
@@ -30,4 +33,5 @@ I would like to acknowledge the amazing time, energy, and expertise that has gon
 
 The hope is the *[Cowboy Collective Pulp Archive](https://cowboycollective.cc/pulp/)* makes discovering and navigating cowboy themed pulp magazines and comics easy and fun.
 
-1. **[<b>VISIT ARCHIVE</b>](https://cowboycollective.cc/pulp/).**
+[<br><b>&#x2605; VISIT ARCHIVE &#x2605;</b>](https://cowboycollective.cc/pulp/)
+-----
