@@ -1,0 +1,241 @@
+body {
+  background-color: #F4E3D7;
+  color: rgb(40, 23, 11);
+  margin: 0;
+  padding: 0;
+  font-family: 'Century', serif;
+  line-height: 1;
+}
+
+a:hover{
+  cursor: url("https://cowboycollective.cc/welcome%20site/assets/point.svg") 12 0, auto;
+}
+
+#head {
+  position: fixed;
+  width: 60em;
+  margin-left: -30em;
+  left: 50%;
+  height: 10em;
+  background-color: #F4E3D7;
+  top: -2em;
+  z-index: 1;
+}
+
+#home {
+  margin-top: 4em;
+  width: 300px;
+  height: 70px;
+  background-image: url("head.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 0.5em;
+}
+
+#home:hover {
+  background-image: url("headhv.svg");
+}
+
+#toggle {
+  margin-top: 4.8em;
+  text-align: right;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+
+#toggle2 {
+  text-align: right;
+  margin-right: 0.5em;
+  margin-top: 0.2em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#body {
+  position: absolute;
+  width: 60em;
+  margin-left: -30em;
+  left: 50%;
+  z-index: 0;
+  margin-top: 8em;
+  padding-bottom: 8em;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+h1 {
+  font-family: "railroad";
+  font-weight: normal;
+  font-size: 3em;
+  display: block;
+  flex-basis: 100%;
+  margin-bottom: 0.1em;
+}
+
+.book {
+  background-color: green;
+  height: 252px;
+  width: 176px;
+  margin: 0.5em;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.ender {
+  width: 176px;
+  margin: 0.5em;
+  align-items: flex-start;
+}
+
+#footer {
+  position: fixed;
+  width: 60em;
+  margin-left: -30em;
+  left: 50%;
+  bottom: 0;
+  visibility: hidden;
+}
+
+#bookTitle {
+  text-align: center;
+  width: calc(100% - 8em);
+  bottom: -0.7em;
+  padding-bottom: 1em;
+  position: absolute;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 0.3em;
+  left: 0;
+  background-color: #F4E3D7;
+}
+
+#bookDate {
+  font-size: 1.1em;
+  font-weight: normal;
+  left: 0;
+  position: absolute;
+  bottom: 1em;
+}
+
+#bookNumb {
+  font-size: 1.1em;
+  font-weight: normal;
+  right: 0;
+  position: absolute;
+  bottom: 1em;
+}
+
+#preview {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  visibility: hidden;
+}
+
+#preview iframe{
+  position: fixed;
+  width: 95%;
+  left: 2.5%;
+  top: 8em;
+  height: calc(100vh - 13em);
+  border: none;
+}
+
+#preview h1{
+  bottom: -0.7em;
+  padding-bottom: 1em;
+  position: absolute;
+  width: 850px;
+  overflow: hidden;
+  height: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: -500px;
+  padding-left: 10px;
+  padding-right: 120px;
+  padding-top: 13px;
+  left: 50%;
+  background-color: #F4E3D7;
+}
+
+#preview h2{
+  bottom: 0;
+  padding-bottom: 1em;
+  position: absolute;
+  margin-right: -475px;
+  right: 50%;
+  text-align: right;
+  font-size: 1.1em;
+  color: inherit;
+  cursor: pointer;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 65em) {
+  #head {
+    width: 95vw;
+    margin-left: -47.5vw;
+  }
+  #body {
+    width: 95vw;
+    margin-left: -47.5vw;
+  }
+  #footer {
+    width: 95vw;
+    margin-left: -47.5vw;
+  }
+  #preview h1{
+    width: calc(95vw - 140px);
+    padding-right: 200px;
+    margin-left: calc(-10px - 47.5vw);
+  }
+  #preview h2{
+    right: 2.5vw;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 38em) {
+  #home {
+    width: 100%;
+    margin-top: 3em;
+  }
+  #toggle {
+    float: left;
+    margin-top: 1em;
+  }
+  #toggle2 {
+    float: right;
+    margin-top: 1em;
+  }
+  #body {
+    width: 95vw;
+    margin-left: -47.5vw;
+  }
+  .book {
+    width: calc(50vw - 1.8em);
+    height: calc((50vw - 1.8em)*1.428571429);
+  }
+  #bookTitle{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    bottom: -0.3em;
+  }
+  #bookDate {
+    bottom: 0;
+  }
+
+  #bookNumb {
+    bottom:0;
+  }
+}

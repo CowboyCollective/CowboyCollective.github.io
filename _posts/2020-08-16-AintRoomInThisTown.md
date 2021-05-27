@@ -2,7 +2,7 @@
 layout: default
 title: "There Ain't Room in this Town for the Both of Us Music Video"
 description: "Lovingly created for the Cowboy Collective"
-cowboy: "Leo and Ani"
+cowboy: "Leo and Warwick"
 type: "Watchin"
 date: 2020-08-16
 photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/aintroominthistown.png"
