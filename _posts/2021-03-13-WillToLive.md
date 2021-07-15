@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Will to Live Music Video"
-description: "music video and process"
+description: "Collage animation for Cowboys everywhere. Thanks to the Cowboy Collective and viewers like you. :)"
 cowboy: "Madi and Jakob"
 type: "Watchin"
 date: 2021-03-13
