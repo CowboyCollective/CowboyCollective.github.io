@@ -11,7 +11,7 @@ zip: "https://github.com/CowboyCollective/Wanted-Posters/archive/master.zip"
 
 Howdy Cowboys!
 
-There's all sorts of reasons a cowboy might need to make a WANTED poster. Here at the Cowboy Collective, we need WANTED posters to advertise our [$1000 reward for making a music video](https://cowboycollective.cc/music), or remind ourselves about our [Rules of the Cowboy](https://cowboycollective.cc/2019/11/30/RulesoftheCowboy.html), but maybe you're needing to invite folks to a birthday party, or you lost your dog.
+There's all sorts of reasons a cowboy might need to make a WANTED poster. Here at the Cowboy Collective, we need WANTED posters to advertise our [$1000 reward for making a music video](https://cowboycollective.cc/bounty), or remind ourselves about our [Rules of the Cowboy](https://cowboycollective.cc/2019/11/30/RulesoftheCowboy.html), but maybe you're needing to invite folks to a birthday party, or you lost your dog.
 
 That's why I'm writing some instructions on how to make your own WANTED poster, as well as giving out a couple resources to aid in the process.
 

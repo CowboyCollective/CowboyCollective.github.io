@@ -2,7 +2,7 @@
 layout: cowboypage
 title: "Ben Swithen"
 cowboy: "Ben Swithen"
-type: "CCCCC"
+type: "sheriff"
 ---
 ![Photo](https://static.tumblr.com/b962a79eb9e512b0804d9080d0a66ffb/k5ktjlk/frxoz69gz/tumblr_static_5ambr6qqnyck8o0c8s8o4sww8.jpg)
 
@@ -18,4 +18,4 @@ I also make music, videos and costumes, and everything else in between.
 1. **[Patreon](https://www.patreon.com/benswithen).**
 1. **[Birthday Bread Man](https://www.youtube.com/channel/UC3cUcGElMHVlJnwvFeLw_rA).**
 1. **[Ask me anything](https://swithen.uk/ask).**
-1. **[Twitter](https://twitter.com/benswithen)
+1. **[Twitter](https://twitter.com/benswithen)**

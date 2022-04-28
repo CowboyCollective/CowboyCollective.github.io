@@ -14,7 +14,7 @@ The Cowboy Collective has been approved for Spotify! [Songs of the Cowboy (Vol. 
 
 This actually took a little doing, as the album got rejected the first time around. Spotify, in its infinite wisdom, assumed that because all the songs were exactly a minute long it must be a collection of "preview" tracks and not the full album.
 
-To combated this, I threw on a track of me explaining the [$1000 reward situation](https://cowboycollective.cc/music) with six minutes of silence at the end. This seemed to do the trick. Hopefully we won't get sued by the estate of John Cage.<br><br>
+To combated this, I threw on a track of me explaining the [$1000 reward situation](https://cowboycollective.cc/bounty) with six minutes of silence at the end. This seemed to do the trick. Hopefully we won't get sued by the estate of John Cage.<br><br>
 
 <iframe id="youtube" src="https://open.spotify.com/embed/album/42tgjsFqfKxmmthVL6h0CP" frameborder="0" allowtransparency="true"></iframe><br>
 

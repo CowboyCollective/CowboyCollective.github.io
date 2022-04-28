@@ -6,7 +6,7 @@ The Cowboy Collective is a free-range group of artists making [Creative Commons]
 
 We are looking to empower everyone to be a cowboy by offering resources and an inclusive space to make and share cowboy art! You can learn more about our mission by reading the [manifesto](https://cowboycollective.cc/2019/11/28/Manifesto.html).
 
-We are offering a $1000 REWARD for making a music video to one of the songs in *[Songs of the Cowboy](https://CowboyCollective.cc/2019/11/29/SongsOfTheCowboyVol01.html)*. Head over to [CowboyCollective.cc/music](https://CowboyCollective.cc/music) to learn more.
+We are offering a $1000 REWARD for making a music video to one of the songs in *[Songs of the Cowboy](https://CowboyCollective.cc/2019/11/29/SongsOfTheCowboyVol01.html)*. Head over to [CowboyCollective.cc/bounty](https://CowboyCollective.cc/bounty) to learn more.
 
 Everything that is here on the site is [Creative Commons](https://creativecommons.org/licenses/by/4.0/legalcode), which means you are free to download, remix, and make your own! Just make sure to give us a little shout-out when you do!
 <br><br><br><br>
@@ -23,7 +23,7 @@ Mosey on over to the [contribute](https://cowboycollective.cc/Submit) section to
 <br><br><br><br>
 
 <h1>Keep in Touch</h1>
-If you like what we're doing here and you want to get occasional updates, sign up to our ["Cowboy Mail" newsletter](https://mailchi.mp/0592cc9ce576/cowboymail). We'll do a Cowboy Collective round up to give you the highlights!
+We are active on many social media sites!
 
 If you want to reach out, but you aren't submitting anything, just send a letter to [CowboyCollectiveCC@gmail.com](mailto:EwonRael@CowboyCollectiveCC@gmail.com) or write to one of our [Sheriffs](https://cowboycollective.cc/Cowboys)!
 <br><br><br>
