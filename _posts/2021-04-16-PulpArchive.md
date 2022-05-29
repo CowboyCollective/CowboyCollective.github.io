@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Pulp Archive"
-description: "A Historical revival of Railroad Gothic by indestructible type*"
+description: "A Library of old cowboy pulp magazines"
 cowboy: "Owen Earl"
 type: "Lookin"
 date: 2021-04-16
