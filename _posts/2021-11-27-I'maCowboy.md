@@ -1,3 +1,4 @@
+---
 layout: default
 title: "I'm a Cowboy Music Video"
 description: "A cowboy out on the town!"
