@@ -10,6 +10,10 @@ The first round of bounties have all been awarded, and many of the music videos 
 
 All cowboy art is included in the Cowboy Collective, so you are welcome to make a music video even if you didn't get the reward, and that video will be included in the Cowboy Collective Archives!
 
+<script>
+console.log("TESTING 1 2")
+</script>
+
 <br>Step 01: Pick a Song
 ====================
 <iframe style="border: 0; width: 80%; height: 472px; margin-left: 10%;" src="https://bandcamp.com/EmbeddedPlayer/album=299835966/size=large/bgcol=ffffff/linkcol=502D16/artwork=small/transparent=true/" seamless><a href="http://cowboycollective.bandcamp.com/album/songs-of-the-cowboy-vol-02">Songs of the Cowboy (Vol. 02) by Cowboy Collective</a></iframe>
