@@ -11,7 +11,7 @@ The first round of bounties have all been awarded, and many of the music videos 
 All cowboy art is included in the Cowboy Collective, so you are welcome to make a music video even if you didn't get the reward, and that video will be included in the Cowboy Collective Archives!
 
 <script>
-console.log("TESTING 1 2")
+window.location.href = "https://cowboycollective.cc/2023/10/07/NoMoreBounties.html";
 </script>
 
 <br>Step 01: Pick a Song
