@@ -18,7 +18,7 @@ In any case, the money always came from my own pocket. I am not a rich man and I
 
 And so I am, with a heavy heart, withdrawing my funding, and buying myself an upright bass so I can make more music.
 
-The Cowboy Collective continues, as always, to welcome contributions of all kinds. (Send us cowboy art, poetry, music, you name it)[https://cowboycollective.cc/Submit]! Heck, you can make a music video to one of the songs on (Songs of the Cowboy (Vol. 02) )[https://cowboycollective.bandcamp.com/album/songs-of-the-cowboy-vol-02], you just won't get paid for it.
+The Cowboy Collective continues, as always, to welcome contributions of all kinds. [Send us cowboy art, poetry, music, you name it](https://cowboycollective.cc/Submit)! Heck, you can make a music video to one of the songs on [Songs of the Cowboy (Vol. 02) ](https://cowboycollective.bandcamp.com/album/songs-of-the-cowboy-vol-02), you just won't get paid for it.
 
 Someday when I am rich and famous the $1000 bounty will be reinstated, but until then  ¯\\\_\(&#x30C4;\)\_/¯
 
