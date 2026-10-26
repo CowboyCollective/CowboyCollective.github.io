@@ -1,11 +1,31 @@
 title: The Cowboy Collective
 description: The Cowboy Collective is a free-range group of artists making creative commons cowboy themed art!
+url: "https://cowboycollective.cc"
+baseurl: ""
+repository: CowboyCollective/CowboyCollective.github.io
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
+markdown: kramdown
 paginate: 5
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
 
 collections:
   cowboy:
     output: true
+
+# NOTE: a custom exclude list replaces Jekyll's defaults, so the defaults
+# (Gemfile, Gemfile.lock, node_modules, vendor/...) are repeated here.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - vendor/
+  - script/
+  - "*.gem"
+  - "*.gemspec"

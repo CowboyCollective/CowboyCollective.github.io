@@ -63,7 +63,7 @@
     <section class="main-content">
       <h1 id="mar">Sort by Title </h1>
       <br><br>
-      {% assign sorted = (site.posts | sort: 'title') %}
+      {% assign sorted = site.posts | sort: 'title' %}
       {% for item in sorted %}
       <li>
         <div class="list">

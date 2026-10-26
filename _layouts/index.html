@@ -63,7 +63,7 @@
     <section class="main-content">
       <h1 id="mar">Sort by Date </h1>
       <br><br>
-      {% assign sorted = (site.posts | sort: 'date' | reverse) %}
+      {% assign sorted = site.posts | sort: 'date' | reverse %}
       {% for item in sorted %}
       <li>
         <div class="list">
