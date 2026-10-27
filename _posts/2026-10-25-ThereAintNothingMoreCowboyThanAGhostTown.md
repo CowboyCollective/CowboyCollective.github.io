@@ -3,7 +3,7 @@ layout: default
 title: "there ain't nothing more cowboy than a ghost town"
 cowboy: "Owen Earl"
 type: "Writin"
-date: 2026-10-26
+date: 2026-10-25
 photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/ghost-town/PIC03098%20cropped.JPG"
 ---
 
