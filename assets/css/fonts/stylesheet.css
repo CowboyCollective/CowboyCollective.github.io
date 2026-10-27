@@ -1,4 +1,12 @@
 @font-face {
+    font-family: 'Besley Condensed';
+    src: url('BesleyCondensed-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Century';
     src: url('cent.otf') format('opentype');
     font-weight: normal;
