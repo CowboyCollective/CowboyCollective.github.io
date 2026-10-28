@@ -70,7 +70,7 @@
         <div class="list">
             {% assign yearTitlesSorted = y.items | sort: "date" %}
             {% for item in yearTitlesSorted reversed %}
-            <h2 class="date">{{ item.date | date: "%d / %m / &rsquo;%y" }}</h2><h2><b><a href="{{ item.url }}"> {{ item.the | upcase}}{{ item.title | upcase}}</b><br>{{ item.cowboy | upcase }}</a></h2><br><br>
+            <h2 class="date">{{ item.date | date: "%d / %m / &rsquo;%y" }}</h2><h2><b><a href="{{ item.url }}"> {{ item.the | upcase}}{{ item.title | upcase}}{% include slop-label.html post=item placement="sort" %}</b><br>{{ item.cowboy | upcase }}</a></h2><br><br>
             {% endfor %}
             <br>
           </div>

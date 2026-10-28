@@ -69,7 +69,7 @@
       {% for item in sorted %}
       <li>
         <div class="list">
-          <h2 class="date">{{ item.date | date: "%m / %Y" }}</h2><h2><b><a href="{{ item.url }}"> {{ item.the | upcase}}{{ item.title | upcase}}</b><br>{{ item.artist | upcase }}</a></h2><br><br>
+          <h2 class="date">{{ item.date | date: "%m / %Y" }}</h2><h2><b><a href="{{ item.url }}"> {{ item.the | upcase}}{{ item.title | upcase}}{% include slop-label.html post=item placement="sort" %}</b><br>{{ item.artist | upcase }}</a></h2><br><br>
         </div>
       </li>
       {% endfor %}

@@ -1,8 +1,9 @@
 ---
+slop: true
 layout: default
 title: "Eatin' Steatin': The forgotten classic"
 cowboy: "Owen Earl"
-type: "Playin"
+type: "Memein"
 date: 2026-10-26 00:01:00
 photo: "/assets/eatin-steatin/breakfast-cropped.gif"
 zip: "https://github.com/CowboyCollective/eatin-steatin/archive/refs/heads/main.zip"

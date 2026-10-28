@@ -2,3 +2,18 @@
 ---
 
 @import 'jekyll-theme-cayman';
+
+.slop-label {
+  color: red;
+  font-family: "Besley", serif;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.slop-label--sort {
+  margin-left: 15px;
+}
+
+.slop-label--home {
+  margin-left: 15px;
+}
