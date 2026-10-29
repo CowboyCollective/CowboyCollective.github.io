@@ -411,7 +411,8 @@
       } catch (error) { /* Keep feedback usable without storage. */ }
       updateRating();
       showFeedback(buttons[value], rating
-        ? (value === 'up' ? 'Glad you liked it, partner!' : 'Sorry to disappoint, partner.')
+        ? (value === 'up' ? 'Glad you liked it, partner!'
+          : (Math.random() < .2 ? 'Okay asshole. I liked it' : 'Sorry to disappoint, partner.'))
         : 'Feedback removed.');
     }));
     buttons.copy.addEventListener('click', async () => {
