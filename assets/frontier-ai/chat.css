@@ -1,0 +1,255 @@
+.main-content p.frontier-warning { color: red; font-family: "Besley", serif; }
+.main-content:has(.frontier-chat) {
+  width: 100%;
+  min-width: 0;
+}
+.frontier-chat__scroll-frame {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100% !important;
+  height: clamp(320px, 48vh, 520px) !important;
+}
+.frontier-chat__scroll-frame .frontier-chat__thread {
+  width: calc(100% - 12px) !important;
+  padding-right: 2rem !important;
+  scrollbar-width: none;
+  scrollbar-gutter: auto;
+}
+.frontier-chat__scroll-frame .frontier-chat__thread::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.frontier-chat__scroll-frame .ie-scrollbar,
+.frontier-chat__scroll-frame .ie-scrollbar__track {
+  background: #e6d3c5;
+}
+.frontier-chat__scroll-frame .ie-scrollbar {
+  --ink: #f4e3d7;
+  --paper: #502d16;
+  top: -1px;
+  right: -1px;
+}
+.frontier-chat__scroll-frame .ie-scrollbar::before,
+.frontier-chat__scroll-frame .ie-scrollbar__track::before {
+  display: none;
+}
+.frontier-chat__scroll-frame .ie-scrollbar__track {
+  border-inline: 1px solid #502d16;
+  overflow: visible;
+  z-index: 1;
+}
+.frontier-chat__scroll-frame .ie-scrollbar__thumb,
+.frontier-chat__scroll-frame .ie-scrollbar__button {
+  border: 1px solid #502d16;
+  border-radius: 0;
+  background: var(--ink);
+}
+.frontier-chat__scroll-frame .ie-scrollbar__thumb {
+  left: -1px;
+  width: calc(100% + 2px);
+  border-top: 1px solid #502d16;
+  border-bottom: 1px solid #502d16;
+}
+.frontier-chat__scroll-frame .ie-scrollbar:has(.ie-scrollbar__button--up.ie-scrollbar__button--disabled) .ie-scrollbar__thumb {
+  transform: translateY(-1px);
+}
+.frontier-chat__scroll-frame .ie-scrollbar:has(.ie-scrollbar__button--down.ie-scrollbar__button--disabled) .ie-scrollbar__thumb {
+  transform: none;
+}
+.frontier-chat__scroll-frame .ie-scrollbar:has(.ie-scrollbar__button--down.ie-scrollbar__button--disabled) .ie-scrollbar__button--down {
+  border-top: 0;
+}
+.frontier-chat__scroll-frame .ie-scrollbar__thumb .ie-scrollbar__face {
+  background: var(--ink);
+}
+.frontier-chat {
+  --ink: #502d16;
+  --paper: #f4e3d7;
+  --scrollbar-space: 0px;
+  --bottom-gradient-offset: 0px;
+  --bottom-gradient-width: calc(100% - 2.5rem + var(--scrollbar-space));
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  margin: 1.5rem 0 2rem;
+  font-family: "Besley", serif;
+}
+.frontier-chat:has(.frontier-chat__scroll-frame) {
+  --scrollbar-space: 12px;
+  --bottom-gradient-offset: 6px;
+}
+.frontier-chat__header,
+.frontier-chat__composer,
+.frontier-chat__disclaimer { flex-shrink: 0; }
+.frontier-chat__header {
+  background: rgba(80, 45, 22, .06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid var(--ink);
+}
+.frontier-chat__identity { display: grid; grid-template-columns: auto 1fr; align-items: baseline; column-gap: .8rem; row-gap: .3rem; font-size: 1.25rem; }
+.frontier-chat__mark { font-size: 1em; line-height: 1; }
+.frontier-chat__brand { display: block; font-size: 1em; font-weight: 800; line-height: 1.2; white-space: nowrap; }
+.frontier-chat__byline { grid-column: 1 / -1; display: block; font-size: .6rem; font-weight: 400; letter-spacing: .04em; }
+.frontier-chat__model { font-size: .7rem; font-style: italic; text-align: right; }
+.frontier-chat__thread {
+  flex: 1 1 auto;
+  min-height: 0;
+  --ie-scrollbar-size: 12px;
+  --ie-scrollbar-min-thumb-size: 32px;
+  --ie-scrollbar-border-inset: 0px;
+  --ie-scrollbar-bevel-width: 0px;
+  --ie-scrollbar-pressed-invert: none;
+  height: clamp(320px, 48vh, 520px);
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  background:
+    linear-gradient(var(--paper) 30%, transparent) center top / 100% 24px local no-repeat,
+    linear-gradient(transparent, var(--paper) 70%) calc(50% + var(--bottom-gradient-offset)) bottom / var(--bottom-gradient-width) 24px local no-repeat,
+    linear-gradient(rgba(80, 45, 22, .1), transparent) center top / 100% 12px scroll no-repeat,
+    linear-gradient(transparent, rgba(80, 45, 22, .1)) calc(50% + var(--bottom-gradient-offset)) bottom / var(--bottom-gradient-width) 12px scroll no-repeat;
+  padding: 2rem;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ink) var(--paper);
+}
+.frontier-chat__welcome {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: .75rem;
+}
+.frontier-chat__star {
+  font-size: 3rem;
+  line-height: 1;
+}
+.frontier-chat__welcome strong {
+  max-width: 13em;
+  font-family: "Besley Condensed", "Besley", serif;
+  font-size: clamp(1.9rem, 4vw, 2.65rem);
+  line-height: 1.1;
+  font-weight: 800;
+  text-wrap: balance;
+}
+.frontier-chat__welcome small { font-size: .8rem; }
+.frontier-chat__message { margin-bottom: 2rem; }
+.frontier-chat__message:last-child { margin-bottom: .5rem; }
+.frontier-chat__message--user {
+  width: fit-content;
+  border-radius: 12px 12px 0 12px;
+  background: rgba(80, 45, 22, .06);
+  border: 1px solid rgba(80, 45, 22, .2);
+  padding: 1rem 1.2rem;
+  margin-left: auto;
+  max-width: 88%;
+}
+.frontier-chat__speaker { display: flex; align-items: center; gap: .6rem; font-size: .6rem; letter-spacing: .12em; font-weight: 800; margin-bottom: .65rem; }
+.frontier-chat__message:not(.frontier-chat__message--user) .frontier-chat__speaker::before { content: '★'; font-size: 1em; line-height: 1; }
+.frontier-chat__text { font-family: "Century", serif; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.5; font-size: 19.2px; }
+.frontier-chat__thinking { font-style: italic; opacity: .7; margin-left: -2px; }
+.frontier-chat__thinking-star { display: inline-block; width: 1em; margin-right: .35em; text-align: left; font-style: normal; }
+.frontier-chat__thinking-star::before { content: '★'; animation: frontier-star-cycle 2s steps(1, end) infinite; }
+@keyframes frontier-star-cycle {
+  0%, 100% { content: '★'; }
+  20% { content: '⋆'; }
+  40% { content: '☆'; }
+  60% { content: '✩'; }
+  80% { content: '✭'; }
+}
+.frontier-chat__thought-letter { animation: frontier-letter-in .6s both; animation-delay: var(--letter-delay); }
+.frontier-chat__thought-dot { animation: frontier-dot-pulse 1.4s infinite both; animation-delay: var(--dot-delay); }
+.frontier-chat__thinking--leaving .frontier-chat__thought-letter {
+  animation: frontier-letter-out .4s both;
+  animation-delay: calc(var(--letter-delay) * .5);
+}
+.frontier-chat__thinking--leaving .frontier-chat__thought-dot { animation: frontier-letter-out .4s both; }
+@keyframes frontier-letter-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes frontier-letter-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes frontier-dot-pulse {
+  0%, 80%, 100% { opacity: .2; }
+  40% { opacity: 1; }
+}
+.frontier-chat__composer {
+  margin: 0 1.25rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--ink);
+  background: rgba(80, 45, 22, .025);
+}
+.frontier-chat__prompt-label { display: block; float: none; font-size: .6rem; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; margin-bottom: .5rem; }
+.frontier-chat__input-row { display: flex; align-items: center; gap: 1rem; }
+.frontier-chat textarea {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  height: 1.5em;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-family: "Century", serif;
+  font-size: 19.2px;
+  resize: none;
+  cursor: not-allowed;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+.frontier-chat__send {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  cursor: pointer;
+  padding: 0;
+  transition: background .15s, color .15s;
+}
+.frontier-chat__send svg { width: 22px; height: 22px; }
+.frontier-chat__send:hover:not(:disabled) { background: var(--paper); color: var(--ink); }
+.frontier-chat__send:disabled { opacity: .35; cursor: wait; }
+.frontier-chat__send:focus-visible, .frontier-chat textarea:focus-visible, .frontier-chat__thread:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+.frontier-chat__disclaimer { text-align: center; font-size: .6rem; line-height: 1.6; padding: .85rem 1.25rem 1rem; opacity: .75; }
+@media (max-width: 480px) {
+  .frontier-chat { --bottom-gradient-width: calc(100% - 1.5rem + var(--scrollbar-space)); }
+  .frontier-chat__header { padding: 1rem; gap: .6rem; }
+  .frontier-chat__identity { font-size: 1.1rem; }
+  .frontier-chat__byline { font-size: .55rem; }
+  .frontier-chat__model { max-width: 75px; font-size: .65rem; }
+  .frontier-chat__thread { padding: 1.25rem; }
+  .frontier-chat__scroll-frame .frontier-chat__thread { padding-right: 1.25rem !important; }
+  .frontier-chat__message--user { max-width: 95%; }
+  .frontier-chat__composer { margin: 0 .75rem; padding: .85rem; }
+  .frontier-chat__input-row { gap: .6rem; }
+  .frontier-chat__send { width: 40px; height: 40px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .frontier-chat__send { transition: none; }
+  .frontier-chat .frontier-chat__thought-letter, .frontier-chat .frontier-chat__thought-dot { animation: none; }
+  .frontier-chat__thinking-star::before { animation: none; }
+}
