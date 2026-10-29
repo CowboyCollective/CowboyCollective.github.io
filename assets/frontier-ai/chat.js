@@ -358,7 +358,7 @@
     share: '<path d="M12 15V3m-4 4 4-4 4 4M5 12v8h14v-8"/>',
     up: '<path d="M7 10v11H3V10zm0 0 5-8c3 0 2 5 1 8h6a2 2 0 0 1 2 2l-2 7a2 2 0 0 1-2 2H7"/><path class="frontier-chat__thumb-divider" d="M7 9v13"/>',
     down: '<path d="M7 14V3H3v11zm0 0 5 8c3 0 2-5 1-8h6a2 2 0 0 0 2-2l-2-7a2 2 0 0 0-2-2H7"/><path class="frontier-chat__thumb-divider" d="M7 2v13"/>',
-    regenerate: '<path d="M20 7v5h-5M4 17v-5h5"/><path d="M6 7a7 7 0 0 1 12-1l2 6M4 12l2 6a7 7 0 0 0 12-1"/>'
+    regenerate: '<path d="M16 10l4 2 2-4M8 14l-4-2-2 4"/><path d="M6 7a7 7 0 0 1 12-1l2 6M4 12l2 6a7 7 0 0 0 12-1"/>'
   };
 
   function addActions(body, text) {
