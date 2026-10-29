@@ -8,6 +8,10 @@
   const send = chat.querySelector('button');
   const status = chat.querySelector('[data-status]');
   const disclosure = status.textContent;
+  const notice = chat.querySelector('[data-notice]');
+  const shareDialog = document.querySelector('[data-share-dialog]');
+  const shareInput = shareDialog.querySelector('[data-share-link]');
+  const shareNotice = shareDialog.querySelector('[data-share-notice]');
 
   async function loadScrollbar() {
     if (!window.URL || !window.Blob) return;
@@ -108,6 +112,8 @@
   const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let samples = [];
+  let originalSamples = [];
+  let sampleIDs = new Map();
   let sampleDeck = [];
   let busy = true;
   let lastSample = null;
@@ -237,11 +243,7 @@
 
   function nextSample() {
     if (!sampleDeck.length) {
-      sampleDeck = [...samples];
-      for (let i = sampleDeck.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [sampleDeck[i], sampleDeck[j]] = [sampleDeck[j], sampleDeck[i]];
-      }
+      sampleDeck = shuffled(samples);
       // Avoid repeating the last story across the reshuffle boundary, too.
       const end = sampleDeck.length - 1;
       if (end > 0 && sampleDeck[end] === lastSample) {
@@ -250,6 +252,206 @@
     }
     lastSample = sampleDeck.pop();
     return lastSample;
+  }
+
+  function shuffled(items) {
+    const deck = [...items];
+    for (let i = deck.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [deck[i], deck[j]] = [deck[j], deck[i]];
+    }
+    return deck;
+  }
+
+  function storyURL(id) {
+    const url = new URL(window.location.href);
+    url.search = id.toString(16).padStart(5, '0');
+    url.hash = '';
+    return url.href;
+  }
+
+  function smartQuotes(text) {
+    return text.replace(/"([^"]*)"/g, '“$1”');
+  }
+
+  async function copyText(text) {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+    } catch (error) { /* Try the selection fallback when permission is denied. */ }
+    const active = document.activeElement;
+    const field = document.createElement('textarea');
+    field.value = text;
+    field.setAttribute('readonly', '');
+    field.style.cssText = 'position:fixed;left:-9999px;top:0;opacity:0';
+    // A modal dialog makes the rest of the document inert.
+    (shareDialog.open ? shareDialog : document.body).append(field);
+    field.select();
+    const copied = document.execCommand('copy');
+    field.remove();
+    if (active) active.focus({ preventScroll: true });
+    if (!copied) throw new Error('Clipboard unavailable');
+  }
+
+  function openShare(id) {
+    const url = storyURL(id);
+    shareInput.value = url;
+    shareNotice.textContent = '';
+    shareDialog.dataset.storyId = id.toString(16).padStart(5, '0');
+    shareDialog.querySelector('[data-share-post]').hidden = true;
+    shareDialog.querySelector('[data-share-usenet]').setAttribute('aria-expanded', 'false');
+    shareDialog.querySelector('[data-share-plaintext]').value =
+      `Subject: A little cowboy literature from CowbAI 2.0\n\n${smartQuotes(originalSamples[id])}\n\n-- \nCowbAI 2.0 / The Cowboy Collective\n${url}`;
+    shareDialog.querySelector('[data-share-linkedin]').href =
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+    shareDialog.querySelector('[data-share-email]').href =
+      `mailto:?subject=${encodeURIComponent('A little cowboy literature from CowbAI 2.0')}&body=${encodeURIComponent(url)}`;
+    shareDialog.showModal();
+  }
+
+  shareDialog.querySelector('[data-share-copy]').addEventListener('click', async () => {
+    try {
+      await copyText(shareInput.value);
+      shareNotice.textContent = 'Link copied!';
+    } catch (error) {
+      shareNotice.textContent = 'Select the link above and copy it manually.';
+      shareInput.focus();
+      shareInput.select();
+    }
+  });
+  shareInput.addEventListener('click', () => shareInput.select());
+  shareDialog.querySelector('[data-share-usenet]').addEventListener('click', event => {
+    const post = shareDialog.querySelector('[data-share-post]');
+    post.hidden = !post.hidden;
+    event.currentTarget.setAttribute('aria-expanded', String(!post.hidden));
+  });
+  shareDialog.querySelector('[data-share-copy-post]').addEventListener('click', async () => {
+    const field = shareDialog.querySelector('[data-share-plaintext]');
+    try { await copyText(field.value); shareNotice.textContent = 'Plain-text post copied!'; }
+    catch (error) {
+      shareNotice.textContent = 'Select the post above and copy it manually.';
+      field.focus(); field.select();
+    }
+  });
+  shareDialog.querySelector('[data-share-download]').addEventListener('click', () => {
+    const text = shareDialog.querySelector('[data-share-plaintext]').value;
+    const url = URL.createObjectURL(new Blob([text], { type: 'text/plain;charset=utf-8' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `cowbai-${shareDialog.dataset.storyId}.txt`;
+    document.body.append(link);
+    link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+  shareDialog.addEventListener('click', event => {
+    if (event.target !== shareDialog) return;
+    const rect = shareDialog.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) {
+      shareDialog.close();
+    }
+  });
+
+  const icons = {
+    copy: '<rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V4H4v12h4"/>',
+    share: '<path d="M12 15V3m-4 4 4-4 4 4M5 12v8h14v-8"/>',
+    up: '<path d="M7 10v11H3V10zm0 0 5-8c3 0 2 5 1 8h6a2 2 0 0 1 2 2l-2 7a2 2 0 0 1-2 2H7"/><path class="frontier-chat__thumb-divider" d="M7 9v13"/>',
+    down: '<path d="M7 14V3H3v11zm0 0 5 8c3 0 2-5 1-8h6a2 2 0 0 0 2-2l-2-7a2 2 0 0 0-2-2H7"/><path class="frontier-chat__thumb-divider" d="M7 2v13"/>',
+    regenerate: '<path d="M20 7v5h-5M4 17v-5h5"/><path d="M6 7a7 7 0 0 1 12-1l2 6M4 12l2 6a7 7 0 0 0 12-1"/>'
+  };
+
+  function addActions(body, text) {
+    const id = sampleIDs.get(text);
+    const row = body.parentElement;
+    row.dataset.storyId = id.toString(16).padStart(5, '0');
+    const actions = document.createElement('div');
+    actions.className = 'frontier-chat__actions';
+    actions.setAttribute('role', 'group');
+    actions.setAttribute('aria-label', 'Response actions');
+    const actionNotice = document.createElement('span');
+    actionNotice.className = 'frontier-chat__action-notice';
+    actionNotice.setAttribute('role', 'status');
+    const buttons = {};
+    const labels = { copy: 'Copy response', share: 'Share response', up: 'Thumbs up', down: 'Thumbs down', regenerate: 'Regenerate response' };
+    Object.keys(labels).forEach(name => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'frontier-chat__action';
+      button.dataset.action = name;
+      button.setAttribute('aria-label', labels[name]);
+      button.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name]}</svg>`;
+      actions.append(button);
+      buttons[name] = button;
+    });
+    let feedbackTimer;
+    let feedbackButton;
+    const showFeedback = (button, message) => {
+      clearTimeout(feedbackTimer);
+      if (feedbackButton) delete feedbackButton.dataset.feedback;
+      feedbackButton = button;
+      button.dataset.feedback = message;
+      actionNotice.textContent = message;
+      feedbackTimer = setTimeout(() => {
+        delete button.dataset.feedback;
+        actionNotice.textContent = '';
+      }, 2000);
+    };
+    let rating = null;
+    try { rating = localStorage.getItem(`cowbai-rating-${id}`); } catch (error) { /* Storage is optional. */ }
+    const updateRating = () => {
+      ['up', 'down'].forEach(value => buttons[value].setAttribute('aria-pressed', String(rating === value)));
+    };
+    updateRating();
+    ['up', 'down'].forEach(value => buttons[value].addEventListener('click', () => {
+      rating = rating === value ? null : value;
+      try {
+        if (rating) localStorage.setItem(`cowbai-rating-${id}`, rating);
+        else localStorage.removeItem(`cowbai-rating-${id}`);
+      } catch (error) { /* Keep feedback usable without storage. */ }
+      updateRating();
+      showFeedback(buttons[value], rating
+        ? (value === 'up' ? 'Glad you liked it, partner!' : 'Sorry to disappoint, partner.')
+        : 'Feedback removed.');
+    }));
+    buttons.copy.addEventListener('click', async () => {
+      try { await copyText(smartQuotes(text)); showFeedback(buttons.copy, 'Copied!'); }
+      catch (error) { showFeedback(buttons.copy, 'Could not copy. Select the text to copy it.'); }
+    });
+    buttons.share.addEventListener('click', () => openShare(id));
+    buttons.regenerate.disabled = busy;
+    buttons.regenerate.addEventListener('click', () => generateReply(body));
+    actions.append(actionNotice);
+    row.append(actions);
+    scrollIfNearBottom();
+  }
+
+  function setBusy(value) {
+    busy = value;
+    send.disabled = value;
+    thread.setAttribute('aria-busy', String(value));
+    chat.querySelectorAll('[data-action="regenerate"]').forEach(button => { button.disabled = value; });
+  }
+
+  function showSharedStory() {
+    const query = window.location.search.slice(1);
+    if (!/^[0-9a-f]+$/i.test(query)) return;
+    const id = Number.parseInt(query, 16);
+    if (!Number.isSafeInteger(id) || id >= originalSamples.length) {
+      notice.textContent = 'That story is not on this trail. Send a message to find another.';
+      return;
+    }
+    const text = originalSamples[id];
+    thread.querySelector('[data-welcome]')?.remove();
+    message('YOU', firstPrompt, true);
+    const body = message('COWBAI 2.0', smartQuotes(text));
+    addActions(body, text);
+    // A shared story counts as seen in this visit's shuffled deck.
+    lastSample = text;
+    sampleDeck = shuffled(samples.filter(sample => sample !== text));
+    prompt.value = choose(followUps);
+    fitPrompt();
+    requestAnimationFrame(() => chat.scrollIntoView({ block: 'start' }));
   }
 
   async function loadSamples() {
@@ -263,28 +465,29 @@
       if (!Array.isArray(data) || !data.length || !data.every(text => typeof text === 'string' && text.trim())) {
         throw new Error('Literature must be a nonempty JSON array of strings');
       }
-      samples = [...new Set(data)];
+      originalSamples = data;
+      sampleIDs = new Map();
+      data.forEach((text, id) => { if (!sampleIDs.has(text)) sampleIDs.set(text, id); });
+      samples = [...sampleIDs.keys()];
       sampleDeck = [];
     } catch (error) {
       status.textContent = disclosure + ' The supply wagon got lost. Press send to try loading the stories again.';
     } finally {
-      busy = false;
-      send.disabled = false;
+      setBusy(false);
     }
   }
 
-  form.addEventListener('submit', async event => {
-    event.preventDefault();
+  async function generateReply(existingBody = null) {
     if (busy) return;
     if (!samples.length) { await loadSamples(); return; }
-    busy = true;
-    send.disabled = true;
+    setBusy(true);
     const welcome = thread.querySelector('[data-welcome]');
     if (welcome) welcome.remove();
-    message('YOU', prompt.value, true);
+    if (!existingBody) message('YOU', prompt.value, true);
     prompt.value = '';
     fitPrompt();
-    const body = message('COWBAI 2.0', '');
+    const body = existingBody || message('COWBAI 2.0', '');
+    body.parentElement.querySelector('.frontier-chat__actions')?.remove();
     body.classList.add('frontier-chat__thinking');
     thread.setAttribute('aria-busy', 'true');
     try {
@@ -300,10 +503,11 @@
       }
       body.classList.remove('frontier-chat__thinking');
       const text = nextSample();
+      const displayText = smartQuotes(text);
       body.textContent = '';
-      if (reducedMotion) body.textContent = text;
+      if (reducedMotion) body.textContent = displayText;
       else {
-        const words = text.match(/\S+\s*|\s+/g) || [];
+        const words = displayText.match(/\S+\s*|\s+/g) || [];
         for (const word of words) {
           const chunk = document.createElement('span');
           chunk.textContent = word;
@@ -320,18 +524,22 @@
         }
         // Keep completed replies as plain text once the final fade finishes.
         await wait(100);
-        body.textContent = text;
+        body.textContent = displayText;
       }
       scrollIfNearBottom();
+      addActions(body, text);
       const options = followUps.filter(text => text !== lastPrompt);
       lastPrompt = choose(options);
       prompt.value = lastPrompt;
       fitPrompt();
     } finally {
-      thread.setAttribute('aria-busy', 'false');
-      busy = false;
-      send.disabled = false;
+      setBusy(false);
     }
+  }
+
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    await generateReply();
   });
-  loadSamples();
+  loadSamples().then(() => { if (samples.length) showSharedStory(); });
 })();

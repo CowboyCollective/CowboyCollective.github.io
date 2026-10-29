@@ -35,8 +35,9 @@
   display: none;
 }
 .frontier-chat__scroll-frame .ie-scrollbar__track {
-  border-inline: 1px solid #502d16;
-  overflow: visible;
+  border: 0;
+  box-shadow: inset 1px 0 #502d16, inset -1px 0 #502d16;
+  overflow: hidden;
   z-index: 1;
 }
 .frontier-chat__scroll-frame .ie-scrollbar__thumb,
@@ -46,22 +47,28 @@
   background: var(--ink);
 }
 .frontier-chat__scroll-frame .ie-scrollbar__thumb {
-  left: -1px;
-  width: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  min-height: 0;
+  max-height: 100%;
   border-top: 1px solid #502d16;
   border-bottom: 1px solid #502d16;
 }
-.frontier-chat__scroll-frame .ie-scrollbar:has(.ie-scrollbar__button--up.ie-scrollbar__button--disabled) .ie-scrollbar__thumb {
-  transform: translateY(-1px);
-}
-.frontier-chat__scroll-frame .ie-scrollbar:has(.ie-scrollbar__button--down.ie-scrollbar__button--disabled) .ie-scrollbar__thumb {
-  transform: none;
+.frontier-chat__scroll-frame .ie-scrollbar:has(.ie-scrollbar__button--up.ie-scrollbar__button--disabled) .ie-scrollbar__button--up {
+  border-bottom: 0;
 }
 .frontier-chat__scroll-frame .ie-scrollbar:has(.ie-scrollbar__button--down.ie-scrollbar__button--disabled) .ie-scrollbar__button--down {
   border-top: 0;
 }
 .frontier-chat__scroll-frame .ie-scrollbar__thumb .ie-scrollbar__face {
   background: var(--ink);
+}
+.frontier-chat__scroll-frame .ie-scrollbar__button .ie-scrollbar__face {
+  justify-content: center;
+}
+.frontier-chat__scroll-frame .ie-scrollbar__arrow {
+  margin: 0 !important;
 }
 .frontier-chat {
   --ink: #502d16;
@@ -109,6 +116,8 @@
   --ie-scrollbar-border-inset: 0px;
   --ie-scrollbar-bevel-width: 0px;
   --ie-scrollbar-pressed-invert: none;
+  --ie-scrollbar-glyph-start-center-triangle: 1;
+  --ie-scrollbar-glyph-end-center-triangle: 1;
   height: clamp(320px, 48vh, 520px);
   overflow-y: auto;
   scrollbar-gutter: stable;
@@ -252,4 +261,158 @@
   .frontier-chat__send { transition: none; }
   .frontier-chat .frontier-chat__thought-letter, .frontier-chat .frontier-chat__thought-dot { animation: none; }
   .frontier-chat__thinking-star::before { animation: none; }
+}
+
+.frontier-chat__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .25rem;
+  margin-top: .7rem;
+}
+.frontier-chat__action {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  opacity: .65;
+}
+.frontier-chat__action svg { width: 18px; height: 18px; }
+.frontier-chat__action:hover,
+.frontier-chat__action:focus-visible { opacity: 1; background: rgba(80, 45, 22, .08); }
+.frontier-chat__action[aria-pressed="true"] { opacity: 1; background: transparent; }
+.frontier-chat__action[aria-pressed="true"] svg { fill: var(--ink); }
+.frontier-chat__thumb-divider { display: none; }
+.frontier-chat__action[aria-pressed="true"] .frontier-chat__thumb-divider {
+  display: block;
+  fill: none;
+  stroke: var(--paper);
+  stroke-width: 1.2;
+}
+.frontier-chat__action:disabled { opacity: .25; cursor: wait; }
+.frontier-chat__action::after {
+  content: attr(aria-label);
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: 0;
+  z-index: 3;
+  padding: .3rem .5rem;
+  background: var(--ink);
+  color: var(--paper);
+  font: 400 .7rem/1.4 "Besley", serif;
+  letter-spacing: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  visibility: hidden;
+}
+.frontier-chat__action:hover::after,
+.frontier-chat__action:focus-visible::after { visibility: visible; }
+.frontier-chat__action[data-feedback] { opacity: 1; }
+.frontier-chat__action[data-feedback]::after {
+  content: attr(data-feedback);
+  visibility: visible;
+  animation: frontier-feedback 2s ease-out both;
+  max-width: min(18rem, 65vw);
+  width: max-content;
+  white-space: normal;
+}
+@keyframes frontier-feedback {
+  0%, 80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .frontier-chat__action[data-feedback]::after { animation: none; }
+}
+.frontier-chat__action:focus-visible { outline: 1px solid var(--ink); outline-offset: 2px; }
+.frontier-chat__action-notice {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.frontier-chat__action-notice:empty,
+.frontier-chat__notice:empty { display: none; }
+.frontier-chat__notice { flex-shrink: 0; padding: .75rem 1.25rem 0; text-align: center; font-size: .75rem; }
+.frontier-share {
+  width: min(92vw, 480px);
+  padding: 1.5rem;
+  border: 1px solid #502d16;
+  background: #f4e3d7;
+  color: #502d16;
+  font-family: "Besley", serif;
+}
+.frontier-share::backdrop { background: rgba(80, 45, 22, .35); }
+.main-content .frontier-share h2 {
+  margin: 0 1rem 1rem 0;
+  font: 800 1.4rem/1.25 "Besley Condensed", "Besley", serif;
+}
+.frontier-share__close {
+  position: absolute;
+  top: .5rem;
+  right: .7rem;
+  width: 30px;
+  height: 30px;
+  color: inherit;
+  font-size: 1.4rem;
+  cursor: url("https://cowboycollective.cc/welcome%20site/assets/point.svg") 12 0, pointer;
+}
+.frontier-share label { display: block; float: none; font-size: .75rem; margin-bottom: .6rem; }
+.frontier-share input {
+  width: 100%;
+  padding: .65rem;
+  border: 1px solid #502d16;
+  background: transparent;
+  color: inherit;
+  font: 400 .85rem/1.5 "Century", serif;
+}
+.frontier-share__buttons { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem; margin-top: 1rem; }
+.frontier-share__buttons a,
+.frontier-share__buttons button {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: .55rem .8rem;
+  border: 1px solid #502d16;
+  color: inherit;
+  font: 400 .8rem/1.4 "Besley", serif;
+  letter-spacing: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.frontier-share__buttons a:hover,
+.frontier-share__buttons button:hover { background: rgba(80, 45, 22, .08); }
+.frontier-share :focus-visible { outline: 2px solid #502d16; outline-offset: 3px; }
+.frontier-share__notice { margin-top: .7rem; font-size: .75rem; line-height: 1.5; }
+.frontier-share__notice:empty { display: none; }
+.frontier-share__post { margin-top: 1.1rem; }
+.frontier-share__post textarea {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 12rem;
+  padding: .65rem;
+  border: 1px solid #502d16;
+  background: transparent;
+  color: inherit;
+  font: .8rem/1.5 monospace;
+  resize: vertical;
+}
+
+.frontier-chat button:not(:disabled),
+.frontier-chat a,
+.frontier-share button:not(:disabled),
+.frontier-share a,
+.frontier-share input[readonly] {
+  cursor: url("https://cowboycollective.cc/welcome%20site/assets/point.svg") 12 0, pointer;
 }

@@ -51,7 +51,29 @@ And it's free to use for everyone forever, ad-free, just like our last. Check it
       </button>
     </div>
   </form>
+  <div class="frontier-chat__notice" data-notice role="status" aria-live="polite"></div>
   <div class="frontier-chat__disclaimer" data-status role="status" aria-live="polite">AI is prone to mistakes. Consult your doctor to see if CowbAI is right for you.</div>
 </div>
+<dialog class="frontier-share" data-share-dialog aria-labelledby="frontier-share-title">
+  <form method="dialog"><button class="frontier-share__close" aria-label="Close share dialog">×</button></form>
+  <h2 id="frontier-share-title">Share this cowboy literature</h2>
+  <label for="frontier-share-link">A little something from CowbAI 2.0</label>
+  <input id="frontier-share-link" data-share-link readonly>
+  <div class="frontier-share__buttons">
+    <a data-share-linkedin target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <button type="button" data-share-copy>Copy link</button>
+    <a data-share-email>Email</a>
+    <button type="button" data-share-usenet aria-expanded="false" aria-controls="frontier-share-post">Usenet / BBS</button>
+  </div>
+  <div id="frontier-share-post" class="frontier-share__post" data-share-post hidden>
+    <label for="frontier-share-plaintext">A plain-text post for your favorite newsgroup or bulletin board.</label>
+    <textarea id="frontier-share-plaintext" data-share-plaintext readonly rows="7"></textarea>
+    <div class="frontier-share__buttons">
+      <button type="button" data-share-copy-post>Copy post</button>
+      <button type="button" data-share-download>Download .txt</button>
+    </div>
+  </div>
+  <div class="frontier-share__notice" data-share-notice role="status" aria-live="polite"></div>
+</dialog>
 <noscript>You’ll need JavaScript enabled to chat with this cowpoke.</noscript>
 <script src="{{ '/assets/frontier-ai/chat.js' | relative_url }}" defer></script>
