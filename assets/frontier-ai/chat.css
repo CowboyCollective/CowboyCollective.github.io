@@ -4,72 +4,95 @@
   min-width: 0;
 }
 .frontier-chat__scroll-frame {
+  position: relative;
   flex: 1 1 auto;
   min-height: 0;
-  width: 100% !important;
-  height: clamp(320px, 48vh, 520px) !important;
+  height: clamp(320px, 48vh, 520px);
 }
 .frontier-chat__scroll-frame .frontier-chat__thread {
-  width: calc(100% - 12px) !important;
-  padding-right: 2rem !important;
+  box-sizing: border-box;
+  height: 100%;
+  width: calc(100% - 12px);
   scrollbar-width: none;
   scrollbar-gutter: auto;
 }
-.frontier-chat__scroll-frame .frontier-chat__thread::-webkit-scrollbar {
-  display: none;
-  width: 0;
-  height: 0;
-}
-.frontier-chat__scroll-frame .ie-scrollbar,
-.frontier-chat__scroll-frame .ie-scrollbar__track {
+
+.frontier-chat__scroll-frame .frontier-chat__thread::-webkit-scrollbar { display: none; }
+.frontier-scroll {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 12px;
+  border-left: 1px solid #502d16;
+  /* The chat owns the right outline. Balance its shared edge without
+     extending the controls outside the frame or drawing a second border. */
+  border-right: 0;
+
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 12px minmax(0, 1fr) 12px;
   background: #e6d3c5;
+  user-select: none;
+  touch-action: none;
 }
-.frontier-chat__scroll-frame .ie-scrollbar {
-  --ink: #f4e3d7;
-  --paper: #502d16;
-  top: -1px;
-  right: -1px;
+.frontier-scroll {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 180ms ease, visibility 0s 180ms;
 }
-.frontier-chat__scroll-frame .ie-scrollbar::before,
-.frontier-chat__scroll-frame .ie-scrollbar__track::before {
-  display: none;
+.has-scrollbar .frontier-scroll {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
 }
-.frontier-chat__scroll-frame .ie-scrollbar__track {
-  border: 0;
-  box-shadow: inset 1px 0 #502d16, inset -1px 0 #502d16;
+.frontier-chat__flight {
+  position: absolute;
+  inset: 0 12px 0 0;
   overflow: hidden;
-  z-index: 1;
+  pointer-events: none;
 }
-.frontier-chat__scroll-frame .ie-scrollbar__thumb,
-.frontier-chat__scroll-frame .ie-scrollbar__button {
-  border: 1px solid #502d16;
-  border-radius: 0;
-  background: var(--ink);
+@media (prefers-reduced-motion: reduce) {
+  .frontier-scroll { transition: none; }
 }
-.frontier-chat__scroll-frame .ie-scrollbar__thumb {
-  left: 0;
+.frontier-scroll__track { position: relative; overflow: hidden;  }
+.frontier-scroll__thumb,
+.frontier-scroll button {
+  box-sizing: border-box;
   width: 100%;
-  max-width: 100%;
-  min-height: 0;
-  max-height: 100%;
-  border-top: 1px solid #502d16;
-  border-bottom: 1px solid #502d16;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-block: 1px solid #502d16;
+  box-shadow: none;
+  border-radius: 0;
+  background: #f4e3d7;
+  color: #502d16;
 }
-.frontier-chat__scroll-frame .ie-scrollbar:has(.ie-scrollbar__button--up.ie-scrollbar__button--disabled) .ie-scrollbar__button--up {
-  border-bottom: 0;
+.frontier-scroll__thumb { position: absolute; top: 0; left: 0; cursor: grab; }
+.frontier-scroll__up { border-top: 0 !important; }
+.frontier-scroll.at-top .frontier-scroll__thumb { border-top-color: transparent; }
+.frontier-scroll.at-bottom .frontier-scroll__thumb { border-bottom-color: transparent; }
+.frontier-scroll__thumb:active { cursor: grabbing; }
+.frontier-scroll button { position: relative; appearance: none; }
+.frontier-scroll button::before {
+  content: '';
+  position: absolute;
+  /* Optical alignment within the shared scrollbar outline. */
+  left: calc(50% - .5px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 4px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #502d16;
 }
-.frontier-chat__scroll-frame .ie-scrollbar:has(.ie-scrollbar__button--down.ie-scrollbar__button--disabled) .ie-scrollbar__button--down {
-  border-top: 0;
-}
-.frontier-chat__scroll-frame .ie-scrollbar__thumb .ie-scrollbar__face {
-  background: var(--ink);
-}
-.frontier-chat__scroll-frame .ie-scrollbar__button .ie-scrollbar__face {
-  justify-content: center;
-}
-.frontier-chat__scroll-frame .ie-scrollbar__arrow {
-  margin: 0 !important;
-}
+.frontier-scroll__up::before { clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+.frontier-scroll__down::before { clip-path: polygon(0 0, 100% 0, 50% 100%); }
+.frontier-scroll :focus-visible { outline: 1px solid #502d16; outline-offset: -3px; }
 .frontier-chat {
   --ink: #502d16;
   --paper: #f4e3d7;
@@ -111,13 +134,6 @@
 .frontier-chat__thread {
   flex: 1 1 auto;
   min-height: 0;
-  --ie-scrollbar-size: 12px;
-  --ie-scrollbar-min-thumb-size: 32px;
-  --ie-scrollbar-border-inset: 0px;
-  --ie-scrollbar-bevel-width: 0px;
-  --ie-scrollbar-pressed-invert: none;
-  --ie-scrollbar-glyph-start-center-triangle: 1;
-  --ie-scrollbar-glyph-end-center-triangle: 1;
   height: clamp(320px, 48vh, 520px);
   overflow-y: auto;
   scrollbar-gutter: stable;
@@ -251,7 +267,6 @@
   .frontier-chat__byline { font-size: .55rem; }
   .frontier-chat__model { max-width: 75px; font-size: .65rem; }
   .frontier-chat__thread { padding: 1.25rem; }
-  .frontier-chat__scroll-frame .frontier-chat__thread { padding-right: 1.25rem !important; }
   .frontier-chat__message--user { max-width: 95%; }
   .frontier-chat__composer { margin: 0 .75rem; padding: .85rem; }
   .frontier-chat__input-row { gap: .6rem; }

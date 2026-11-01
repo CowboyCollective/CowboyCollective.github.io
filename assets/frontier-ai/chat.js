@@ -13,63 +13,133 @@
   const shareInput = shareDialog.querySelector('[data-share-link]');
   const shareNotice = shareDialog.querySelector('[data-share-notice]');
 
-  async function loadScrollbar() {
-    if (!window.URL || !window.Blob) return;
-    let objectURL;
-    try {
-      // Fetch GitHub's current main on each visit; raw files are served as text,
-      // so use a JavaScript Blob to give the browser the correct content type.
-      const response = await fetch(
-        `https://raw.githubusercontent.com/dancing-about-architecture/IE-Scrollbars/main/ie-scrollbar.js?visit=${Date.now()}`,
-        { cache: 'no-store' }
-      );
-      if (!response.ok) throw new Error(`Scrollbar download failed: ${response.status}`);
-      const source = await response.text();
-      // Load the manual API only: upstream's automatic mounter also replaces
-      // the page scrollbar. Fail back to native if that source boundary changes.
-      const boundary = source.indexOf('\n  // Automatic mounting\n');
-      if (boundary < 0 || !source.slice(0, boundary).includes('global.IEScrollbar = IEScrollbar;')) {
-        throw new Error('Scrollbar manual API boundary changed');
-      }
-      const manualSource = source.slice(0, boundary) + '\n})(window);';
-      objectURL = URL.createObjectURL(new Blob([manualSource], { type: 'text/javascript' }));
-      const script = document.createElement('script');
-      script.src = objectURL;
-      const cleanup = () => {
-        URL.revokeObjectURL(objectURL);
-        script.remove();
-      };
-      script.onerror = cleanup;
-      script.onload = () => {
-        cleanup();
-        if (!window.IEScrollbar) return;
-        let scrollbar;
-        const update = () => {
-          if (!scrollbar && thread.scrollHeight > thread.clientHeight + 1) {
-            scrollbar = new window.IEScrollbar(thread, {
-              orientation: 'vertical',
-              colors: {
-                face: '#f4e3d7', arrow: '#502d16',
-                '3dlight': '#f4e3d7', highlight: '#f4e3d7',
-                shadow: '#f4e3d7', darkshadow: '#f4e3d7', track: '#e6d3c5'
-              }
-            });
-            scrollbar.wrapper.classList.add('frontier-chat__scroll-frame');
-          }
-          if (scrollbar) scrollbar.update();
-        };
-        new MutationObserver(update).observe(thread, { childList: true, subtree: true, characterData: true });
-        if (window.ResizeObserver) new ResizeObserver(update).observe(thread);
-        update();
-      };
-      document.head.append(script);
-    } catch (error) {
-      if (objectURL) URL.revokeObjectURL(objectURL);
-      // The native brown scrollbar remains available if GitHub is unreachable.
-      console.warn('Could not load IE-Scrollbars; using native scrolling.', error);
+  function setupScrollbar() {
+    const frame = document.createElement('div');
+    frame.className = 'frontier-chat__scroll-frame';
+    thread.before(frame);
+    frame.append(thread);
+    const bar = document.createElement('div');
+    bar.className = 'frontier-scroll';
+    bar.innerHTML = '<button type="button" class="frontier-scroll__up" aria-label="Scroll conversation up"></button><div class="frontier-scroll__track"><div class="frontier-scroll__thumb"></div></div><button type="button" class="frontier-scroll__down" aria-label="Scroll conversation down"></button>';
+    frame.append(bar);
+    const [up, track, down] = bar.children;
+    const thumb = track.firstElementChild;
+    thread.id ||= 'frontier-conversation';
+    thumb.tabIndex = 0;
+    thumb.setAttribute('role', 'scrollbar');
+    thumb.setAttribute('aria-label', 'Conversation scroll position');
+    thumb.setAttribute('aria-controls', thread.id);
+    thumb.setAttribute('aria-orientation', 'vertical');
+    thumb.setAttribute('aria-valuemin', '0');
+    let pending = false;
+    let revealTimer = null;
+    let revealReady = false;
+    let lastMax = 0;
+    let followBottom = true;
+    let drag = null;
+    let repeat;
+    const clamp = (value, max) => Math.max(0, Math.min(value, max));
+    function geometry() {
+      const max = Math.max(0, thread.scrollHeight - thread.clientHeight);
+      const height = track.getBoundingClientRect().height;
+      const size = Math.min(height, Math.max(32, height * thread.clientHeight / Math.max(1, thread.scrollHeight)));
+      return { max, size, travel: height - size };
     }
+    function update() {
+      pending = false;
+      const overflowing = thread.scrollHeight > thread.clientHeight + 1;
+      if (!overflowing) {
+        clearTimeout(revealTimer);
+        revealTimer = null;
+        revealReady = false;
+      } else if (!revealReady && revealTimer === null) {
+        revealTimer = setTimeout(() => {
+          revealTimer = null;
+          revealReady = true;
+          schedule();
+        }, 500);
+      }
+      const visible = overflowing && revealReady;
+      frame.classList.toggle('has-scrollbar', visible);
+      bar.inert = !visible;
+      bar.setAttribute('aria-hidden', String(!visible));
+      const { max, size, travel } = geometry();
+      if (followBottom && !drag) thread.scrollTop = max;
+      lastMax = max;
+      const position = clamp(thread.scrollTop, max);
+      bar.classList.toggle('at-top', position <= 1);
+      bar.classList.toggle('at-bottom', position >= max - 1);
+      thumb.style.height = `${size}px`;
+      thumb.style.transform = `translateY(${max ? position / max * travel : 0}px)`;
+      thumb.setAttribute('aria-valuemax', String(Math.round(max)));
+      thumb.setAttribute('aria-valuenow', String(Math.round(position)));
+      up.setAttribute('aria-disabled', String(position <= 0));
+      down.setAttribute('aria-disabled', String(position >= max - 1));
+    }
+    function schedule() {
+      if (!pending) { pending = true; requestAnimationFrame(update); }
+    }
+    function move(amount) {
+      thread.scrollTop += amount;
+      followBottom = thread.scrollTop >= geometry().max - 2;
+      schedule();
+    }
+    thread.addEventListener('scroll', () => {
+      followBottom = thread.scrollTop >= lastMax - 2;
+      schedule();
+    }, { passive: true });
+    new MutationObserver(schedule).observe(thread, { childList: true, subtree: true, characterData: true });
+    const observer = new ResizeObserver(schedule);
+    observer.observe(thread);
+    observer.observe(frame);
+    // Font loading changes text height without necessarily resizing the viewport.
+    if (document.fonts) document.fonts.ready.then(schedule);
+    thumb.addEventListener('pointerdown', event => {
+      if (event.button !== 0) return;
+      event.preventDefault();
+      thumb.focus({ preventScroll: true });
+      const { max, travel } = geometry();
+      drag = { y: event.clientY, fraction: max ? thread.scrollTop / max : 0, travel };
+      thumb.setPointerCapture(event.pointerId);
+    });
+    thumb.addEventListener('pointermove', event => {
+      if (!drag) return;
+      const { max } = geometry();
+      thread.scrollTop = clamp(drag.fraction + (event.clientY - drag.y) / Math.max(1, drag.travel), 1) * max;
+      followBottom = thread.scrollTop >= max - 2;
+      schedule();
+    });
+    thumb.addEventListener('lostpointercapture', () => { drag = null; });
+    track.addEventListener('pointerdown', event => {
+      if (event.target !== track || event.button !== 0) return;
+      event.preventDefault();
+      move((event.clientY < thumb.getBoundingClientRect().top ? -1 : 1) * thread.clientHeight * .9);
+    });
+    function stopRepeat() { clearTimeout(repeat); }
+    [up, down].forEach((button, index) => {
+      const step = index ? 40 : -40;
+      button.addEventListener('click', event => { if (event.detail === 0) move(step); });
+      button.addEventListener('pointerdown', event => {
+        if (event.button !== 0) return;
+        event.preventDefault();
+        stopRepeat();
+        button.setPointerCapture(event.pointerId);
+        move(step);
+        const tick = () => { move(step); repeat = setTimeout(tick, 60); };
+        repeat = setTimeout(tick, 350);
+      });
+      ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(name => button.addEventListener(name, stopRepeat));
+    });
+    window.addEventListener('blur', stopRepeat);
+    thumb.addEventListener('keydown', event => {
+      const amounts = { ArrowUp: -40, ArrowDown: 40, PageUp: -thread.clientHeight * .9, PageDown: thread.clientHeight * .9, Home: -thread.scrollHeight, End: thread.scrollHeight };
+      if (!(event.key in amounts)) return;
+      event.preventDefault();
+      move(amounts[event.key]);
+    });
+    update();
   }
-  loadScrollbar();
+  setupScrollbar();
   const firstPrompt = 'Can you generate me some world-class cowboy literature?';
   const followUps = [
     "That's amazing! Can you write more for me?",
@@ -118,6 +188,8 @@
   let busy = true;
   let lastSample = null;
   let lastPrompt = '';
+  // One entry per exchange: the user's prompt and the story id that answered it.
+  let conversation = [];
   prompt.value = firstPrompt;
   const greeting = chat.querySelector('[data-welcome] strong');
   if (greeting) greeting.textContent = choose(greetings);
@@ -162,20 +234,28 @@
     thread.append(row);
     thread.scrollTop = thread.scrollHeight;
     if (user && !reducedMotion && row.animate) {
-      // Measure after both messages are inserted and the thread has scrolled.
+      // Animate a visual copy in a clipped sibling layer. The actual bubble
+      // keeps its final layout, so its flight cannot inflate scrollHeight.
       requestAnimationFrame(() => {
+        const frame = thread.parentElement;
         const origin = prompt.getBoundingClientRect();
         const destination = row.getBoundingClientRect();
-        row.animate([
-          {
-            transform: `translateY(${origin.top - destination.top}px)`,
-            opacity: .25
-          },
+        const bounds = frame.getBoundingClientRect();
+        const layer = document.createElement('div');
+        layer.className = 'frontier-chat__flight';
+        layer.setAttribute('aria-hidden', 'true');
+        layer.inert = true;
+        const copy = row.cloneNode(true);
+        copy.style.cssText = `position:absolute;box-sizing:border-box;margin:0;max-width:none;width:${destination.width}px;left:${destination.left - bounds.left}px;top:${destination.top - bounds.top}px`;
+        layer.append(copy);
+        frame.append(layer);
+        row.style.visibility = 'hidden';
+        const animation = copy.animate([
+          { transform: `translateY(${origin.top - destination.top}px)`, opacity: .25 },
           { transform: 'translateY(0)', opacity: 1 }
-        ], {
-          duration: 420,
-          easing: 'cubic-bezier(.22, 1, .36, 1)'
-        });
+        ], { duration: 420, easing: 'cubic-bezier(.22, 1, .36, 1)' });
+        const cleanup = () => { row.style.visibility = ''; layer.remove(); };
+        animation.finished.then(cleanup, cleanup);
       });
     }
     return body;
@@ -263,9 +343,24 @@
     return deck;
   }
 
-  function storyURL(id) {
+  // Share links are fixed-width base64url, so they need no separators:
+  // ?SS then PSS for each later exchange, where SS is a story id (2 chars,
+  // up to 4096 stories) and P is the follow-up prompt's index (1 char).
+  // Append to followUps and the literature, never reorder, or old links break.
+  const digits = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
+  const storyKey = id => digits[id >> 6] + digits[id & 63];
+  const storyKeyID = key => digits.indexOf(key[0]) * 64 + digits.indexOf(key[1]);
+
+  // prompt is an index into followUps; the first exchange (-1) is standardized.
+  const promptText = entry => entry.prompt < 0 ? firstPrompt : followUps[entry.prompt];
+
+  function storyURL(turn) {
     const url = new URL(window.location.href);
-    url.search = id.toString(16).padStart(5, '0');
+    let code = storyKey(conversation[0].id);
+    for (const entry of conversation.slice(1, turn + 1)) {
+      code += digits[entry.prompt] + storyKey(entry.id);
+    }
+    url.search = code;
     url.hash = '';
     return url.href;
   }
@@ -295,15 +390,17 @@
     if (!copied) throw new Error('Clipboard unavailable');
   }
 
-  function openShare(id) {
-    const url = storyURL(id);
+  function openShare(turn) {
+    const url = storyURL(turn);
+    const transcript = conversation.slice(0, turn + 1).map(entry =>
+      `YOU: ${promptText(entry)}\n\nCOWBAI 2.0: ${smartQuotes(originalSamples[entry.id])}`).join('\n\n');
     shareInput.value = url;
     shareNotice.textContent = '';
-    shareDialog.dataset.storyId = id.toString(16).padStart(5, '0');
+    shareDialog.dataset.storyId = storyKey(conversation[turn].id);
     shareDialog.querySelector('[data-share-post]').hidden = true;
     shareDialog.querySelector('[data-share-usenet]').setAttribute('aria-expanded', 'false');
     shareDialog.querySelector('[data-share-plaintext]').value =
-      `Subject: A little cowboy literature from CowbAI 2.0\n\n${smartQuotes(originalSamples[id])}\n\n-- \nCowbAI 2.0 / The Cowboy Collective\n${url}`;
+      `Subject: A little cowboy literature from CowbAI 2.0\n\n${transcript}\n\n-- \nCowbAI 2.0 / The Cowboy Collective\n${url}`;
     shareDialog.querySelector('[data-share-linkedin]').href =
       `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
     shareDialog.querySelector('[data-share-email]').href =
@@ -364,7 +461,7 @@
   function addActions(body, text) {
     const id = sampleIDs.get(text);
     const row = body.parentElement;
-    row.dataset.storyId = id.toString(16).padStart(5, '0');
+    row.dataset.storyId = storyKey(id);
     const actions = document.createElement('div');
     actions.className = 'frontier-chat__actions';
     actions.setAttribute('role', 'group');
@@ -419,7 +516,7 @@
       try { await copyText(smartQuotes(text)); showFeedback(buttons.copy, 'Copied!'); }
       catch (error) { showFeedback(buttons.copy, 'Could not copy. Select the text to copy it.'); }
     });
-    buttons.share.addEventListener('click', () => openShare(id));
+    buttons.share.addEventListener('click', () => openShare(Number(row.dataset.turn)));
     buttons.regenerate.disabled = busy;
     buttons.regenerate.addEventListener('click', () => generateReply(body));
     actions.append(actionNotice);
@@ -434,22 +531,39 @@
     chat.querySelectorAll('[data-action="regenerate"]').forEach(button => { button.disabled = value; });
   }
 
+  function parseSharedConversation(query) {
+    if (query.length % 3 !== 2) return null;
+    const turns = [];
+    for (let i = 0; i < query.length; i += 3) {
+      const prompt = i ? digits.indexOf(query[i - 1]) : -1;
+      const id = storyKeyID(query.slice(i, i + 2));
+      if (id >= originalSamples.length || prompt >= followUps.length) return null;
+      turns.push({ prompt, id });
+    }
+    return turns;
+  }
+
   function showSharedStory() {
     const query = window.location.search.slice(1);
-    if (!/^[0-9a-f]+$/i.test(query)) return;
-    const id = Number.parseInt(query, 16);
-    if (!Number.isSafeInteger(id) || id >= originalSamples.length) {
+    if (![...query].length || ![...query].every(char => digits.includes(char))) return;
+    const turns = parseSharedConversation(query);
+    if (!turns) {
       notice.textContent = 'That story is not on this trail. Send a message to find another.';
       return;
     }
-    const text = originalSamples[id];
     thread.querySelector('[data-welcome]')?.remove();
-    message('YOU', firstPrompt, true);
-    const body = message('COWBAI 2.0', smartQuotes(text));
-    addActions(body, text);
-    // A shared story counts as seen in this visit's shuffled deck.
-    lastSample = text;
-    sampleDeck = shuffled(samples.filter(sample => sample !== text));
+    conversation = turns;
+    turns.forEach((entry, turn) => {
+      const text = originalSamples[entry.id];
+      message('YOU', promptText(entry), turn === 0);
+      const body = message('COWBAI 2.0', smartQuotes(text));
+      body.parentElement.dataset.turn = turn;
+      addActions(body, text);
+    });
+    // Shared stories count as seen in this visit's shuffled deck.
+    const seen = new Set(turns.map(entry => originalSamples[entry.id]));
+    lastSample = originalSamples[turns[turns.length - 1].id];
+    sampleDeck = shuffled(samples.filter(sample => !seen.has(sample)));
     prompt.value = choose(followUps);
     fitPrompt();
     requestAnimationFrame(() => chat.scrollIntoView({ block: 'start' }));
@@ -484,10 +598,17 @@
     setBusy(true);
     const welcome = thread.querySelector('[data-welcome]');
     if (welcome) welcome.remove();
-    if (!existingBody) message('YOU', prompt.value, true);
+    let turn;
+    if (existingBody) turn = Number(existingBody.parentElement.dataset.turn);
+    else {
+      turn = conversation.length;
+      conversation.push({ prompt: turn ? Math.max(0, followUps.indexOf(prompt.value)) : -1, id: null });
+      message('YOU', prompt.value, true);
+    }
     prompt.value = '';
     fitPrompt();
     const body = existingBody || message('COWBAI 2.0', '');
+    body.parentElement.dataset.turn = turn;
     body.parentElement.querySelector('.frontier-chat__actions')?.remove();
     body.classList.add('frontier-chat__thinking');
     thread.setAttribute('aria-busy', 'true');
@@ -504,6 +625,7 @@
       }
       body.classList.remove('frontier-chat__thinking');
       const text = nextSample();
+      conversation[turn].id = sampleIDs.get(text);
       const displayText = smartQuotes(text);
       body.textContent = '';
       if (reducedMotion) body.textContent = displayText;
