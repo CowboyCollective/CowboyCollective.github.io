@@ -408,7 +408,25 @@
 .frontier-share__buttons a:hover,
 .frontier-share__buttons button:hover { background: rgba(80, 45, 22, .08); }
 .frontier-share :focus-visible { outline: 2px solid #502d16; outline-offset: 3px; }
-.frontier-share__notice { margin-top: .7rem; font-size: .75rem; line-height: 1.5; }
+.frontier-share__notice {
+  position: absolute;
+  top: .6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  max-width: calc(100% - 2rem);
+  width: max-content;
+  padding: .3rem .5rem;
+  background: #502d16;
+  color: #f4e3d7;
+  font: 400 .7rem/1.4 "Besley", serif;
+  text-align: center;
+  pointer-events: none;
+  animation: frontier-feedback 2s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .frontier-share__notice { animation: none; }
+}
 .frontier-share__notice:empty { display: none; }
 .frontier-share__post { margin-top: 1.1rem; }
 .frontier-share__post textarea {

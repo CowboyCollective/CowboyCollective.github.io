@@ -221,7 +221,7 @@
     }
   }
 
-  function message(speaker, text, user = false) {
+  function message(speaker, text, user = false, animate = user) {
     const row = document.createElement('div');
     row.className = 'frontier-chat__message' + (user ? ' frontier-chat__message--user' : '');
     const label = document.createElement('div');
@@ -233,7 +233,7 @@
     row.append(label, body);
     thread.append(row);
     thread.scrollTop = thread.scrollHeight;
-    if (user && !reducedMotion && row.animate) {
+    if (user && animate && !reducedMotion && row.animate) {
       // Animate a visual copy in a clipped sibling layer. The actual bubble
       // keeps its final layout, so its flight cannot inflate scrollHeight.
       requestAnimationFrame(() => {
@@ -395,6 +395,7 @@
     const transcript = conversation.slice(0, turn + 1).map(entry =>
       `YOU: ${promptText(entry)}\n\nCOWBAI 2.0: ${smartQuotes(originalSamples[entry.id])}`).join('\n\n');
     shareInput.value = url;
+    clearTimeout(noticeTimer);
     shareNotice.textContent = '';
     shareDialog.dataset.storyId = storyKey(conversation[turn].id);
     shareDialog.querySelector('[data-share-post]').hidden = true;
@@ -408,12 +409,21 @@
     shareDialog.showModal();
   }
 
+  let noticeTimer;
+  const showShareNotice = message => {
+    clearTimeout(noticeTimer);
+    shareNotice.textContent = '';
+    void shareNotice.offsetWidth; // restart the fade animation
+    shareNotice.textContent = message;
+    noticeTimer = setTimeout(() => { shareNotice.textContent = ''; }, 2000);
+  };
+
   shareDialog.querySelector('[data-share-copy]').addEventListener('click', async () => {
     try {
       await copyText(shareInput.value);
-      shareNotice.textContent = 'Link copied!';
+      showShareNotice('Link copied!');
     } catch (error) {
-      shareNotice.textContent = 'Select the link above and copy it manually.';
+      showShareNotice('Select the link above and copy it manually.');
       shareInput.focus();
       shareInput.select();
     }
@@ -426,9 +436,9 @@
   });
   shareDialog.querySelector('[data-share-copy-post]').addEventListener('click', async () => {
     const field = shareDialog.querySelector('[data-share-plaintext]');
-    try { await copyText(field.value); shareNotice.textContent = 'Plain-text post copied!'; }
+    try { await copyText(field.value); showShareNotice('Plain-text post copied!'); }
     catch (error) {
-      shareNotice.textContent = 'Select the post above and copy it manually.';
+      showShareNotice('Select the post above and copy it manually.');
       field.focus(); field.select();
     }
   });
@@ -555,7 +565,7 @@
     conversation = turns;
     turns.forEach((entry, turn) => {
       const text = originalSamples[entry.id];
-      message('YOU', promptText(entry), turn === 0);
+      message('YOU', promptText(entry), true, turn === 0);
       const body = message('COWBAI 2.0', smartQuotes(text));
       body.parentElement.dataset.turn = turn;
       addActions(body, text);
