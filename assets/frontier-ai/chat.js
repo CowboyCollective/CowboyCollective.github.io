@@ -558,7 +558,7 @@
     if (![...query].length || ![...query].every(char => digits.includes(char))) return;
     const turns = parseSharedConversation(query);
     if (!turns) {
-      notice.textContent = 'That story is not on this trail. Send a message to find another.';
+      history.replaceState(null, '', window.location.pathname + window.location.hash);
       return;
     }
     thread.querySelector('[data-welcome]')?.remove();
