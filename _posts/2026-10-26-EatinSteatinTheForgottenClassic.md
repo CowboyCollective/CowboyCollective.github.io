@@ -5,7 +5,7 @@ title: "Eatin' Steatin': The forgotten classic"
 cowboy: "Owen Earl"
 type: "Memein"
 date: 2026-10-26 00:01:00
-photo: "/assets/eatin-steatin/breakfast-cropped.gif"
+photo: "https://raw.githubusercontent.com/CowboyCollective/media/master/ES-breakfast-cropped.gif"
 zip: "https://github.com/CowboyCollective/eatin-steatin/archive/refs/heads/main.zip"
 description: "Hungry Hungry Cowboy!"
 ---
@@ -24,7 +24,7 @@ He would ask for his paycheck in quarters so he could run down to the arcade and
 
 When I was around 9, the Nintendo Wii came out. Of course, this was a classic console for many, with unique titles like *FIFA World Cup South Africa* or *Pirates vs. Ninjas Dodgeball*, but for my dad there was a particular appeal to this new console: it was the first console to release a port of *Eatin' Steatin'*.
 
-![Eatin' Steatin' Wii cover](/assets/eatin-steatin/cover-art.jpg)
+![Eatin' Steatin' Wii cover](https://raw.githubusercontent.com/CowboyCollective/media/master/ES-cover-art.jpg)
 
 I probably clocked around 23,000 hours playing this game. To me it was an all-time classic, and a good way to connect to my old man.
 
@@ -34,7 +34,7 @@ Of course, the Wii came out 20 years ago now, and after 10+ years our Wii finall
 
 
 
-![Breakfast gameplay with the clown transformation](/assets/eatin-steatin/breakfast_clown_transform.gif)
+![Breakfast gameplay with the clown transformation](https://raw.githubusercontent.com/CowboyCollective/media/master/ES-breakfast_clown_transform.gif)
 
 The ROM is not available to play in MAME, nor were any ROMs available to play in the Dolphin Wii emulator. Without the disc or a working Wii, this game was not possible to play.
 
@@ -52,11 +52,11 @@ But I had Eatin' fever at this point and I would not stop before I could play th
 
 I censored his name because he asked me to. 
 
-![Midnight snack gameplay](/assets/eatin-steatin/midnight_snack.gif)
+![Midnight snack gameplay](https://raw.githubusercontent.com/CowboyCollective/media/master/ES-midnight_snack.gif)
 
 Anyway, I have a working Wii ROM now. It runs on the [Dolphin Wii emulator](https://dolphin-emu.org/). Right now, the only way to play is to download Dolphin. I think it's in some ways the best way to play because you can use the Wii Remote which really adds to the experience. I'm trying to use ChatGPT to convert it to something a little bit easier to play. Maybe there will be updates here soon.
 
 In the meantime, stay hungry!
 
-![Lunch gameplay featuring the window and repairman](/assets/eatin-steatin/lunch_window_and_repairman.gif)
+![Lunch gameplay featuring the window and repairman](https://raw.githubusercontent.com/CowboyCollective/media/master/ES-lunch_window_and_repairman.gif)
 
